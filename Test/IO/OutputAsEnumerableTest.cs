@@ -2,6 +2,7 @@
 using Cactoos.IO;
 
 using static System.Collections.Generic.Create;
+using System.IO;
 
 namespace Test.IO
 {
@@ -13,8 +14,8 @@ namespace Test.IO
         {
             array<byte>(
                 new OutputAsEnumerable(
-                    new StringInput("nice try nigga"),
-                    new PathOutput("file2.txt")
+                    new StringInput("nice try fascist"),
+                    new PathOutput("file2.txt", FileMode.Truncate)
                 )
             );
         }

@@ -17,7 +17,7 @@ namespace Test.IO
         {
             var output =
                 monad(
-                    new PathOutput(GetTempFileName()),
+                    new PathOutput(GetTempFileName(), FileMode.OpenOrCreate),
                     @out =>
                         use(
                             @out.Stream(),
