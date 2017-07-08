@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,30 +26,30 @@ namespace Cactoos.IO
         }
     }
 
-    public class OutputAsEnumerable : IEnumerable<byte>
+    public class OutputEnumerable : IEnumerable<byte>, IDisposable
     {
         private Stream _output;
         private IEnumerable<byte> _source;
 
-        public OutputAsEnumerable(IEnumerable<byte> source, Stream output)
+        public OutputEnumerable(IEnumerable<byte> source, Stream output)
         {
             _source = source;
             _output = output;
         }
 
-        public OutputAsEnumerable(Stream from, Stream to)
-            : this(new InputAsEnumerable(from), to)
+        public OutputEnumerable(Stream from, Stream to)
+            : this(new InputEnumerable  (from), to)
         {
 
         }
 
-        public OutputAsEnumerable(IInput from, IOutput to)
-            : this(new InputAsEnumerable(from.Stream()), to.Stream())
+        public OutputEnumerable(IInput from, IOutput to)
+            : this(new InputEnumerable(from.Stream()), to.Stream())
         {
 
         }
 
-        public OutputAsEnumerable()
+        public OutputEnumerable()
         {
 
         }
@@ -63,6 +64,11 @@ namespace Cactoos.IO
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
+        }
+
+        public void Dispose()
+        {
+            _output.Dispose();
         }
     }
 }

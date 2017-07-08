@@ -13,6 +13,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)IInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IOutput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\ByteInput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\BytesAsOutput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\LengthOfInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\NotNullInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\NotNullOutput.cs" />
@@ -27,6 +28,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)IText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\ByteArray.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\BytesAsText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\EmptyBytes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\StringText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\TextBytes.cs" />

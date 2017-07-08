@@ -1,4 +1,6 @@
-﻿namespace Cactoos.Text
+﻿using System.Linq;
+
+namespace Cactoos.Text
 {
     /// <summary>
     /// Array as Bytes
@@ -14,6 +16,15 @@
         public ByteArray(params byte[] source)
         {
             _source = source;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of ByteArray
+        /// </summary>
+        /// <param name="source">Enumerable of byte</param>
+        public ByteArray(System.Collections.Generic.IEnumerable<byte> source)
+        {
+            _source = source.ToArray();
         }
 
         /// <summary>

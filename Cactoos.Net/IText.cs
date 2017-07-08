@@ -11,6 +11,6 @@ namespace Cactoos
         /// Get string value
         /// </summary>
         /// <returns>String value</returns>
-        string AsString();
+        string String();
     }
 }

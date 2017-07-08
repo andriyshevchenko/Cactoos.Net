@@ -20,7 +20,7 @@
         /// Get string value
         /// </summary>
         /// <returns>String value</returns>
-        public string AsString() => _source;
+        public string String() => _source;
 
         /// <summary>
         /// Compares IText to another
@@ -33,13 +33,13 @@
         /// sort order as other. Greater than zero This instance follows other in the sort
         /// order.
         /// </returns>
-        public int CompareTo(IText other) => _source.CompareTo(other.AsString());
+        public int CompareTo(IText other) => _source.CompareTo(other.String());
 
         /// <summary>
         /// Indicates whether the current object is equal to another IText.
         /// </summary>
         /// <param name="other">IText to compare</param>
         /// <returns>True if objects are equal</returns>
-        public bool Equals(IText other) => _source.Equals(other.AsString());
+        public bool Equals(IText other) => _source.Equals(other.String());
     }
 }

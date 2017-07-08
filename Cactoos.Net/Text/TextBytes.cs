@@ -45,7 +45,7 @@ namespace Cactoos.Text
         /// <returns>Byte value</returns>
         public byte[] Bytes()
         {
-            return _encoding.GetBytes(_source.AsString());
+            return _encoding.GetBytes(_source.String());
         }
     }
 }

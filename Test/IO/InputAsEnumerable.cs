@@ -12,7 +12,7 @@ namespace Test.IO
         public void should_read()
         {
             var target =
-                new InputAsEnumerable(
+                new InputEnumerable(
                        new StringInput("hello world")
                 );
  

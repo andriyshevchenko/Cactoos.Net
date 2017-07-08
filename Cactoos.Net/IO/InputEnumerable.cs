@@ -2,22 +2,23 @@
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
+using System;
 
 namespace Cactoos.IO
 {
     public class InputAsBytes : IBytes
     {
-        InputAsEnumerable enumerator;
+        InputEnumerable enumerator;
 
         public InputAsBytes(Stream stream)
         {
-            enumerator = new InputAsEnumerable(stream);
+            enumerator = new InputEnumerable(stream);
         }
 
 
         public InputAsBytes(IInput input)
         {
-            enumerator = new InputAsEnumerable(input);
+            enumerator = new InputEnumerable(input);
         }
 
         public byte[] Bytes()
@@ -26,19 +27,24 @@ namespace Cactoos.IO
         }
     }
 
-    public class InputAsEnumerable : IEnumerable<byte>
+    public class InputEnumerable : IEnumerable<byte>, IDisposable
     {
         private Stream _stream;
 
-        public InputAsEnumerable(Stream stream)
+        public InputEnumerable(Stream stream)
         {
             _stream = stream;
         }
 
-        public InputAsEnumerable(IInput stream) : this(stream.Stream())
+        public InputEnumerable(IInput stream) : this(stream.Stream())
         {
         }
-        
+
+        public void Dispose()
+        {
+            _stream.Dispose();
+        }
+
         public IEnumerator<byte> GetEnumerator()
         {
             return new SingleByteEnumerator(
