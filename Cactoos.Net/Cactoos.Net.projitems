@@ -17,13 +17,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)IO\LengthOfInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\NotNullInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\NotNullOutput.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)IO\OutputEnumerable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\OutputCollection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\OutputEnumerator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\PathInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\PathOutput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\SingleByteEnumerator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\InputEnumerator.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)IO\InputEnumerable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\InputCollection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\StringInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IScalar.cs" />

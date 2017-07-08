@@ -16,16 +16,15 @@ namespace Test.IO
         [TestMethod]
         public void should_write_to_output()
         {
-            array<byte>(
-                new OutputEnumerable(
-                    new StringInput("nice try fascist"),
-                    new PathOutput("file2.txt", FileMode.Truncate)
-                )
-            );
+            new OutputCollection(
+                new StringInput("nice try fascist"),
+                new PathOutput("file2.txt", FileMode.Truncate)
+            ).Count();
+
             Assert.AreEqual(
-                "nice try fascist", 
+                "nice try fascist",
                 new BytesAsText(
-                    new InputEnumerable(
+                    new InputCollection(
                         new PathInput("file2.txt")
                     ),
                     Encoding.UTF8
@@ -39,14 +38,14 @@ namespace Test.IO
             var name = Path.GetTempFileName();
             File.WriteAllBytes(name, array<byte>(0, 1, 2, 2, 2, 5));
             use(
-                new OutputEnumerable(
+                new OutputCollection(
                     new PathInput(name),
                     new BytesAsOutput(trg)
                 ),
-                output => array(output)
+                Enumerable.Count
             );
-            var test = new InputEnumerable(new PathInput(name)).ToArray();
-                
+            var test = new InputCollection(new PathInput(name)).ToArray();
+
             Assert.IsTrue(test.SequenceEqual(part(trg, 0, test.Length)));
         }
     }

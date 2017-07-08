@@ -8,17 +8,17 @@ namespace Cactoos.IO
 {
     public class InputAsBytes : IBytes
     {
-        InputEnumerable enumerator;
+        InputCollection enumerator;
 
         public InputAsBytes(Stream stream)
         {
-            enumerator = new InputEnumerable(stream);
+            enumerator = new InputCollection(stream);
         }
 
 
         public InputAsBytes(IInput input)
         {
-            enumerator = new InputEnumerable(input);
+            enumerator = new InputCollection(input);
         }
 
         public byte[] Bytes()
@@ -27,16 +27,16 @@ namespace Cactoos.IO
         }
     }
 
-    public class InputEnumerable : IEnumerable<byte>, IDisposable
+    public class InputCollection : IEnumerable<byte>, IDisposable
     {
         private Stream _stream;
 
-        public InputEnumerable(Stream stream)
+        public InputCollection(Stream stream)
         {
             _stream = stream;
         }
 
-        public InputEnumerable(IInput stream) : this(stream.Stream())
+        public InputCollection(IInput stream) : this(stream.Stream())
         {
         }
 

@@ -26,30 +26,30 @@ namespace Cactoos.IO
         }
     }
 
-    public class OutputEnumerable : IEnumerable<byte>, IDisposable
+    public class OutputCollection : IEnumerable<byte>, IDisposable
     {
         private Stream _output;
         private IEnumerable<byte> _source;
 
-        public OutputEnumerable(IEnumerable<byte> source, Stream output)
+        public OutputCollection(IEnumerable<byte> source, Stream output)
         {
             _source = source;
             _output = output;
         }
 
-        public OutputEnumerable(Stream from, Stream to)
-            : this(new InputEnumerable  (from), to)
+        public OutputCollection(Stream from, Stream to)
+            : this(new InputCollection  (from), to)
         {
 
         }
 
-        public OutputEnumerable(IInput from, IOutput to)
-            : this(new InputEnumerable(from.Stream()), to.Stream())
+        public OutputCollection(IInput from, IOutput to)
+            : this(new InputCollection(from.Stream()), to.Stream())
         {
 
         }
 
-        public OutputEnumerable()
+        public OutputCollection()
         {
 
         }
