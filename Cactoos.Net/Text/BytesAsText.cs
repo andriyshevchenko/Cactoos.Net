@@ -8,25 +8,27 @@ namespace Cactoos.Text
     public class BytesAsText : IText
     {
         IBytes _source;
+        Encoding _encoding;
 
-        public BytesAsText(IBytes source)
+        public BytesAsText(IBytes source, Encoding encoding)
         {
             _source = source;
+            _encoding = encoding;
         }
 
-        public BytesAsText(byte[] source): this(new ByteArray(source))
+        public BytesAsText(byte[] source, Encoding encoding): this(new ByteArray(source), encoding)
         {
 
         }
 
-        public BytesAsText(IEnumerable<byte> source) : this(new ByteArray(source))
+        public BytesAsText(IEnumerable<byte> source, Encoding encoding) : this(new ByteArray(source), encoding)
         {
 
         }
 
         public string String()
-        { 
-            return Convert.ToBase64String(_source.Bytes(), Base64FormattingOptions.InsertLineBreaks);
+        {
+            return _encoding.GetString(_source.Bytes());
         }
 
         public int CompareTo(IText other)

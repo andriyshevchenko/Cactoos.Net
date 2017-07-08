@@ -6,6 +6,7 @@ using static System.Functional.FlowControl;
 using System.IO;
 using Cactoos.Text;
 using System.Linq;
+using System.Text;
 
 namespace Test.IO
 {
@@ -21,11 +22,13 @@ namespace Test.IO
                     new PathOutput("file2.txt", FileMode.Truncate)
                 )
             );
-            Assert.AreEqual("nice try fascist", 
+            Assert.AreEqual(
+                "nice try fascist", 
                 new BytesAsText(
                     new InputEnumerable(
                         new PathInput("file2.txt")
-                    )
+                    ),
+                    Encoding.UTF8
                 ).String());
         }
 
