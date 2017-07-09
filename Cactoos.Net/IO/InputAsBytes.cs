@@ -1,25 +1,26 @@
 ﻿using System.IO;
+using System.Linq;
 
 namespace Cactoos.IO
 {
     public class InputAsBytes : IBytes
     {
-        InputCollection enumerator;
+        InputCollection _source;
 
         public InputAsBytes(Stream stream)
         {
-            enumerator = new InputCollection(stream);
+            _source = new InputCollection(stream);
         }
 
 
         public InputAsBytes(IInput input)
         {
-            enumerator = new InputCollection(input);
+            _source = new InputCollection(input);
         }
 
         public byte[] Bytes()
         {
-            return enumerator.ToArray();
+            return _source.ToArray();
         }
     }
 }

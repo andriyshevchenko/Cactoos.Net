@@ -30,15 +30,5 @@ namespace Cactoos.Text
         {
             return _encoding.GetString(_source.Bytes());
         }
-
-        public int CompareTo(IText other)
-        {
-            return String().CompareTo(other.String());
-        }
-
-        public bool Equals(IText other)
-        {
-            return String().Equals(other.String());
-        }
     }
 }

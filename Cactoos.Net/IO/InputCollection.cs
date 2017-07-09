@@ -6,7 +6,9 @@ using System;
 
 namespace Cactoos.IO
 {
-
+    /// <summary>
+    /// Reads a bytes one-by-one from <see cref="Stream"/> or <see cref="IInput"/>
+    /// </summary>
     public class InputCollection : IEnumerable<byte>, IDisposable
     {
         private Stream _stream;

@@ -5,6 +5,10 @@ using System.IO;
 
 namespace Cactoos.IO
 {
+    /// <summary>
+    /// Reads a bytes one-by-one from first source of data(<see cref="Stream"/>, <see cref="IInput"/>, <see cref="IEnumerable{T}"/>)
+    /// and writes them to second(<see cref="Stream"/>, <see cref="IOutput"/>)
+    /// </summary>
     public class OutputCollection : IEnumerable<byte>, IDisposable
     {
         private Stream _output;

@@ -34,7 +34,7 @@ namespace Cactoos.Text
         /// Initializes a new instance of <see cref="TextBytes"/>
         /// </summary>
         /// <param name="source">Source string</param>
-        public TextBytes(string source) : this(new StringText(source))
+        public TextBytes(string source) : this(new Text(source))
         {
 
         }

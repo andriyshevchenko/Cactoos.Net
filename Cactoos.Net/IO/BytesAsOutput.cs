@@ -11,7 +11,7 @@ namespace Cactoos.IO
 
         public BytesAsOutput(byte[] source)
         {
-            _source = new MemoryStream(source);
+            _source = new MemoryStream(source, true);
         }
 
         public BytesAsOutput(IBytes source) : this(source.Bytes())

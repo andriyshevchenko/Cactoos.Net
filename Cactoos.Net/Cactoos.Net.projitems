@@ -30,10 +30,15 @@
     <Compile Include="$(MSBuildThisFileDirectory)IO\WriteOnlyEnumerator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IScalar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\Base64Text.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\ByteArray.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\BytesAsText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\ComparableText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\EmptyBytes.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Text\StringText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\EmptyText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\EquatableText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\JoinedText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\Text.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\TextBytes.cs" />
   </ItemGroup>
 </Project>
