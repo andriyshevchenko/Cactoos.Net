@@ -1,7 +1,5 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Cactoos.List;
-using System.Linq;
 
 using static System.Collections.Generic.Create;
 using static System.Functional.Func;
