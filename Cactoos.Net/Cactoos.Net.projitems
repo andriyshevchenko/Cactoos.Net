@@ -30,6 +30,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)IO\WriteOnlyEnumerator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IScalar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)List\FilteredEnumerable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)List\FilteringEnumerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)List\MappedEnumerable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)List\MappingEnumerator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\Base64Text.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\ByteArray.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\BytesAsText.cs" />
