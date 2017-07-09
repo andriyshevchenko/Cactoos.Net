@@ -66,6 +66,7 @@
     <Compile Include="IO\PathOutputTest.cs" />
     <Compile Include="IO\SingleByteEnumeratorTest.cs" />
     <Compile Include="IO\OutputEnumeratorTest.cs" />
+    <Compile Include="List\CactoosVsLinqBenchmark.cs" />
     <Compile Include="List\FilteredEnumerableTest.cs" />
     <Compile Include="List\FilteringEnumeratorTest.cs" />
     <Compile Include="List\JoinedEnumerableTest.cs" />

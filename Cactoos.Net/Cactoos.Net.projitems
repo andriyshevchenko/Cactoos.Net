@@ -36,6 +36,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)List\JoinEnumerator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)List\MappedEnumerable.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)List\MappingEnumerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\Elapsed.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\Base64Text.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\ByteArray.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\BytesAsText.cs" />
