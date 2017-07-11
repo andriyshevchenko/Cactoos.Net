@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Cactoos.Net.Text
+namespace Cactoos.Text
 {
     public class EquatableText : IText, IEquatable<IText>
     {

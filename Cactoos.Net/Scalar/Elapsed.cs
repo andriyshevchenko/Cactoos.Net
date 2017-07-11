@@ -7,7 +7,7 @@ namespace Cactoos.Scalar
     public class Elapsed : IScalar<TimeSpan>
     {
         private Action _action;
-        private Stopwatch _clock = new Stopwatch();
+        private Stopwatch _clock;
 
         public Elapsed(Action run)
         {
@@ -16,6 +16,7 @@ namespace Cactoos.Scalar
 
         public TimeSpan Value()
         {
+            _clock = new Stopwatch();
             _clock.Start();
             _action();
             _clock.Stop();
