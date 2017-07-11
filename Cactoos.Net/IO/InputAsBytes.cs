@@ -5,17 +5,17 @@ namespace Cactoos.IO
 {
     public class InputAsBytes : IBytes
     {
-        InputCollection _source;
+        Input _source;
 
         public InputAsBytes(Stream stream)
         {
-            _source = new InputCollection(stream);
+            _source = new Input(stream);
         }
 
 
         public InputAsBytes(IInput input)
         {
-            _source = new InputCollection(input);
+            _source = new Input(input);
         }
 
         public byte[] Bytes()

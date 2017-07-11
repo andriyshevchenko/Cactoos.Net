@@ -12,7 +12,7 @@ namespace Test.IO
         public void should_read()
         {
             var target =
-                new InputCollection(
+                new Input(
                        new StringInput("hello world")
                 );
  

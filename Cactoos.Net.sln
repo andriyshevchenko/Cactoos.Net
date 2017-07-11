@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cactoos", "Cactoos\Cactoos.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{12057FA3-2B2F-4598-BDDB-0FAB10A78C68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Console", "Test.Console\Test.Console.csproj", "{AA9FA5A1-9736-4DC4-9E75-27F837FD2D2A}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Cactoos.Net\Cactoos.Net.projitems*{79a6776a-5ff6-4b72-9150-8e147cdf6006}*SharedItemsImports = 13
@@ -27,6 +29,10 @@ Global
 		{12057FA3-2B2F-4598-BDDB-0FAB10A78C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12057FA3-2B2F-4598-BDDB-0FAB10A78C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12057FA3-2B2F-4598-BDDB-0FAB10A78C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA9FA5A1-9736-4DC4-9E75-27F837FD2D2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA9FA5A1-9736-4DC4-9E75-27F837FD2D2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA9FA5A1-9736-4DC4-9E75-27F837FD2D2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA9FA5A1-9736-4DC4-9E75-27F837FD2D2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

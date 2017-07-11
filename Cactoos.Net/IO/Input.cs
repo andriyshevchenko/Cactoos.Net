@@ -9,16 +9,16 @@ namespace Cactoos.IO
     /// <summary>
     /// Reads a bytes one-by-one from <see cref="Stream"/> or <see cref="IInput"/>
     /// </summary>
-    public class InputCollection : IEnumerable<byte>, IDisposable
+    public class Input : IEnumerable<byte>, IDisposable
     {
         private Stream _stream;
 
-        public InputCollection(Stream stream)
+        public Input(Stream stream)
         {
             _stream = stream;
         }
 
-        public InputCollection(IInput stream) : this(stream.Stream())
+        public Input(IInput stream) : this(stream.Stream())
         {
         }
 
