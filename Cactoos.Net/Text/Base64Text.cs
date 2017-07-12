@@ -25,7 +25,7 @@ namespace Cactoos.Text
 
         public string String()
         {
-            return new BytesAsText(Convert.FromBase64String(_source.String()), _encoding).String();
+            return new BytesText(Convert.FromBase64String(_source.String()), _encoding).String();
         }
     }
 }

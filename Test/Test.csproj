@@ -69,7 +69,6 @@
     <Compile Include="List\CactoosVsLinqBenchmark.cs" />
     <Compile Include="List\CycledEnumerableTest.cs" />
     <Compile Include="List\FilteredEnumerableTest.cs" />
-    <Compile Include="List\FilteringEnumeratorTest.cs" />
     <Compile Include="List\JoinedEnumerableTest.cs" />
     <Compile Include="List\MappedEnumerableTest.cs" />
     <Compile Include="List\UnitTest1.cs" />

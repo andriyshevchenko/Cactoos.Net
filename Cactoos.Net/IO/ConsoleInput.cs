@@ -11,13 +11,13 @@ namespace Cactoos.IO
         {
             private MemoryStream _stream = new MemoryStream();
 
-            public override bool CanRead => _stream.CanRead;
+            public override bool CanRead => true;
 
             public override bool CanSeek => _stream.CanSeek;
 
-            public override bool CanWrite => _stream.CanWrite;
+            public override bool CanWrite => false;
 
-            public override long Length => _stream.Length;
+            public override long Length => long.MaxValue;
 
             public override long Position { get => _stream.Position; set => _stream.Position = value; }
 
@@ -28,16 +28,23 @@ namespace Cactoos.IO
 
             public override int Read(byte[] buffer, int offset, int count)
             {
-                int mod = count % 4;
-                int div = count - mod;
+                int mod = 0;
+                int div = count;
                 int read;
-                for (int i = 0; i < div; i += 4)
+
+                if (count > 4)
                 {
-                    read = Console.Read();
-                    buffer[i] = (byte)(read >> 24);
-                    buffer[i + 1] = (byte)((read & 0xFFFFF) >> 16);
-                    buffer[i + 2] = (byte)((read & 0xFFFF) >> 8);
-                    buffer[i + 3] = (byte)(read & 0xFF);
+                    mod = count % 4;
+                    div = count - mod;
+
+                    for (int i = 0; i < div; i += 4)
+                    {
+                        read = Console.Read();
+                        buffer[i] = (byte)(read >> 24);
+                        buffer[i + 1] = (byte)((read & 0xFFFFF) >> 16);
+                        buffer[i + 2] = (byte)((read & 0xFFFF) >> 8);
+                        buffer[i + 3] = (byte)(read & 0xFF);
+                    }
                 }
 
                 read = Console.Read();

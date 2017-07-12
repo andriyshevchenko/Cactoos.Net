@@ -23,7 +23,7 @@ namespace Test.IO
 
             Assert.AreEqual(
                 "nice try fascist",
-                new BytesAsText(
+                new BytesText(
                     new Input(
                         new PathInput("file2.txt")
                     ),
@@ -37,6 +37,7 @@ namespace Test.IO
             byte[] trg = array<byte>(1024);
             var name = Path.GetTempFileName();
             File.WriteAllBytes(name, array<byte>(0, 1, 2, 2, 2, 5));
+            
             use(
                 new Output(
                     new PathInput(name),

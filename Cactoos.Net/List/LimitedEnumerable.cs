@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Cactoos.List
@@ -58,7 +59,7 @@ namespace Cactoos.List
 
         public IEnumerator<T> GetEnumerator()
         {
-            return new Enumerator(_source, _items);
+            return _source.Take(_items).GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()

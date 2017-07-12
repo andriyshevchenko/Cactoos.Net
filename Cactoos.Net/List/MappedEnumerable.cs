@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Cactoos.List
 {
@@ -17,7 +18,7 @@ namespace Cactoos.List
 
         public IEnumerator<TResult> GetEnumerator()
         {
-            return new MappingEnumerator<T, TResult>(_source, _selector);
+            return _source.Select(_selector).GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()

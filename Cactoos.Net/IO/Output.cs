@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InputValidation;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -12,11 +13,31 @@ namespace Cactoos.IO
     public class Output : IEnumerable<byte>, IDisposable
     {
         private Stream _output;
-        private IEnumerable<byte> _source;
+        private DisposableWrap<IEnumerable<byte>> _source;
+
+        /// <summary>
+        /// Acts as a raii guard, to dispose _source when needed
+        /// </summary>
+        /// <typeparam name="T">Type of item to capture</typeparam>
+        class DisposableWrap<T> : IDisposable
+        {
+            public T Item { get { return _wrapee; } }
+            private T _wrapee;
+
+            public DisposableWrap(T wrapee)
+            {
+                _wrapee = wrapee;
+            }
+
+            public void Dispose()
+            {
+                _wrapee.As<IDisposable>()?.Dispose();
+            }
+        }
 
         public Output(IEnumerable<byte> source, Stream output)
         {
-            _source = source;
+            _source = new DisposableWrap<IEnumerable<byte>>(source);
             _output = output;
         }
 
@@ -41,7 +62,7 @@ namespace Cactoos.IO
         {
             return new WriteOnlyEnumerator<byte>(
                        new SingleByteEnumerator(
-                           new OutputEnumerator(_source, _output, 1)
+                           new OutputEnumerator(_source.Item, _output, 1)
                        )
                    );
         }
@@ -54,6 +75,7 @@ namespace Cactoos.IO
         public void Dispose()
         {
             _output.Dispose();
+            _source.Dispose();
         }
     }
 }

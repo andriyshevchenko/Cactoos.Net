@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Cactoos.List
 {
@@ -17,7 +18,7 @@ namespace Cactoos.List
 
         public IEnumerator<T> GetEnumerator()
         {
-            return new FilteringEnumerator<T>(_source, _predicate);
+            return _source.Where(_predicate).GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()

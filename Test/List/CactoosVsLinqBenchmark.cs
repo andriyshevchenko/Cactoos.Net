@@ -10,6 +10,8 @@ namespace Test.List
     [TestClass]
     public class CactoosVsLinqBenchmark
     {
+        private const float MAX_OFFSET = 0.25f;
+
         [TestMethod]
         public void should_map()
         {
@@ -21,15 +23,15 @@ namespace Test.List
                          .ToArray()
                 ).Value();
 
-            var elapsed2 =
-                new Elapsed(() =>
+          var elapsed2 =
+                  new Elapsed(() =>
                      new MappedEnumerable<int, int>(
                          range,
                          i => i + 1
                      ).ToArray()
                 ).Value();
 
-            Assert.IsTrue(elapsed1 > elapsed2);
+            Assert.IsTrue(new Percents(elapsed1.Milliseconds, elapsed2.Milliseconds).Value() < MAX_OFFSET);
         }
 
         [TestMethod]
@@ -49,7 +51,7 @@ namespace Test.List
                      .ToArray()
                 ).Value();
 
-            Assert.IsTrue(elapsed1 > elapsed2);
+            Assert.IsTrue(new Percents(elapsed1.Milliseconds, elapsed2.Milliseconds).Value() < MAX_OFFSET);
         }
 
         [TestMethod]
@@ -72,7 +74,7 @@ namespace Test.List
                      ).ToArray()
                 ).Value();
 
-            Assert.IsTrue(elapsed1 > elapsed2);
+            Assert.IsTrue(new Percents(elapsed1.Milliseconds, elapsed2.Milliseconds).Value() < MAX_OFFSET);
         }
     }
 }

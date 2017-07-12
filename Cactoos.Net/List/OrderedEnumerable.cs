@@ -25,21 +25,9 @@ namespace Cactoos.List
 
         public IEnumerator<T> GetEnumerator()
         {
-            _items = _source.ToArray();
-            if (_order == SortOrder.Ascending)
-            {
-                Array.Sort(_items);
-            }
-
-            if (_order == SortOrder.Descending)
-            {
-                Array.Sort(_items, (first, second) => - first.CompareTo(second));
-            }
-
-            for (int i = 0; i < _items.Length; i++)
-            {
-                yield return _items[i];
-            }
+            return (_order == SortOrder.Ascending ?
+                    _source.OrderBy(item => item) : 
+                    _source.OrderByDescending(item => item)).GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()
