@@ -59,22 +59,20 @@ namespace Test.List
         {
             var range = Enumerable.Range(0, 10000000).ToArray();
 
-            var elapsed1 =
-                new Elapsed(() =>
-                    range.Where(i => i % 3 == 0)
-                         .Select(i => i + 1)
-                         .ToArray()
-                ).Value();
-
-            var elapsed2 =
-                new Elapsed(() =>
-                     new MappedEnumerable<int, int>(
-                         new FilteredEnumerable<int>(range, i => i % 3 == 0),
-                         i => i + 1
-                     ).ToArray()
-                ).Value();
-
-            Assert.IsTrue(new Percents(elapsed1.Milliseconds, elapsed2.Milliseconds).Value() < MAX_OFFSET);
+            Assert.IsTrue(
+                new Percents(
+                    new Elapsed(() =>
+                        range.Where(i => i % 3 == 0)
+                             .Select(i => i + 1)
+                             .ToArray()
+                    ).Value().Milliseconds, 
+                    new Elapsed(() =>
+                        new MappedEnumerable<int, int>(
+                            new FilteredEnumerable<int>(range, i => i % 3 == 0),
+                            i => i + 1
+                        ).ToArray()
+                    ).Value().Milliseconds
+                ).Value() < MAX_OFFSET);
         }
     }
 }

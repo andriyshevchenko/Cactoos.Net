@@ -20,7 +20,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)IO\FakeInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\FakeOutput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\InputAsBytes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\CachedScalar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\LazyScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Percents.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\ThreadSafeScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\InputText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\LengthOfInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\NotNullInput.cs" />

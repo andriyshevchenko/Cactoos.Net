@@ -9,6 +9,47 @@ namespace Cactoos.Scalar
         private double _first;
         private double _second;
 
+        public Percents(IScalar<double> first, IScalar<double> second)
+        {
+            _first = first.Value();
+            _second = second.Value();
+        }
+
+        public Percents(IScalar<float> first, IScalar<float> second) : this(first.Value(), second.Value())
+        {
+
+        }
+
+        public Percents(IScalar<int> first, IScalar<int> second) : this(first.Value(), second.Value())
+        {
+
+        }
+
+        public Percents(IScalar<decimal> first, IScalar<decimal> second) : this(first.Value(), second.Value())
+        {
+
+        }
+
+        public Percents(IScalar<long> first, IScalar<long> second) : this(first.Value(), second.Value())
+        {
+
+        }
+
+        public Percents(IScalar<short> first, IScalar<short> second) : this(first.Value(), second.Value())
+        {
+
+        }
+
+        public Percents(IScalar<byte> first, IScalar<byte> second) : this(first.Value(), second.Value())
+        {
+
+        }
+
+        public Percents(IScalar<char> first, IScalar<char> second) : this(first.Value(), second.Value())
+        {
+
+        }
+
         public Percents(double first, double second)
         {
             _first = first;
