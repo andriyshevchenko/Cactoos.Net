@@ -8,6 +8,11 @@ namespace Cactoos.Net.Scalar
     {
         private T _value;
 
+        public CachedScalar()
+        {
+
+        }
+
         public CachedScalar(T value)
         {
             _value = value;

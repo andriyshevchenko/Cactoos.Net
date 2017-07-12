@@ -9,6 +9,7 @@
     <Import_RootNamespace>Cactoos.Net</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)IAttempt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IBytes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IOutput.cs" />
@@ -21,7 +22,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)IO\FakeOutput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\InputAsBytes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\CachedScalar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\ErrorSafeScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\LazyScalar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\NotNull.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Percents.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ThreadSafeScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\InputText.cs" />
