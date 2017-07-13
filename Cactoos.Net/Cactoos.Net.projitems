@@ -27,6 +27,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\NotNull.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Percents.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ThreadSafeScalar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\ValueScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\InputText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\LengthOfInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\NotNullInput.cs" />
