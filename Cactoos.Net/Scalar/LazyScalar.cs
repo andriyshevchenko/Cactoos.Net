@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Cactoos.Net.Scalar
+namespace Cactoos.Scalar
 {
     public class LazyScalar<T> : IScalar<T>
     {

@@ -1,4 +1,4 @@
-﻿namespace Cactoos.Net.Scalar
+﻿namespace Cactoos.Scalar
 {
     public class CachedScalar<T> : IScalar<T>
     {
@@ -8,7 +8,7 @@
 
         public CachedScalar(IScalar<T> scalar)
         {
-            _scalar = _scalar;
+            _scalar = scalar;
             evaluated = false;
         }
 

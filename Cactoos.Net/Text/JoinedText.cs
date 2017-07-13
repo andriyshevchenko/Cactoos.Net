@@ -55,10 +55,10 @@ namespace Cactoos.Text
 
             var body = 
                 part(strings, 0, length - 1)
-                .Aggregate(
-                     new StringBuilder(),
-                     (builder, text) => builder.Append(text.String()).Append(_delimiter)
-                 );
+                    .Aggregate(
+                         new StringBuilder(),
+                         (builder, text) => builder.Append(text.String()).Append(_delimiter)
+                     );
 
             return body.Append(strings[length - 1].String())
                        .ToString();

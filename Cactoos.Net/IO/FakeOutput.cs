@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
-namespace Cactoos.Net.IO
+namespace Cactoos.IO
 {
     public class FakeOutput : IOutput
     {

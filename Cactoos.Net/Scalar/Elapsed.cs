@@ -1,5 +1,4 @@
-﻿using Cactoos;
-using System;
+﻿using System;
 using System.Diagnostics;
 
 namespace Cactoos.Scalar

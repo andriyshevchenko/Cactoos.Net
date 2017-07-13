@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Cactoos.Net.Scalar
+﻿namespace Cactoos.Scalar
 {
     public class ThreadSafeScalar<T> : IScalar<T> 
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using static System.Collections.Generic.Create;
 
-namespace Cactoos.Net.Scalar
+namespace Cactoos.Scalar
 {
     public class ErrorSafeScalar<T> : IScalar<T>, IAttempt 
     {

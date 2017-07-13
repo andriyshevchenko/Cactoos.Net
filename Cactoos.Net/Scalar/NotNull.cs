@@ -1,9 +1,6 @@
 ﻿using InputValidation;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Cactoos.Net.Scalar
+namespace Cactoos.Scalar
 {
     public class NotNull<T> : IScalar<T> where T : class
     {
@@ -14,7 +11,7 @@ namespace Cactoos.Net.Scalar
             _source = source;
         }
 
-        public NotNull(T source) : this(new CachedScalar<T>(source))
+        public NotNull(T source) : this(new ValueScalar<T>(source))
         {
 
         }

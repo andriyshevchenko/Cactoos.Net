@@ -23,6 +23,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)IO\InputAsBytes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\CachedScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ErrorSafeScalar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\FuncScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\LazyScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\NotNull.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Percents.cs" />
