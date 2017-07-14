@@ -8,6 +8,7 @@ namespace Cactoos.IO
         public class ConsoleInputStream : Stream
         {
             private int last;
+            private byte current_byte;
             private MemoryStream _stream = new MemoryStream();
 
             public override bool CanRead => true;
@@ -27,8 +28,18 @@ namespace Cactoos.IO
 
             public override int Read(byte[] buffer, int offset, int count)
             {
+                byte read_first_bt(int value) => (byte)(value >> 24);
+                byte read_second_bt(int value) => (byte)((value & 0xFFFFF) >> 16);
+                byte read_third_bt(int value) => (byte)((value & 0xFFFF) >> 8);
+                byte read_fourth_bt(int value) => (byte)(last & 0xFF);
+
                 int length = buffer.Length;
-                count = count - length > 0 ? count : length;
+
+                if (count > length)
+                {
+                    count = length;
+                }
+
                 int mod = count % 4;
                 int div = count / 4;
                 
@@ -40,26 +51,17 @@ namespace Cactoos.IO
                     for (int i = 0; i < div; i += 4)
                     {
                         last = Console.Read();
-                        buffer[i] = (byte)(last >> 24);
-                        buffer[i + 1] = (byte)((last & 0xFFFFF) >> 16);
-                        buffer[i + 2] = (byte)((last & 0xFFFF) >> 8);
-                        buffer[i + 3] = (byte)(last & 0xFF);
+                        buffer[i] = read_first_bt(last);
+                        buffer[i + 1] = read_second_bt(last);
+                        buffer[i + 2] = read_third_bt(last);
+                        buffer[i + 3] = read_fourth_bt(last);
+                        current_byte = 4;
                     }
                 }
 
                 last = Console.Read();
-                if (count == 1)
-                {
-                    buffer[0] = (byte)last;
-                }
-                if (count == 2)
-                {
-
-                }
-                if (count == 3)
-                {
-
-                }
+                //decide which bytes to read depending on current_byte
+                //read number=length of bytes
 
                 _stream.Write(buffer, 0, count);
                 return count;
