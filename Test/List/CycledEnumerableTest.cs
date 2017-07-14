@@ -13,7 +13,7 @@ namespace Test.List
         [TestMethod]
         public void should_loop()
         {
-            Assert.IsTrue(array(1, 2, 3, 1, 2, 3).SequenceEqual(new CycledEnumerable<int>(array(1, 2, 3), 2)));
+            Assert.IsTrue(array(1, 2, 3, 1, 2, 3).SequenceEqual(new Cycled<int>(array(1, 2, 3), 2)));
         }
     }
 }

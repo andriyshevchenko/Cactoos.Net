@@ -7,6 +7,9 @@ using Cactoos.Scalar;
 
 namespace Test.List
 {
+    /// <summary>
+    /// Performance benchmark
+    /// </summary>
     [TestClass]
     public class CactoosVsLinqBenchmark
     {
@@ -25,7 +28,7 @@ namespace Test.List
 
           var elapsed2 =
                   new Elapsed(() =>
-                     new MappedEnumerable<int, int>(
+                     new Mapped<int, int>(
                          range,
                          i => i + 1
                      ).ToArray()
@@ -47,7 +50,7 @@ namespace Test.List
 
             var elapsed2 =
                 new Elapsed(() =>
-                     new FilteredEnumerable<int>(range, i => i % 3 == 0)
+                     new Filtered<int>(range, i => i % 3 == 0)
                      .ToArray()
                 ).Value();
 
@@ -67,8 +70,8 @@ namespace Test.List
                              .ToArray()
                     ).Value().Milliseconds, 
                     new Elapsed(() =>
-                        new MappedEnumerable<int, int>(
-                            new FilteredEnumerable<int>(range, i => i % 3 == 0),
+                        new Mapped<int, int>(
+                            new Filtered<int>(range, i => i % 3 == 0),
                             i => i + 1
                         ).ToArray()
                     ).Value().Milliseconds

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Cactoos.List
 {
-    public class CycledEnumerable<T> : IEnumerable<T>
+    public class Cycled<T> : IEnumerable<T>
     {
         class Enumerator : IEnumerator<T>
         {
@@ -56,7 +56,7 @@ namespace Cactoos.List
         private int _n;
         private IEnumerable<T> _source;
 
-        public CycledEnumerable(IEnumerable<T> source, int repeat)
+        public Cycled(IEnumerable<T> source, int repeat)
         {
             _source = source;
             _n = repeat;

@@ -12,7 +12,7 @@ namespace Test.List
         [TestMethod]
         public void should_join()
         {
-            var enumerable = new JoinedEnumerable<int>(array(1, 2, 3), array(4, 5, 6)).ToArray();
+            var enumerable = new Joined<int>(array(1, 2, 3), array(4, 5, 6)).ToArray();
             Assert.IsTrue(enumerable.SequenceEqual(array(1, 2, 3, 4, 5, 6)));
         }
     }

@@ -13,7 +13,7 @@ namespace Test.List
         {
             Assert.ThrowsException<InvalidOperationException>(() => 
             {
-                new InfiniteEnumerable<int>(i =>
+                new Infinite<int>(i =>
                 {
                     if (i > 1000000)
                     {

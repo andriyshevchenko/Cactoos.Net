@@ -5,12 +5,12 @@ using System.Linq;
 
 namespace Cactoos.List
 {
-    public class MappedEnumerable<T, TResult> : IEnumerable<TResult>
+    public class Mapped<T, TResult> : IEnumerable<TResult>
     {
         private IEnumerable<T> _source;
         private Func<T, TResult> _selector;
 
-        public MappedEnumerable(IEnumerable<T> source, Func<T, TResult> selector)
+        public Mapped(IEnumerable<T> source, Func<T, TResult> selector)
         {
             _source = source;
             _selector = selector;

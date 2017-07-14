@@ -11,13 +11,13 @@ namespace Cactoos.List
         Descending
     }
 
-    public class OrderedEnumerable<T> : IEnumerable<T> where T : IComparable<T>
+    public class Ordered<T> : IEnumerable<T> where T : IComparable<T>
     {
         private T[] _items;
         private IEnumerable<T> _source;
         private SortOrder _order;
 
-        public OrderedEnumerable(IEnumerable<T> source, SortOrder order)
+        public Ordered(IEnumerable<T> source, SortOrder order)
         {
             _source = source;
             _order = order;

@@ -7,6 +7,7 @@ namespace Cactoos.IO
     {
         public class ConsoleInputStream : Stream
         {
+            private int last;
             private MemoryStream _stream = new MemoryStream();
 
             public override bool CanRead => true;
@@ -26,10 +27,11 @@ namespace Cactoos.IO
 
             public override int Read(byte[] buffer, int offset, int count)
             {
-                int mod = 0;
-                int div = count;
-                int read;
-
+                int length = buffer.Length;
+                count = count - length > 0 ? count : length;
+                int mod = count % 4;
+                int div = count / 4;
+                
                 if (count > 4)
                 {
                     mod = count % 4;
@@ -37,32 +39,29 @@ namespace Cactoos.IO
 
                     for (int i = 0; i < div; i += 4)
                     {
-                        read = Console.Read();
-                        buffer[i] = (byte)(read >> 24);
-                        buffer[i + 1] = (byte)((read & 0xFFFFF) >> 16);
-                        buffer[i + 2] = (byte)((read & 0xFFFF) >> 8);
-                        buffer[i + 3] = (byte)(read & 0xFF);
+                        last = Console.Read();
+                        buffer[i] = (byte)(last >> 24);
+                        buffer[i + 1] = (byte)((last & 0xFFFFF) >> 16);
+                        buffer[i + 2] = (byte)((last & 0xFFFF) >> 8);
+                        buffer[i + 3] = (byte)(last & 0xFF);
                     }
                 }
 
-                read = Console.Read();
-                buffer[div] = (byte)(read >> 24);
-
-                if (mod > 0)
+                last = Console.Read();
+                if (count == 1)
                 {
-                    buffer[div + 1] = (byte)((read & 0xFFFFF) >> 16);
-                    if (mod > 1)
-                    {
-                        buffer[div + 2] = (byte)((read & 0xFFFF) >> 8);
-                        if (mod > 2)
-                        {
-                            buffer[div + 3] = (byte)(read & 0xFF);
-                        }
-                    }
+                    buffer[0] = (byte)last;
+                }
+                if (count == 2)
+                {
+
+                }
+                if (count == 3)
+                {
+
                 }
 
                 _stream.Write(buffer, 0, count);
-
                 return count;
             }
 

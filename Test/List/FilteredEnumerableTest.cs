@@ -13,7 +13,7 @@ namespace Test.List
         public void should_filter()
         {
             Assert.IsTrue(
-                new FilteredEnumerable<int>(
+                new Filtered<int>(
                     array(1, 2, 3, 4, 5, 6), 
                     item => item > 3)
                     .SequenceEqual(array(4, 5, 6)));

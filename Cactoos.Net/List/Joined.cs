@@ -4,16 +4,16 @@ using System.Linq;
 
 namespace Cactoos.List
 {
-    public class JoinedEnumerable<T> : IEnumerable<T>
+    public class Joined<T> : IEnumerable<T>
     {
         IEnumerable<IEnumerable<T>> _source;
 
-        public JoinedEnumerable(IEnumerable<IEnumerable<T>> source)
+        public Joined(IEnumerable<IEnumerable<T>> source)
         {
             _source = source;
         }
 
-        public JoinedEnumerable(params IEnumerable<T>[] source)
+        public Joined(params IEnumerable<T>[] source)
             : this(source.AsEnumerable())
         {
         }

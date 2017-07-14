@@ -4,16 +4,16 @@ using System.Collections.Generic;
 
 namespace Cactoos.List
 {
-    public class InfiniteEnumerable<T> : IEnumerable<T>
+    public class Infinite<T> : IEnumerable<T>
     {
         private Func<int, T> _generator;
 
-        public InfiniteEnumerable(Func<int, T> next)
+        public Infinite(Func<int, T> next)
         {
             _generator = next;
         }
 
-        public InfiniteEnumerable(Func<T> next)
+        public Infinite(Func<T> next)
         {
             _generator = (int i) => next();
         }
