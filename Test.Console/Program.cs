@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using Cactoos.IO;
-using Cactoos.Text;
 
 namespace Test.Console
 {
@@ -14,10 +9,13 @@ namespace Test.Console
         {
             new Output(
                 new StringInput("hello world"),
-                new ConsoleOutput(Encoding.UTF8)
+                new ConsoleOutput()
             ).Count();
             
-            var str = new InputText(new ConsoleInput(), Encoding.Default).String();
+            new Output(
+                new ConsoleInput(),
+                new PathOutput("file.txt")
+            );
         }
     }
 }
