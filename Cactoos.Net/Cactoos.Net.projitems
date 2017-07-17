@@ -64,7 +64,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Text\EmptyText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\EquatableText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\JoinedText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\LowerText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\NormalizeText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\Text.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\TextBytes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\UpperText.cs" />
   </ItemGroup>
 </Project>
