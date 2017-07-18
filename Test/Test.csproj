@@ -78,6 +78,8 @@
     <Compile Include="Scalar\CachedScalarTest.cs" />
     <Compile Include="Text\JoinedTextTest.cs" />
     <Compile Include="Text\NormalizedTextTest.cs" />
+    <Compile Include="Text\RepeatedTextTest.cs" />
+    <Compile Include="Text\ReversedTextTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

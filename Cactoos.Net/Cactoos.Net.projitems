@@ -30,6 +30,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Percents.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ThreadSafeScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ValueScalar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\CharSplitText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\DecodedUrl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\EncodedUrl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\InputText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\LengthOfInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\NotNullInput.cs" />
@@ -63,12 +66,15 @@
     <Compile Include="$(MSBuildThisFileDirectory)Text\EmptyBytes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\EmptyText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\EquatableText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\RepeatedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\JoinedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\LowerText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\NormalizeText.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Text\SplitText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\ReversedText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\StringSplitText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\Text.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\TextBytes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\TrimmedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\UpperText.cs" />
   </ItemGroup>
 </Project>
