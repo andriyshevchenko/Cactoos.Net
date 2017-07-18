@@ -20,5 +20,11 @@ namespace Test.Text
         {
             Assert.IsFalse(new NormalizeText(OriginalPhraze).String() == OriginalPhraze);
         }
+
+        [TestMethod]
+        public void should_normalize_large_sequence()
+        {
+            Assert.IsTrue(new NormalizeText("1  1   1    1      1").String() == "1 1 1 1 1");
+        }
     }
 }

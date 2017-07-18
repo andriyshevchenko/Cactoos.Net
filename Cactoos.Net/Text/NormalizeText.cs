@@ -11,7 +11,7 @@ namespace Cactoos.Text
             _source = source;
         }
 
-        public NormalizeText(string source) : this(new Cactoos.Text.Text(source))
+        public NormalizeText(string source) : this(new Text(source))
         {
 
         }

@@ -84,6 +84,11 @@ namespace Cactoos.Scalar
 
         }
 
+        public Percents(sbyte first, sbyte second) : this((double)first, second)
+        {
+
+        }
+
         public Percents(char first, char second) : this((double)first, second)
         {
 
