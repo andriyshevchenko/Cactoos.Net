@@ -13,7 +13,7 @@ namespace Test.List
     [TestClass]
     public class CactoosVsLinqBenchmark
     {
-        private const float MAX_OFFSET = 0.25f;
+        private const float MAX_OFFSET = 0.3f;
 
         [TestMethod]
         public void should_map()

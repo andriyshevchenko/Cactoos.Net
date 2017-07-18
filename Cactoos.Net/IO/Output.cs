@@ -19,7 +19,7 @@ namespace Cactoos.IO
         /// Acts as a raii guard, to dispose _source when needed
         /// </summary>
         /// <typeparam name="T">Type of item to capture</typeparam>
-        class DisposableWrap<T> : IDisposable
+        struct DisposableWrap<T> : IDisposable
         {
             public T Item { get { return _wrapee; } }
             private T _wrapee;
