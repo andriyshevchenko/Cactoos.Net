@@ -20,17 +20,14 @@ new LengthOfInput(
 ```
 And how it looks in Cactoos.Net:<br/>
 ```csharp
- new OutputCollection(
+ new Output(
      new StringInput("hello cactoos"),
      new PathOutput("file2.txt", FileMode.Truncate)
  ).Count(); //happens here
 ```
-Some words about `OutputCollection`.`OutputCollection` is `IEnumerable<byte>`:
-```csharp
-    public class OutputCollection : IEnumerable<byte>, IDisposable
-```
+Some words about `Output`.`Output` is `IEnumerable<byte>`.
 It wraps two sources of data(`Stream`, `IEnumerable<byte>`, `IInput`)
 and writes first data source to second(`Stream` or `IOutput`) just like a `TeeInput` in the original library
 as the iteration happens.<br/> I prefer to use C# LINQ `Count()` instead of `LenghtOfInput` for brevity.
-The same is true about `InputCollection`, it implements `IEnumerable<byte>`<br/> and allows to iterate over `Stream`.
+The same is true about `Input`, it implements `IEnumerable<byte>`<br/> and allows to iterate over `Stream`.
 Contact me in Telegram: https://t.me/Andriy_Shevchenko.
