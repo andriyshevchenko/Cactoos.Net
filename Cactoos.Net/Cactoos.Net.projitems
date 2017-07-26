@@ -28,6 +28,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\FuncScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\LazyScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\NotNull.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\ParsedBool.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\ParsedByte.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\ParsedDecimal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\ParsedDouble.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\ParsedFloat.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Percents.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ThreadSafeScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ValueScalar.cs" />
@@ -67,12 +72,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)Text\EmptyBytes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\EmptyText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\EquatableText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\ParsedInt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\RepeatedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\JoinedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\LowerText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\NormalizeText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\ReversedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\StringSplitText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\SubText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\Text.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\TextBytes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\TrimmedText.cs" />

@@ -1,5 +1,9 @@
 ﻿namespace Cactoos.Scalar
 {
+    /// <summary>
+    /// Performs a lock operation when calling Value()
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class ThreadSafeScalar<T> : IScalar<T> 
     {
         private static readonly object _lock = new object();

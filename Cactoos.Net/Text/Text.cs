@@ -3,7 +3,7 @@
     /// <summary>
     /// String as text. Keeps the same string value inside.
     /// </summary>
-    public class Text : IText
+    public struct Text : IText
     {
         string _source;
 
