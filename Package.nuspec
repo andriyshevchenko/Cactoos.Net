@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Cactoos.Net</id>
+    <version>1.0.1</version>
+    <authors>Andriy Shevchenko</authors>
+    <owners>Andriy Shevchenko</owners>
+    <projectUrl>https://github.com/andriyshevchenko/Cactoos.Net</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.Net port of Yegor Bugayenko's Java library Cactoos for OOP primitives : https://github.com/yegor256/cactoos</description>
+    <releaseNotes>Initial create.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>OOP principles OOP design OOP c#</tags>
+    <dependencies>
+      <dependency id="SampleDependency" version="1.0" />
+    </dependencies>
+  </metadata>
+</package>

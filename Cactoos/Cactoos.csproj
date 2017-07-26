@@ -32,10 +32,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="collections.Net45, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\fcollections.1.0.6\lib\net45\collections.Net45.dll</HintPath>
+      <HintPath>..\packages\fcollections.1.0.7\lib\net45\collections.Net45.dll</HintPath>
     </Reference>
     <Reference Include="InputValidation.Net45, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SmartValidation.1.0.5\lib\net45\InputValidation.Net45.dll</HintPath>
+      <HintPath>..\packages\SmartValidation.1.0.6\lib\net45\InputValidation.Net45.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,7 +53,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="..\Cactoos.Net\Cactoos.Net.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
