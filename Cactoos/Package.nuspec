@@ -12,7 +12,12 @@
     <copyright>Copyright 2017</copyright>
     <tags>OOP principles OOP design OOP c#</tags>
     <dependencies>
-      <dependency id="SampleDependency" version="1.0" />
+      <dependency id="fcolletions" version="1.0.7" />
+	  <dependency id="SmartValidation" version="1.0.6" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="bin\Debug\Cactoos.dll" target="lib\net45"></file>
+    <file src="bin\Debug\Cactoos.xml" target="lib\net45"></file>
+  </files>
 </package>
