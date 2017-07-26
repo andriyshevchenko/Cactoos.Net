@@ -3,7 +3,7 @@ using System;
 
 using static System.Functional.FlowControl;
 
-namespace Cactoos.Net.Scalar
+namespace Cactoos.Scalar
 {
     /// <summary>
     /// Will dispose value it wraps when calling Value().

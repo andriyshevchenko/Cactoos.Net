@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Cactoos.Net</id>
+    <id>Cactoos.Net.UWP</id>
     <version>1.0.2</version>
     <authors>Andriy Shevchenko</authors>
     <owners>Andriy Shevchenko</owners>
@@ -12,12 +12,12 @@
     <copyright>Copyright 2017</copyright>
     <tags>OOP principles OOP design OOP c#</tags>
     <dependencies>
-      <dependency id="fcollections" version="1.0.7" />
-	  <dependency id="SmartValidation" version="1.0.6" />
+      <dependency id="fcollections.Uwp" version="1.0.7" />
+	  <dependency id="SmartValidation.Uwp" version="1.0.6" />
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\Debug\Cactoos.dll" target="lib\net45"></file>
-    <file src="bin\Debug\Cactoos.xml" target="lib\net45"></file>
+    <file src="bin\Debug\Cactoos.UWP.dll" target="lib\uap"></file>
+    <file src="bin\Debug\Cactoos.UWP.xml" target="lib\uap"></file>
   </files>
 </package>

@@ -1,4 +1,4 @@
-﻿namespace Cactoos.Net.Text
+﻿namespace Cactoos.Text
 {
     public class UpperText : IText
     {

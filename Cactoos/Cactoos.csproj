@@ -48,6 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IO\ConsoleInput.cs" />
+    <Compile Include="IO\ConsoleOutput.cs" />
+    <Compile Include="IO\StdErrOutput.cs" />
+    <Compile Include="Text\DecodedUrl.cs" />
+    <Compile Include="Text\EncodedUrl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Cactoos.Net.IO
+namespace Cactoos.IO
 {
     public class StdErrOutput : IOutput
     {
