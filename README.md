@@ -1,7 +1,7 @@
 # Cactoos.Net
 .Net port of Yegor Bugayenko's Java library Cactoos for OOP primitives : https://github.com/yegor256/cactoos <br/>
 It's a little bit changed to better suit to c#, but the overall oop concept is kept within.<br/>
-**Warning!** The Api may and will change frequently. Documentation and test coverage will be complete.
+**Warning!** The Api may and will change frequently. Documentation and test coverage will be complete.<br/>
 For example in you want to write a String to a text file. How it looks in java:<br/>
 ```java
 new LengthOfInput(
