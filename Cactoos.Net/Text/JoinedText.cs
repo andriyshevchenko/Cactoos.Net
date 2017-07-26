@@ -12,7 +12,7 @@ namespace Cactoos.Text
         private string _delimiter;
 
         public JoinedText(string delimiter, IEnumerable<string> strings)
-            : this(delimiter, strings.Select(s => new Text(s)))
+            : this(delimiter, strings.Select(s => (IText)new Text(s)))
         {
 
         }
