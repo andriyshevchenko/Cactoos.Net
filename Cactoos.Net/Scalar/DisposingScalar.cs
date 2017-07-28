@@ -1,5 +1,4 @@
-﻿using Cactoos.Scalar;
-using System;
+﻿using System;
 
 using static System.Functional.FlowControl;
 
