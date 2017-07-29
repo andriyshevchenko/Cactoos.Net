@@ -2,13 +2,13 @@
 <package >
   <metadata>
     <id>Cactoos.Net.UWP</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <authors>Andriy Shevchenko</authors>
     <owners>Andriy Shevchenko</owners>
     <projectUrl>https://github.com/andriyshevchenko/Cactoos.Net</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>.Net port of Yegor Bugayenko's Java library Cactoos for OOP primitives : https://github.com/yegor256/cactoos</description>
-    <releaseNotes>Initial create.</releaseNotes>
+    <releaseNotes>Add reflection primitives.</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>OOP principles OOP design OOP c#</tags>
     <dependencies>

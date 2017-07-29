@@ -1,4 +1,4 @@
-﻿namespace Cactoos.Reflection
+﻿namespace Cactoos.Text
 {
     /// <summary>
     /// Declares a C# struct or class name.

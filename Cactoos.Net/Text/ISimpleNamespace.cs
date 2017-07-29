@@ -1,4 +1,4 @@
-﻿namespace Cactoos.Reflection
+﻿namespace Cactoos.Text
 {
     /// <summary>
     /// Interface for a namepace.

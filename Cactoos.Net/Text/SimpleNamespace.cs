@@ -1,4 +1,4 @@
-﻿namespace Cactoos.Reflection
+﻿namespace Cactoos.Text
 {
     /// <summary>
     /// Represents a simple namespace.

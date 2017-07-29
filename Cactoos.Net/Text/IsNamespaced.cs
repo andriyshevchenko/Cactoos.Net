@@ -1,6 +1,4 @@
-﻿using Cactoos;
-
-namespace Cactoos.Reflection
+﻿namespace Cactoos.Text
 {
     /// <summary>
     /// Determines if text is C# name with a namespace.

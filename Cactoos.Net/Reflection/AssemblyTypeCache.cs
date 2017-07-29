@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Reflection;
 using System.Linq;
-using Cactoos;
 using Cactoos.Scalar;
 
 using static System.Collections.Generic.Create;
+using Cactoos.Text;
 
 namespace Cactoos.Reflection
 {

@@ -3,7 +3,6 @@ using System.Reflection;
 using System.Linq.Expressions;
 using InputValidation;
 using static System.Collections.Generic.Create;
-using Cactoos;
 
 namespace Cactoos.Reflection
 {

@@ -1,10 +1,10 @@
-﻿using Cactoos;
+﻿using Cactoos.Reflection;
 using Cactoos.Scalar;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Cactoos.Reflection
+namespace Cactoos.Text
 {
     /// <summary>
     /// Allows to infer the namespace of a type from given assemblies.

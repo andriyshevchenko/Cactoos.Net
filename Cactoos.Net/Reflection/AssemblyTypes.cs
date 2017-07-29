@@ -1,5 +1,4 @@
-﻿using Cactoos;
-using Cactoos.Scalar;
+﻿using Cactoos.Scalar;
 using System;
 using System.Linq;
 using System.Reflection;

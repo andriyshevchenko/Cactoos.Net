@@ -87,6 +87,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Text\IsBlank.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\ISimpleNamespace.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\IsNamespaced.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\NamespacedName.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\RepeatedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\JoinedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\LowerText.cs" />

@@ -1,7 +1,6 @@
-﻿using Cactoos;
-using Cactoos.Scalar;
+﻿using Cactoos.Scalar;
 
-namespace Cactoos.Reflection
+namespace Cactoos.Text
 {
     /// <summary>
     /// Allows to extract namespace and own name from a full name.

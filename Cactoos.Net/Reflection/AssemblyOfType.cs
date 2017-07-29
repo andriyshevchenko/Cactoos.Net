@@ -1,5 +1,4 @@
-﻿using Cactoos;
-using System.Reflection;
+﻿using System.Reflection;
 using System;
 
 namespace Cactoos.Reflection
