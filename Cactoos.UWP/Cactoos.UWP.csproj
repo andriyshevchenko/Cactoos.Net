@@ -122,6 +122,9 @@
     <PackageReference Include="SmartValidation.Uwp">
       <Version>1.0.6</Version>
     </PackageReference>
+    <PackageReference Include="System.ValueTuple">
+      <Version>4.3.1</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="..\Cactoos.Net\Cactoos.Net.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

@@ -48,6 +48,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\True.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ValueScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\CharSplitText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\ICSharpName.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\InferredName.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\InputText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\LengthOfInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\NotNullInput.cs" />
@@ -82,11 +84,16 @@
     <Compile Include="$(MSBuildThisFileDirectory)Text\EmptyText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\EquatableText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ParsedInt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\IsBlank.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\ISimpleNamespace.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\IsNamespaced.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\RepeatedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\JoinedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\LowerText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\NormalizeText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\ReversedText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\SimpleName.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\SimpleNamespace.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\StringSplitText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\SubText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\Text.cs" />
