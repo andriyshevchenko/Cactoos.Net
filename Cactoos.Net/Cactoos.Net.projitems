@@ -67,6 +67,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)IO\WriteOnlyEnumerator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IScalar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)List\Concat.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)List\Cycled.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)List\Filtered.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)List\Infinite.cs" />
