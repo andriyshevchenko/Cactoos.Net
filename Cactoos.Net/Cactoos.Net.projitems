@@ -54,6 +54,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ParsedDouble.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ParsedFloat.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)List\ParsedLongs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\ParsedLong.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Percents.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\RetryScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Sum.cs" />

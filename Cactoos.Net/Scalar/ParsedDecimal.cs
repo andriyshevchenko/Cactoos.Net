@@ -1,4 +1,6 @@
-﻿namespace Cactoos.Scalar
+﻿using System.Globalization;
+
+namespace Cactoos.Scalar
 {
     public struct ParsedDecimal : IScalar<decimal>
     {
@@ -16,7 +18,7 @@
 
         public decimal Value()
         {
-            return decimal.Parse(_source.Value());
+            return decimal.Parse(_source.Value(), CultureInfo.InvariantCulture);
         }
     }
 }

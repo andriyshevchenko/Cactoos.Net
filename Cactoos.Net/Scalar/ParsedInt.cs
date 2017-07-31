@@ -1,4 +1,6 @@
-﻿namespace Cactoos.Scalar
+﻿using System.Globalization;
+
+namespace Cactoos.Scalar
 {
     public struct ParsedInt : IScalar<int>
     {
@@ -16,7 +18,7 @@
 
         public int Value()
         {
-            return int.Parse(_source.Value());
+            return int.Parse(_source.Value(), CultureInfo.InvariantCulture);
         }
     }
 }

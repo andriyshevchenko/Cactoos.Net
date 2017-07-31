@@ -18,8 +18,7 @@ namespace Cactoos.Scalar
 
         public double Value()
         {
-            string v = _source.Value();
-            return double.Parse(v, CultureInfo.InvariantCulture);
+            return double.Parse(_source.Value(), CultureInfo.InvariantCulture);
         }
     }
 }

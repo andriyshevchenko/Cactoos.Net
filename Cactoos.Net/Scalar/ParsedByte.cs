@@ -1,4 +1,6 @@
-﻿namespace Cactoos.Scalar
+﻿using System.Globalization;
+
+namespace Cactoos.Scalar
 {
     public struct ParsedByte : IScalar<byte>
     {
@@ -16,7 +18,7 @@
 
         public byte Value()
         {
-            return byte.Parse(_source.Value());
+            return byte.Parse(_source.Value(), CultureInfo.InvariantCulture);
         }
     }
 }
