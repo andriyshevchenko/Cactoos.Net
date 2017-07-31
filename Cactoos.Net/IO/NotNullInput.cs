@@ -4,25 +4,25 @@ using System.IO;
 namespace Cactoos.IO
 {
     /// <summary>
-    /// Input with null check
+    /// Input with null check.
     /// </summary>
     public class NotNullInput : IInput
     {
         readonly IInput _source;
 
         /// <summary>
-        /// Initializes a new instance of <see cref="NotNullInput"/>
+        /// Initializes a new instance of <see cref="NotNullInput"/>.
         /// </summary>
-        /// <param name="source"></param>
+        /// <param name="source">The input.</param>
         public NotNullInput(IInput source)
         {
             _source = source;
         }
 
         /// <summary>
-        /// Get stream value
+        /// Get stream value.
         /// </summary>
-        /// <returns>Stream</returns>
+        /// <returns>The stream.</returns>
         public Stream Stream()
         {
             return _source.CheckNotNull("NULL instead of a valid input")

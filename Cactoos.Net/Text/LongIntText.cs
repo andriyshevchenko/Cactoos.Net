@@ -2,16 +2,16 @@
 
 namespace Cactoos.Text
 {
-    public class DoubleText : IText
+    public class LongIntText : IText
     {
-        private IScalar<double> _source;
+        private IScalar<long> _source;
 
-        public DoubleText(IScalar<double> source)
+        public LongIntText(IScalar<long> source)
         {
             _source = source;
         }
 
-        public DoubleText(double source) : this(new ValueScalar<double>(source))
+        public LongIntText(long source) : this(new ValueScalar<long>(source))
         {
 
         }

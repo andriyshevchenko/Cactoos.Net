@@ -71,21 +71,42 @@ namespace Cactoos.IO
 
         }
 
+        /// <summary>
+        /// Initializes a new instance of <see cref="Output"/>. 
+        /// </summary>
+        /// <param name="from">String to read from.</param>
+        /// <param name="to">Output to write to.</param>
         public Output(string from, IOutput to) : this(new StringInput(from), to)
         {
 
         }
 
+        /// <summary>
+        /// Initializes a new instance of <see cref="Output"/>. 
+        /// </summary>
+        /// <param name="from">Text to read from.</param>
+        /// <param name="to">Output to write to.</param>
         public Output(IText from, IOutput to) : this(new TextInput(from), to)
         {
 
         }
 
+        /// <summary>
+        /// Initializes a new instance of <see cref="Output"/>. 
+        /// </summary>
+        /// <param name="from">Bytes to read from.</param>
+        /// <param name="to">Output to write to.</param>
         public Output(IBytes from, IOutput to) : this(new ByteInput(from), to)
         {
 
         }
 
+        /// <summary>
+        /// Initializes a new instance of <see cref="Output"/>. 
+        /// </summary>
+        /// <param name="from">Bytes to read from.</param>
+        /// <param name="encoding">The input encoding.</param>
+        /// <param name="to">Output to write to.</param>
         public Output(IBytes from, Encoding encoding, IOutput to) : this(new BytesText(from, encoding), to)
         {
 

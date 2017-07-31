@@ -6,24 +6,24 @@ using static System.Collections.Generic.Create;
 
 namespace Cactoos.List
 {
-    public class ParsedDoubles : IEnumerable<double>
+    public class ParsedInts : IEnumerable<int>
     {
         private IEnumerable<string> _source;
 
-        public ParsedDoubles(IEnumerable<string> source)
+        public ParsedInts(IEnumerable<string> source)
         {
             _source = source;
         }
 
-        public ParsedDoubles(IEnumerable<IText> source)
+        public ParsedInts(IEnumerable<IText> source)
             : this(map(source, item => item.String()))
         {
-                
+
         }
 
-        public IEnumerator<double> GetEnumerator()
+        public IEnumerator<int> GetEnumerator()
         {
-            return map(_source, item => double.Parse(item, CultureInfo.InvariantCulture)).GetEnumerator();
+            return map(_source, item => int.Parse(item, CultureInfo.InvariantCulture)).GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()

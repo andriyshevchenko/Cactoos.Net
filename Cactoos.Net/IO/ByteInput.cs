@@ -38,9 +38,9 @@ namespace Cactoos.IO
         }
 
         /// <summary>
-        /// Get stream value
+        /// Get stream value.
         /// </summary>
-        /// <returns>Stream</returns>
+        /// <returns>Stream.</returns>
         public Stream Stream()
         {
             return new MemoryStream(_source.Bytes());

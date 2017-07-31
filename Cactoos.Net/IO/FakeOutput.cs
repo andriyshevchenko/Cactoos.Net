@@ -3,6 +3,9 @@ using System.IO;
 
 namespace Cactoos.IO
 {
+    /// <summary>
+    /// The fake output. To use with unit tests.
+    /// </summary>
     public class FakeOutput : IOutput
     {
         class FakeStream : Stream
@@ -40,6 +43,11 @@ namespace Cactoos.IO
             {
             }
         }
+
+        /// <summary>
+        /// Gets the stream.
+        /// </summary>
+        /// <returns>The stream.</returns>
         public Stream Stream()
         {
             return new FakeStream();

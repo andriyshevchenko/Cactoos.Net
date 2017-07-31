@@ -6,24 +6,27 @@ using static System.Collections.Generic.Create;
 
 namespace Cactoos.List
 {
-    public class ParsedDoubles : IEnumerable<double>
+    /// <summary>
+    /// Convert collection of strings to collection of bytes.
+    /// </summary>
+    public class ParsedBytes : IEnumerable<byte>
     {
         private IEnumerable<string> _source;
 
-        public ParsedDoubles(IEnumerable<string> source)
+        public ParsedBytes(IEnumerable<string> source)
         {
             _source = source;
         }
 
-        public ParsedDoubles(IEnumerable<IText> source)
+        public ParsedBytes(IEnumerable<IText> source)
             : this(map(source, item => item.String()))
         {
-                
+
         }
 
-        public IEnumerator<double> GetEnumerator()
+        public IEnumerator<byte> GetEnumerator()
         {
-            return map(_source, item => double.Parse(item, CultureInfo.InvariantCulture)).GetEnumerator();
+            return map(_source, item => byte.Parse(item, CultureInfo.InvariantCulture)).GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()

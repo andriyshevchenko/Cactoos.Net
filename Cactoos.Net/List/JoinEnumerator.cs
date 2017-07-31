@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+
 using static System.Functional.FlowControl;
 using static System.Collections.Generic.Create;
 
 namespace Cactoos.List
 {
-    public class JoinEnumerator<T> : IEnumerator<T>
+    internal class JoinEnumerator<T> : IEnumerator<T>
     {
         private IEnumerator<T>[] _source;
         private T current;

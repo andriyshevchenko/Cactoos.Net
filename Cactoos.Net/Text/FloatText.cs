@@ -2,16 +2,16 @@
 
 namespace Cactoos.Text
 {
-    public class DoubleText : IText
+    public class FloatText : IText
     {
-        private IScalar<double> _source;
+        private IScalar<float> _source;
 
-        public DoubleText(IScalar<double> source)
+        public FloatText(IScalar<float> source)
         {
             _source = source;
         }
 
-        public DoubleText(double source) : this(new ValueScalar<double>(source))
+        public FloatText(float source) : this(new ValueScalar<float>(source))
         {
 
         }

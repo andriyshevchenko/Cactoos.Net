@@ -1,8 +1,6 @@
-﻿using System.Linq;
-using Cactoos.IO;
+﻿using Cactoos.IO;
 using Cactoos.Scalar;
 using Cactoos.Text;
-using System.Text;
 
 namespace Test.Console
 {
@@ -11,20 +9,15 @@ namespace Test.Console
         static void Main(string[] args)
         {
             new Output(
-               new DoubleText(
-                   new DoubleSum(
-                       new ParsedDoubles(
-                           new Lines(
-                               new InputText(
-                                   new PathInput(@"C:\Users\user\Desktop\apteka.txt"),
-                                   Encoding.Default
-                               )
-                           )
-                       )
-                   )
-               ),
-               new ConsoleOutput()
-           ).Count();
+                new AttemptAsText(
+                    new ErrorSafeScalar<int>(
+                        () => throw new System.NotImplementedException("hello"),
+                        () => 0
+                    )
+                ),
+                new ConsoleOutput()
+            );
+            System.Console.Read();
         }
     }
 }

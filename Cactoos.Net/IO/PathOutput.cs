@@ -3,7 +3,7 @@
 namespace Cactoos.IO
 {
     /// <summary>
-    /// Represents path as Output
+    /// Represents path as Output.
     /// </summary>
     public class PathOutput : IOutput
     {
@@ -11,10 +11,10 @@ namespace Cactoos.IO
         string _path;
 
         /// <summary>
-        /// Initializes a new instance of <see cref="PathOutput"/>
+        /// Initializes a new instance of <see cref="PathOutput"/>.
         /// </summary>
-        /// <param name="path">File path</param>
-        /// <param name="mode">Specifies a <see cref="FileMode"/> to open a stream</param>
+        /// <param name="path">The file path.</param>
+        /// <param name="mode">Specifies a <see cref="FileMode"/> to open a stream.</param>
         public PathOutput(string path, FileMode mode = FileMode.OpenOrCreate)
         {
             _path = path;
@@ -22,9 +22,9 @@ namespace Cactoos.IO
         }
 
         /// <summary>
-        /// Returns input stream
+        /// Returns output stream.
         /// </summary>
-        /// <returns>File output stream</returns>
+        /// <returns>The file output stream.</returns>
         public Stream Stream()
         {
             return new FileStream(_path, _mode);
