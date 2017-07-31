@@ -26,6 +26,25 @@ And how it looks in Cactoos.Net:<br/>
      new PathOutput("file2.txt", FileMode.Truncate)
  ).Count(); //happens here
 ```
+
+Read numbers from text file and count a sum of them:
+```csharp
+new Output(
+    new DoubleText(
+         new DoubleSum(
+              new ParsedDoubles(
+                  new Lines(
+                      new InputText(
+                          new PathInput(@"C:\Users\user\Desktop\apteka.txt"),
+                          Encoding.Default
+                      )
+                  )
+              )
+         )
+    ),
+    new ConsoleOutput()
+).Count();
+```
 Some words about `Output`.`Output` is `IEnumerable<byte>`.
 It wraps two sources of data(`Stream`, `IEnumerable<byte>`, `IInput`)
 and writes first data source to second(`Stream` or `IOutput`) just like a `TeeInput` in the original library

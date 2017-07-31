@@ -7,6 +7,9 @@ using InputValidation;
 
 namespace Cactoos.IO
 {
+    /// <summary>
+    /// The enumerator for <see cref="Output"/>.
+    /// </summary>
     public class OutputEnumerator : IEnumerator<byte[]>
     {
         private Stream _output;

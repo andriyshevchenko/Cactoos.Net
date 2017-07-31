@@ -6,13 +6,11 @@ namespace Cactoos.List
 {
     public class Concat<T> : IEnumerable<T>
     {
-        private IEnumerable<T>[] _source;
-        private int _items;
+        private IEnumerable<T>[] _source; 
  
         public Concat(params IEnumerable<T>[] source)
         {
-            _source = source;
-            _items = items;
+            _source = source; 
         }
 
         public IEnumerator<T> GetEnumerator()

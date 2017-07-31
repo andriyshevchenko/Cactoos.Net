@@ -1,6 +1,6 @@
 ﻿namespace Cactoos.Scalar
 {
-    public class ParsedFloat : IScalar<float>
+    public struct ParsedFloat : IScalar<float>
     {
         private IScalar<string> _source;
 

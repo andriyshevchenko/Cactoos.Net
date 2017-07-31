@@ -1,6 +1,6 @@
 ﻿namespace Cactoos.Scalar
 {
-    public class ParsedByte : IScalar<byte>
+    public struct ParsedByte : IScalar<byte>
     {
         private IScalar<string> _source;
 

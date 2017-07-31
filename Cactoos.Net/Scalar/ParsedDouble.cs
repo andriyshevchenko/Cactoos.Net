@@ -1,6 +1,8 @@
-﻿namespace Cactoos.Scalar
+﻿using System.Globalization;
+
+namespace Cactoos.Scalar
 {
-    public class ParsedDouble : IScalar<double>
+    public struct ParsedDouble : IScalar<double>
     {
         private IScalar<string> _source;
 
@@ -11,12 +13,13 @@
 
         public ParsedDouble(string source) : this(new ValueScalar<string>(source))
         {
-
+            
         }
 
         public double Value()
         {
-            return double.Parse(_source.Value());
+            string v = _source.Value();
+            return double.Parse(v, CultureInfo.InvariantCulture);
         }
     }
 }

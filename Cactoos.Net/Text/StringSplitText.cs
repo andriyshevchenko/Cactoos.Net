@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
+using static System.Collections.Generic.Create;
+
 namespace Cactoos.Text
 {
     /// <summary>
@@ -13,13 +15,18 @@ namespace Cactoos.Text
         private string[] _separator;
         private IText _source;
 
-        public StringSplitText(IText source, string[] separator)
+        public StringSplitText(IText source, string separator) : this(source, array(separator))
+        {
+
+        }
+
+        public StringSplitText(IText source, params string[] separator)
         {
             _source = source;
             _separator = separator;
         }
 
-        public StringSplitText(string source, string[] separator) : this(new Cactoos.Text.Text(source), separator)
+        public StringSplitText(string source, params string[] separator) : this(new Cactoos.Text.Text(source), separator)
         {
 
         }

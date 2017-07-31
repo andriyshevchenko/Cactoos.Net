@@ -1,6 +1,6 @@
 ﻿namespace Cactoos.Scalar
 {
-    public class ParsedDecimal : IScalar<decimal>
+    public struct ParsedDecimal : IScalar<decimal>
     {
         private IScalar<string> _source;
 

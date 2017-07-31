@@ -1,8 +1,10 @@
-﻿using InputValidation;
+﻿using Cactoos.Text;
+using InputValidation;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 
 namespace Cactoos.IO
 {
@@ -69,17 +71,35 @@ namespace Cactoos.IO
 
         }
 
+        public Output(string from, IOutput to) : this(new StringInput(from), to)
+        {
+
+        }
+
+        public Output(IText from, IOutput to) : this(new TextInput(from), to)
+        {
+
+        }
+
+        public Output(IBytes from, IOutput to) : this(new ByteInput(from), to)
+        {
+
+        }
+
+        public Output(IBytes from, Encoding encoding, IOutput to) : this(new BytesText(from, encoding), to)
+        {
+
+        }
+
         /// <summary>
         /// Returns a new enumerator.
         /// </summary>
         /// <returns>New enumerator.</returns>
         public IEnumerator<byte> GetEnumerator()
         {
-            return new WriteOnlyEnumerator<byte>(
-                       new SingleByteEnumerator(
-                           new OutputEnumerator(_source.Item, _output, 1)
-                       )
-                   );
+            return new SingleByteEnumerator(
+                new OutputEnumerator(_source.Item, _output, 1)
+            );
         }
 
         IEnumerator IEnumerable.GetEnumerator()

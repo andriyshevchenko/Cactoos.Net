@@ -3,14 +3,14 @@
 namespace Cactoos
 {
     /// <summary>
-    /// Output
+    /// Output.
     /// </summary>
     public interface IOutput
     {
         /// <summary>
-        /// Get stream value
+        /// Get the stream value.
         /// </summary>
-        /// <returns>Stream</returns>
+        /// <returns>The stream.</returns>
         Stream Stream();
     }
 }
