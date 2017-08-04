@@ -8,15 +8,15 @@ namespace Cactoos.List
     /// <summary>
     /// Get the errors from <see cref="IAttempt"/> as strings.
     /// </summary>
-    public class Errors : IEnumerable<string>
+    public class ErrorsAsText : IEnumerable<IText>
     {
         private IAttempt _source;
 
         /// <summary>
-        /// Initializes a new instance of <see cref="Errors"/>.
+        /// Initializes a new instance of <see cref="ErrorsAsText"/>.
         /// </summary>
         /// <param name="source">The source.</param>
-        public Errors(IAttempt source)
+        public ErrorsAsText(IAttempt source)
         {
             _source = source;
         }
@@ -25,9 +25,9 @@ namespace Cactoos.List
         /// Returns an enumerator that iterates through the collection.
         /// </summary>
         /// <returns>An enumerator that can be used to iterate through the collection.</returns>
-        public IEnumerator<string> GetEnumerator()
+        public IEnumerator<IText> GetEnumerator()
         {
-            return  map(_source.Errors(), error => error.ToString()).GetEnumerator();
+            return  map(_source.Errors(), error => (IText)new Text.Text(error.ToString())).GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()

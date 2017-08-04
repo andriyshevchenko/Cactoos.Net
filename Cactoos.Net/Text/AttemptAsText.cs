@@ -13,7 +13,7 @@ namespace Cactoos.Text
 
         public string String()
         {
-            return new JoinedText('\n', new Errors(_source)).String();
+            return new JoinedText('\n', new ErrorsAsText(_source)).String();
         }
     }
 }

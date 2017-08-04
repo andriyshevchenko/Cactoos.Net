@@ -76,6 +76,7 @@
     <Compile Include="List\OrderedEnumerableTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scalar\CachedScalarTest.cs" />
+    <Compile Include="Scalar\RetryScalarTest.cs" />
     <Compile Include="Text\JoinedTextTest.cs" />
     <Compile Include="Text\NormalizedTextTest.cs" />
     <Compile Include="Text\RepeatedTextTest.cs" />

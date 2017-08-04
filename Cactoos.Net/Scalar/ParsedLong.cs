@@ -16,7 +16,7 @@
 
         public long Value()
         {
-            return long.Parse(_source.Value());
+            return long.Parse(_source.Value(), System.Globalization.CultureInfo.InvariantCulture);
         }
     }
 }

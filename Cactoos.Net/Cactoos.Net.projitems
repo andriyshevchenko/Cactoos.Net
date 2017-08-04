@@ -57,7 +57,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ParsedLong.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Percents.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\RetryScalar.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Scalar\Sum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\NumericSum.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ThreadSafeScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\True.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ValueScalar.cs" />
@@ -110,6 +110,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Text\Lines.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\LongIntText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\NamespacedName.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\ParagraphText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\RepeatedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\JoinedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\LowerText.cs" />
