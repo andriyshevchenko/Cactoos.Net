@@ -43,7 +43,7 @@ new Output(
          )
     ),
     new ConsoleOutput()
-).Count();
+).Count(); //"trigger" the code to run 
 ```
 Some words about `Output`.`Output` is `IEnumerable<byte>`.
 It wraps two sources of data(`Stream`, `IEnumerable<byte>`, `IInput`)
