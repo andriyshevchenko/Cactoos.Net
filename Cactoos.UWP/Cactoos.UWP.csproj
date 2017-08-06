@@ -117,7 +117,7 @@
       <Version>1.0.7</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>5.3.3</Version>
+      <Version>5.3.4</Version>
     </PackageReference>
     <PackageReference Include="SmartValidation.Uwp">
       <Version>1.0.6</Version>

@@ -79,6 +79,7 @@
     <Compile Include="Scalar\RetryScalarTest.cs" />
     <Compile Include="Text\JoinedTextTest.cs" />
     <Compile Include="Text\NormalizedTextTest.cs" />
+    <Compile Include="Text\ParagraphTextTest.cs" />
     <Compile Include="Text\RepeatedTextTest.cs" />
     <Compile Include="Text\ReversedTextTest.cs" />
   </ItemGroup>
