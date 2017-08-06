@@ -29,5 +29,16 @@ namespace Cactoos.List
         {
             return GetEnumerator();
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="selector"></param>
+        /// <returns></returns>
+        public static Mapped<T, TResult> Create(IEnumerable<T> source, Func<T, TResult> selector)
+        {
+            return new Mapped<T, TResult>(source, selector);
+        }
     }
 }

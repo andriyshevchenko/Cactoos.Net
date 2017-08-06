@@ -28,6 +28,7 @@ namespace Cactoos.Text
         public string String()
         {
             var source = _source.String();
+            int lastBreakAt = 0;
             int wordStart = 0;
             int wordStartBefore = 0;
             int wordIdx = 0;
@@ -45,9 +46,10 @@ namespace Cactoos.Text
                     {
                         newString.Append(word[j]);
                     }
-                    if (wordStartBefore + wordIdx + 1 >= _lineWidth)
+                    if (wordStartBefore + wordIdx - lastBreakAt >= _lineWidth)
                     {
                         newString.Append('\n');
+                        lastBreakAt = i;
                     }
                     wordIdx = 0;
                     wordStartBefore = wordStart; 

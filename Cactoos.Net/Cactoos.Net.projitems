@@ -45,6 +45,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ErrorSafeScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\FuncScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\LazyScalar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\Max.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Not.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\NotNull.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Or.cs" />

@@ -48,13 +48,18 @@ namespace Cactoos.List
         public IEnumerator<T> GetEnumerator()
         {
             return (_order == SortOrder.Ascending ?
-                    _source.OrderBy(item => item) : 
+                    _source.OrderBy(item => item) :
                     _source.OrderByDescending(item => item)).GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
+        }
+
+        public static Ordered<T> Create(IEnumerable<T> source, SortOrder sortOrder)
+        {
+            return new Ordered<T>(source, sortOrder);
         }
     }
 }

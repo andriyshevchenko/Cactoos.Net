@@ -29,5 +29,10 @@ namespace Cactoos.List
         {
             return GetEnumerator();
         }
+
+        public static Filtered<T> Create(IEnumerable<T> source, Func<T, bool> predicate)
+        {
+            return new Filtered<T>(source, predicate);
+        }
     }
 }
