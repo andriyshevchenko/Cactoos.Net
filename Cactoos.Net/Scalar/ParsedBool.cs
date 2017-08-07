@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-namespace Cactoos.Scalar
+﻿namespace Cactoos.Scalar
 {
     public class ParsedBool : IScalar<bool>
     {

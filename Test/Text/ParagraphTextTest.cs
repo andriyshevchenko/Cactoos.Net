@@ -1,7 +1,5 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Cactoos.Text;
-using Cactoos.List;
 
 using static System.Collections.Generic.Create;
 using Cactoos.Scalar;
@@ -37,8 +35,8 @@ namespace Test.Text
         [TestMethod]
         public void should_insert_breaks()
         {
-            Assert.AreEqual(
-                "I said a\n hip hop \nthe \nhippie \nthe \nhippie\nTo the\n hip hip\n" +
+            Assert.AreEqual(    
+                "I said a\n hip hop \nthe \nhippie \nthe hippie\nTo the\n hip hip\n" +
                 " hop and\n you \ndon't\n stop\nThe rock\n it to\n the bang\n bang \n" +
                 "boogie\nSay up\n jump \nthe \nboogie \nto the \nrhythm \nof the \n" +
                 "boogie, \nthe beat\n",
@@ -47,6 +45,36 @@ namespace Test.Text
                     ExampleText
                 ).String()
             );
+        }
+
+        [TestMethod]
+        public void should_insert_breaks_inside_a_two_line_text()
+        {
+            Assert.AreEqual(
+               "Добре \nвідомо",
+               new ParagraphText(
+                   10,
+                   "Добре відомо"
+               ).String()
+           );
+        }
+
+        [TestMethod]
+        public void should_insert_breaks_inside_a_simple_text()
+        {
+            Assert.AreEqual(
+               "Добре \nвідомо, що \nбудь який \nрозв’язок \nкрайової \nзадачі",
+               new ParagraphText(
+                   10,
+                   "Добре відомо, що будь який розв’язок крайової задачі"
+               ).String()
+           );
+        }
+
+        [TestMethod]
+        public void should_break_a_phraze()
+        {
+            Assert.AreEqual("Hello ggwp\n!", new ParagraphText(10, "Hello ggwp!").String());
         }
     }
 }

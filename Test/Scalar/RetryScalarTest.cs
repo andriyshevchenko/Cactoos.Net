@@ -3,7 +3,6 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Cactoos.Scalar;
 
 using static System.Functional.Func;
-using System.Reflection;
 
 namespace Test.Scalar
 {
