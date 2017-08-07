@@ -16,7 +16,7 @@ namespace Cactoos.Scalar.Async
             _fallback = fallback;
         }
 
-        public ErrorSafeAsyncScalar(Task<T> source, Task<T> fallback)
+        public ErrorSafeAsyncScalar(Func<Task<T>> source, Func<Task<T>> fallback)
             : this(new TaskScalar<T>(source), new TaskScalar<T>(fallback))
         {
 
@@ -28,7 +28,7 @@ namespace Cactoos.Scalar.Async
             
         }
 
-        public ErrorSafeAsyncScalar(Task<T> source, Func<T> fallback)
+        public ErrorSafeAsyncScalar(Func<Task<T>> source, Func<T> fallback)
             : this(new TaskScalar<T>(source), new FromResultScalar<T>(fallback))
         {
 

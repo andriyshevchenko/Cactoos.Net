@@ -15,7 +15,7 @@ namespace Cactoos.Scalar.Async
             _source = source;
         }
 
-        public RetryAsyncScalar(Task<T> source) : this(new TaskScalar<T>(source))
+        public RetryAsyncScalar(Func<Task<T>> source) : this(new TaskScalar<T>(source))
         {
 
         }
