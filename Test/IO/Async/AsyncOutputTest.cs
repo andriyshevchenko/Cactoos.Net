@@ -4,47 +4,52 @@ using System.IO;
 using Cactoos.Text;
 using System.Linq;
 using System.Text;
+using Cactoos.IO.Async;
+using Cactoos.Scalar.Async;
 
 using static System.Collections.Generic.Create;
-using static System.Functional.FlowControl;
 
-namespace Test.IO
+namespace Test.IO.Async
 {
     [TestClass]
-    public class OutputAsEnumerableTest
+    public class AsyncOutputTest
     {
         [TestMethod]
-        public void should_write_to_output()
+        public async System.Threading.Tasks.Task should_write_to_output()
         {
-            new Output(
-                new StringInput("nice try fascist"),
-                new PathOutput("file2.txt", FileMode.Truncate)
-            ).Count();
+            using (var output = new AsyncOutput(
+                    new StringInput("nice try fascist"),
+                    new PathOutput("async_output_test.txt", FileMode.Truncate)
+                ))
+            {
+                await new Count<byte>(output).Value();
+            }
 
             Assert.AreEqual(
                 "nice try fascist",
                 new BytesText(
                     new Input(
-                        new PathInput("file2.txt")
+                        new PathInput("async_output_test.txt")
                     ),
                     Encoding.UTF8
                 ).String());
         }
 
         [TestMethod]
-        public void should_read_from_input()
+        public async System.Threading.Tasks.Task should_read_from_input()
         {
             byte[] trg = array<byte>(1024);
             var name = Path.GetTempFileName();
             File.WriteAllBytes(name, array<byte>(0, 1, 2, 2, 2, 5));
-            
-            use(
-                new Output(
+
+            using (var output = new AsyncOutput(
                     new PathInput(name),
                     new BytesAsOutput(trg)
-                ),
-                Enumerable.Count
-            );
+                ))
+            {
+                await new Count<byte>(output).Value();
+            }
+
             var test = new Input(new PathInput(name)).ToArray();
 
             Assert.IsTrue(test.SequenceEqual(part(trg, 0, test.Length)));

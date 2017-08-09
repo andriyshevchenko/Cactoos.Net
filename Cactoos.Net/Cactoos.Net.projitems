@@ -9,13 +9,20 @@
     <Import_RootNamespace>Cactoos.Net</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)IAsyncEnumerable.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IAsyncScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IAttempt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IBytes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IOutput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\Async\AsyncInput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\Async\AsyncInputEnumerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\Async\AsyncOutput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\Async\AsyncOutputEnumerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\Async\SingleByteAsyncEnumerator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\ByteInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\BytesAsOutput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\DisposableWrap.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\EnumerableAsBytes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\FakeInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\FakeOutput.cs" />
@@ -25,6 +32,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)IO\IntBytes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\ShortBytes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\TextInput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)List\Async.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)List\Errors.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)List\Indexed.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)List\ParsedBytes.cs" />
@@ -41,9 +49,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\NamespacesOfAssembly.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\TypeOf.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\And.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\Async\Count.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Async\ErrorSafeAsyncScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Async\FromResultScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Async\RetryAsyncScalar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\Async\SequenceEqual.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Async\TaskScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\CachedScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\False.cs" />

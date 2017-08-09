@@ -60,6 +60,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IO\Async\AsyncInputTest.cs" />
+    <Compile Include="IO\Async\AsyncOutputTest.cs" />
     <Compile Include="IO\InputAsEnumerable.cs" />
     <Compile Include="IO\InputEnumeratorTest.cs" />
     <Compile Include="IO\OutputAsEnumerableTest.cs" />
@@ -76,6 +78,7 @@
     <Compile Include="List\MappedEnumerableTest.cs" />
     <Compile Include="List\OrderedEnumerableTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\InferredNameTest.cs" />
     <Compile Include="Scalar\CachedScalarTest.cs" />
     <Compile Include="Scalar\RetryScalarTest.cs" />
     <Compile Include="Text\JoinedTextTest.cs" />
