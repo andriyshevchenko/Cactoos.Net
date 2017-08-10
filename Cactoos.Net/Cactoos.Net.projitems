@@ -43,10 +43,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\AssemblyOfType.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\AssemblyRootNamespace.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\AssemblyTypeCache.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Reflection\AssemblyTypes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\FastObject.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\MergedTypeCache.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\NamespacesOfAssembly.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Reflection\NotGeneratedTypes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\TypeOf.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\And.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Async\Count.cs" />

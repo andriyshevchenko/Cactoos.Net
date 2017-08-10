@@ -17,7 +17,8 @@ namespace Test.IO.Async
         [TestMethod]
         public async System.Threading.Tasks.Task should_write_to_output()
         {
-            using (var output = new AsyncOutput(
+            using (var output = 
+                new AsyncOutput(
                     new StringInput("nice try fascist"),
                     new PathOutput("async_output_test.txt", FileMode.Truncate)
                 ))

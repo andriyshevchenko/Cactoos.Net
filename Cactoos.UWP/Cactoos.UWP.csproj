@@ -108,6 +108,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\AssemblyTypes.cs" />
     <Compile Include="Text\DecodedUrl.cs" />
     <Compile Include="Text\EncodedUrl.cs" />
     <EmbeddedResource Include="Properties\Cactoos.UWP.rd.xml" />

@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BB1A1EC8-E594-4870-9CD9-5C6027F440C7}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cactoos</RootNamespace>
-    <AssemblyName>Cactoos</AssemblyName>
+    <ProjectGuid>{6749F4A6-D9D1-48B0-AC8F-B425127B369C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CodeGen</RootNamespace>
+    <AssemblyName>CodeGen</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -20,9 +21,9 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\Cactoos.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -34,15 +35,9 @@
     <Reference Include="collections.Net45, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\fcollections.1.0.7\lib\net45\collections.Net45.dll</HintPath>
     </Reference>
-    <Reference Include="InputValidation.Net45, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SmartValidation.1.0.6\lib\net45\InputValidation.Net45.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.ValueTuple, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.ValueTuple.4.3.1\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,15 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IO\ConsoleInput.cs" />
-    <Compile Include="IO\ConsoleOutput.cs" />
-    <Compile Include="IO\StdErrOutput.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reflection\AssemblyTypes.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <Import Project="..\Cactoos.Net\Cactoos.Net.projitems" Label="Shared" />
+  <ItemGroup>
+    <ProjectReference Include="..\Cactoos.CodeGen\Cactoos.CodeGen.csproj">
+      <Project>{83d5b8a8-63cc-4b33-8c71-41f6e4748faa}</Project>
+      <Name>Cactoos.CodeGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cactoos\Cactoos.csproj">
+      <Project>{bb1a1ec8-e594-4870-9cd9-5c6027f440c7}</Project>
+      <Name>Cactoos</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

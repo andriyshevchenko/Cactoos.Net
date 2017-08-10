@@ -12,13 +12,13 @@ namespace Cactoos.Reflection
     /// </summary>
     public struct NamespacesOfAssembly : IScalar<IEnumerable<SimpleNamespace>>
     {
-        private IScalar<Type[]> _types;
+        private IEnumerable<Type> _types;
 
         /// <summary>
         /// Initializes a new instance of <see cref="NamespacedName"/>.
         /// </summary>
         /// <param name="types">The types of an assembly.</param>
-        public NamespacesOfAssembly(IScalar<Type[]> types)
+        public NamespacesOfAssembly(IEnumerable<Type> types)
         {
             _types = types;
         }
@@ -52,7 +52,7 @@ namespace Cactoos.Reflection
             return
                 set(
                     map(
-                        _types.Value(),
+                        _types,
                         type =>
                             new SimpleNamespace(
                                 new SimpleName(type.FullName)

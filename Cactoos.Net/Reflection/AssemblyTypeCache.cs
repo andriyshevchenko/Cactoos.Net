@@ -73,7 +73,6 @@ namespace Cactoos.Reflection
         public IReadOnlyDictionary<string, Type> Value()
         {
             return new AssemblyTypes(_assembly)
-                .Value()
                 .ToDictionary(type => type.FullName, type => type);
         }
     }
