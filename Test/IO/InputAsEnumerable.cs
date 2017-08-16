@@ -13,7 +13,7 @@ namespace Test.IO
         {
             var target =
                 new Input(
-                       new StringInput("hello world")
+                    new StringInput("hello world")
                 );
  
             byte[] test = new TextBytes("hello world").Bytes();

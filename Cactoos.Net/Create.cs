@@ -1,2528 +1,1062 @@
-public static class Create
+namespace Cactoos
 {
-    public static EmptyBytes emptyBytes()
+    public static class Create 
+    {
+        public static EmptyBytes emptyBytes()
     {
         return new EmptyBytes();
     }
- 
-    public static AttemptAsText attemptAsText()
+        public static Cactoos.Text.AttemptAsText attemptAsText()
     {
-        return new AttemptAsText();
+        return new Cactoos.Text.AttemptAsText();
     }
- 
-    public static BoolText boolText()
+        public static Cactoos.Text.BoolText boolText()
     {
-        return new BoolText();
+        return new Cactoos.Text.BoolText();
     }
- 
-    public static BoolText boolText()
+        public static Cactoos.Text.BoolText boolText()
     {
-        return new BoolText();
+        return new Cactoos.Text.BoolText();
     }
- 
-    public static ByteText byteText()
+        public static Cactoos.Text.ByteText byteText()
     {
-        return new ByteText();
+        return new Cactoos.Text.ByteText();
     }
- 
-    public static ByteText byteText()
+        public static Cactoos.Text.ByteText byteText()
     {
-        return new ByteText();
+        return new Cactoos.Text.ByteText();
     }
- 
-    public static CharSplitText charSplitText()
+        public static Cactoos.Text.CharSplitText charSplitText()
     {
-        return new CharSplitText();
+        return new Cactoos.Text.CharSplitText(source, Cactoos.Text.Text);
     }
- 
-    public static CharSplitText charSplitText()
+        public static Cactoos.Text.CharSplitText charSplitText()
     {
-        return new CharSplitText();
+        return new Cactoos.Text.CharSplitText(source, Cactoos.Text.Text);
     }
- 
-    public static DoubleText doubleText()
+        public static Cactoos.Text.CommaSeparated commaSeparated()
     {
-        return new DoubleText();
+        return new Cactoos.Text.CommaSeparated();
     }
- 
-    public static DoubleText doubleText()
+        public static Cactoos.Text.CommaSeparated commaSeparated()
     {
-        return new DoubleText();
+        return new Cactoos.Text.CommaSeparated();
     }
- 
-    public static FloatText floatText()
+        public static Cactoos.Text.DoubleText doubleText()
     {
-        return new FloatText();
+        return new Cactoos.Text.DoubleText();
     }
- 
-    public static FloatText floatText()
+        public static Cactoos.Text.DoubleText doubleText()
     {
-        return new FloatText();
+        return new Cactoos.Text.DoubleText();
     }
- 
-    public static InferredName inferredName()
+        public static Cactoos.Text.FloatText floatText()
     {
-        return new InferredName();
+        return new Cactoos.Text.FloatText();
     }
- 
-    public static InferredName inferredName()
+        public static Cactoos.Text.FloatText floatText()
     {
-        return new InferredName();
+        return new Cactoos.Text.FloatText();
     }
- 
-    public static InferredName inferredName()
+        public static Cactoos.Text.InferredName inferredName()
     {
-        return new InferredName();
+        return new Cactoos.Text.InferredName(typeCache, source, Cactoos.Text.Text);
     }
- 
-    public static InputText inputText()
+        public static Cactoos.Text.InferredName inferredName()
     {
-        return new InputText();
+        return new Cactoos.Text.InferredName(typeCache, source, Cactoos.Text.Text);
     }
- 
-    public static InputText inputText()
+        public static Cactoos.Text.InferredName inferredName()
     {
-        return new InputText();
+        return new Cactoos.Text.InferredName(assembly, source, Cactoos.Text.Text);
     }
- 
-    public static Base64Text base64Text()
+        public static Cactoos.Text.InferredName inferredName()
     {
-        return new Base64Text();
+        return new Cactoos.Text.InferredName(type, source, Cactoos.Text.Text);
     }
- 
-    public static Base64Text base64Text()
+        public static Cactoos.Text.InferredName inferredName()
     {
-        return new Base64Text();
+        return new Cactoos.Text.InferredName(assembly, source, Cactoos.Text.Text);
     }
- 
-    public static ByteArray byteArray()
+        public static Cactoos.Text.InputText inputText()
     {
-        return new ByteArray();
+        return new Cactoos.Text.InputText(source, Cactoos.Text.Text);
     }
- 
-    public static ByteArray byteArray()
+        public static Cactoos.Text.InputText inputText()
     {
-        return new ByteArray();
+        return new Cactoos.Text.InputText(source, Cactoos.Text.Text);
     }
- 
-    public static BytesText bytesText()
+        public static Cactoos.Text.Base64Text base64Text()
     {
-        return new BytesText();
+        return new Cactoos.Text.Base64Text(source, Cactoos.Text.Text);
     }
- 
-    public static BytesText bytesText()
+        public static Cactoos.Text.Base64Text base64Text()
     {
-        return new BytesText();
+        return new Cactoos.Text.Base64Text(source, Cactoos.Text.Text);
     }
- 
-    public static BytesText bytesText()
+        public static Cactoos.Text.ByteArray byteArray()
     {
-        return new BytesText();
+        return new Cactoos.Text.ByteArray();
     }
- 
-    public static ComparableText comparableText()
+        public static Cactoos.Text.ByteArray byteArray()
     {
-        return new ComparableText();
+        return new Cactoos.Text.ByteArray();
     }
- 
-    public static EmptyText emptyText()
+        public static Cactoos.Text.BytesText bytesText()
     {
-        return new EmptyText();
+        return new Cactoos.Text.BytesText(source, Cactoos.Text.Text);
     }
- 
-    public static EquatableText equatableText()
+        public static Cactoos.Text.BytesText bytesText()
     {
-        return new EquatableText();
+        return new Cactoos.Text.BytesText(source, Cactoos.Text.Text);
     }
- 
-    public static IntText intText()
+        public static Cactoos.Text.BytesText bytesText()
     {
-        return new IntText();
+        return new Cactoos.Text.BytesText(source, Cactoos.Text.Text);
     }
- 
-    public static IntText intText()
+        public static Cactoos.Text.ComparableText comparableText()
     {
-        return new IntText();
+        return new Cactoos.Text.ComparableText();
     }
- 
-    public static IsBlank isBlank()
+        public static Cactoos.Text.EmptyText emptyText()
     {
-        return new IsBlank();
+        return new Cactoos.Text.EmptyText();
     }
- 
-    public static IsBlank isBlank()
+        public static Cactoos.Text.EquatableText equatableText()
     {
-        return new IsBlank();
+        return new Cactoos.Text.EquatableText();
     }
- 
-    public static IsNamespaced isNamespaced()
+        public static Cactoos.Text.IntText intText()
     {
-        return new IsNamespaced();
+        return new Cactoos.Text.IntText();
     }
- 
-    public static IsNamespaced isNamespaced()
+        public static Cactoos.Text.IntText intText()
     {
-        return new IsNamespaced();
+        return new Cactoos.Text.IntText();
     }
- 
-    public static Lines lines()
+        public static Cactoos.Text.IsBlank isBlank()
     {
-        return new Lines();
+        return new Cactoos.Text.IsBlank();
     }
- 
-    public static Lines lines()
+        public static Cactoos.Text.IsBlank isBlank()
     {
-        return new Lines();
+        return new Cactoos.Text.IsBlank();
     }
- 
-    public static LongIntText longIntText()
+        public static Cactoos.Text.IsNamespaced isNamespaced()
     {
-        return new LongIntText();
+        return new Cactoos.Text.IsNamespaced();
     }
- 
-    public static LongIntText longIntText()
+        public static Cactoos.Text.IsNamespaced isNamespaced()
     {
-        return new LongIntText();
+        return new Cactoos.Text.IsNamespaced();
     }
- 
-    public static NamespacedName namespacedName()
+        public static Cactoos.Text.IsUpper isUpper()
     {
-        return new NamespacedName();
+        return new Cactoos.Text.IsUpper();
     }
- 
-    public static NamespacedName namespacedName()
+        public static Cactoos.Text.IsUpper isUpper()
     {
-        return new NamespacedName();
+        return new Cactoos.Text.IsUpper();
     }
- 
-    public static RepeatedText repeatedText()
+        public static Cactoos.Text.Lines lines()
     {
-        return new RepeatedText();
+        return new Cactoos.Text.Lines();
     }
- 
-    public static RepeatedText repeatedText()
+        public static Cactoos.Text.Lines lines()
     {
-        return new RepeatedText();
+        return new Cactoos.Text.Lines();
     }
- 
-    public static JoinedText joinedText()
+        public static Cactoos.Text.LongIntText longIntText()
     {
-        return new JoinedText();
+        return new Cactoos.Text.LongIntText();
     }
- 
-    public static JoinedText joinedText()
+        public static Cactoos.Text.LongIntText longIntText()
     {
-        return new JoinedText();
+        return new Cactoos.Text.LongIntText();
     }
- 
-    public static JoinedText joinedText()
+        public static Cactoos.Text.NamespacedName namespacedName()
     {
-        return new JoinedText();
+        return new Cactoos.Text.NamespacedName(source, Cactoos.Text.Text);
     }
- 
-    public static JoinedText joinedText()
+        public static Cactoos.Text.NamespacedName namespacedName()
     {
-        return new JoinedText();
+        return new Cactoos.Text.NamespacedName(source, Cactoos.Text.Text);
     }
- 
-    public static JoinedText joinedText()
+        public static Cactoos.Text.RepeatedText repeatedText()
     {
-        return new JoinedText();
+        return new Cactoos.Text.RepeatedText(source, Cactoos.Text.Text);
     }
- 
-    public static JoinedText joinedText()
+        public static Cactoos.Text.RepeatedText repeatedText()
     {
-        return new JoinedText();
+        return new Cactoos.Text.RepeatedText(source, Cactoos.Text.Text);
     }
- 
-    public static JoinedText joinedText()
+        public static Cactoos.Text.JoinedText joinedText()
     {
-        return new JoinedText();
+        return new Cactoos.Text.JoinedText(delimiter, Cactoos.Text.Text);
     }
- 
-    public static LowerText lowerText()
+        public static Cactoos.Text.JoinedText joinedText()
     {
-        return new LowerText();
+        return new Cactoos.Text.JoinedText(delimiter, Cactoos.Text.Text);
     }
- 
-    public static LowerText lowerText()
+        public static Cactoos.Text.JoinedText joinedText()
     {
-        return new LowerText();
+        return new Cactoos.Text.JoinedText(delimiter, Cactoos.Text.Text);
     }
- 
-    public static NormalizeText normalizeText()
+        public static Cactoos.Text.JoinedText joinedText()
     {
-        return new NormalizeText();
+        return new Cactoos.Text.JoinedText(delimiter, Cactoos.Text.Text);
     }
- 
-    public static NormalizeText normalizeText()
+        public static Cactoos.Text.JoinedText joinedText()
     {
-        return new NormalizeText();
+        return new Cactoos.Text.JoinedText(delimiter, Cactoos.Text.Text);
     }
- 
-    public static ReversedText reversedText()
+        public static Cactoos.Text.JoinedText joinedText()
     {
-        return new ReversedText();
+        return new Cactoos.Text.JoinedText(delimiter, Cactoos.Text.Text);
     }
- 
-    public static ReversedText reversedText()
+        public static Cactoos.Text.JoinedText joinedText()
     {
-        return new ReversedText();
+        return new Cactoos.Text.JoinedText(delimiter, Cactoos.Text.Text);
     }
- 
-    public static ShortIntText shortIntText()
+        public static Cactoos.Text.JoinedText joinedText()
     {
-        return new ShortIntText();
+        return new Cactoos.Text.JoinedText(delimiter, Cactoos.Text.Text);
     }
- 
-    public static ShortIntText shortIntText()
+        public static Cactoos.Text.LowerText lowerText()
     {
-        return new ShortIntText();
+        return new Cactoos.Text.LowerText();
     }
- 
-    public static SimpleName simpleName()
+        public static Cactoos.Text.LowerText lowerText()
     {
-        return new SimpleName();
+        return new Cactoos.Text.LowerText();
     }
- 
-    public static SimpleNamespace simpleNamespace()
+        public static Cactoos.Text.NormalizeText normalizeText()
     {
-        return new SimpleNamespace();
+        return new Cactoos.Text.NormalizeText();
     }
- 
-    public static SimpleNamespace simpleNamespace()
+        public static Cactoos.Text.NormalizeText normalizeText()
     {
-        return new SimpleNamespace();
+        return new Cactoos.Text.NormalizeText();
     }
- 
-    public static SimpleNamespace simpleNamespace()
+        public static Cactoos.Text.ReversedText reversedText()
     {
-        return new SimpleNamespace();
+        return new Cactoos.Text.ReversedText();
     }
- 
-    public static StringSplitText stringSplitText()
+        public static Cactoos.Text.ReversedText reversedText()
     {
-        return new StringSplitText();
+        return new Cactoos.Text.ReversedText();
     }
- 
-    public static StringSplitText stringSplitText()
+        public static Cactoos.Text.ShortIntText shortIntText()
     {
-        return new StringSplitText();
+        return new Cactoos.Text.ShortIntText();
     }
- 
-    public static StringSplitText stringSplitText()
+        public static Cactoos.Text.ShortIntText shortIntText()
     {
-        return new StringSplitText();
+        return new Cactoos.Text.ShortIntText();
     }
- 
-    public static SubText subText()
+        public static Cactoos.Text.SimpleName simpleName()
     {
-        return new SubText();
+        return new Cactoos.Text.SimpleName();
     }
- 
-    public static SubText subText()
+        public static Cactoos.Text.SimpleNamespace simpleNamespace()
     {
-        return new SubText();
+        return new Cactoos.Text.SimpleNamespace();
     }
- 
-    public static Text text()
+        public static Cactoos.Text.SimpleNamespace simpleNamespace()
     {
-        return new Text();
+        return new Cactoos.Text.SimpleNamespace();
     }
- 
-    public static TextBytes textBytes()
+        public static Cactoos.Text.SimpleNamespace simpleNamespace()
     {
-        return new TextBytes();
+        return new Cactoos.Text.SimpleNamespace();
     }
- 
-    public static TextBytes textBytes()
+        public static Cactoos.Text.StringSplitText stringSplitText()
     {
-        return new TextBytes();
+        return new Cactoos.Text.StringSplitText(source, Cactoos.Text.Text);
     }
- 
-    public static TextBytes textBytes()
+        public static Cactoos.Text.StringSplitText stringSplitText()
     {
-        return new TextBytes();
+        return new Cactoos.Text.StringSplitText(source, Cactoos.Text.Text);
     }
- 
-    public static TrimmedText trimmedText()
+        public static Cactoos.Text.StringSplitText stringSplitText()
     {
-        return new TrimmedText();
+        return new Cactoos.Text.StringSplitText(source, Cactoos.Text.Text);
     }
- 
-    public static TrimmedText trimmedText()
+        public static Cactoos.Text.SubText subText()
     {
-        return new TrimmedText();
+        return new Cactoos.Text.SubText(source, start, Cactoos.Text.Text);
     }
- 
-    public static UpperText upperText()
+        public static Cactoos.Text.SubText subText()
     {
-        return new UpperText();
+        return new Cactoos.Text.SubText(source, start, Cactoos.Text.Text);
     }
- 
-    public static UpperText upperText()
+        public static Cactoos.Text.Text text()
     {
-        return new UpperText();
+        return new Cactoos.Text.Text();
     }
- 
-    public static And and()
+        public static Cactoos.Text.TextBytes textBytes()
     {
-        return new And();
+        return new Cactoos.Text.TextBytes(source, Cactoos.Text.Text);
     }
- 
-    public static And and()
+        public static Cactoos.Text.TextBytes textBytes()
     {
-        return new And();
+        return new Cactoos.Text.TextBytes();
     }
- 
-    public static CachedScalar<T> cachedScalar<T>()
+        public static Cactoos.Text.TextBytes textBytes()
     {
-        return new CachedScalar<T>();
+        return new Cactoos.Text.TextBytes();
     }
- 
-    public static CachedScalar<T> cachedScalar<T>()
+        public static Cactoos.Text.TrimmedText trimmedText()
     {
-        return new CachedScalar<T>();
+        return new Cactoos.Text.TrimmedText();
     }
- 
-    public static DisposingScalar<T> disposingScalar<T>()
+        public static Cactoos.Text.TrimmedText trimmedText()
     {
-        return new DisposingScalar<T>();
+        return new Cactoos.Text.TrimmedText();
     }
- 
-    public static ErrorSafeScalar<T> errorSafeScalar<T>()
+        public static Cactoos.Text.UpperText upperText()
     {
-        return new ErrorSafeScalar<T>();
+        return new Cactoos.Text.UpperText();
     }
- 
-    public static ErrorSafeScalar<T> errorSafeScalar<T>()
+        public static Cactoos.Text.UpperText upperText()
     {
-        return new ErrorSafeScalar<T>();
+        return new Cactoos.Text.UpperText();
     }
- 
-    public static ErrorSafeScalar<T> errorSafeScalar<T>()
+        public static Cactoos.Scalar.Add add()
     {
-        return new ErrorSafeScalar<T>();
+        return new Cactoos.Scalar.Add(left, Cactoos.Text.Text);
     }
- 
-    public static ErrorSafeScalar<T> errorSafeScalar<T>()
+        public static Cactoos.Scalar.Add add()
     {
-        return new ErrorSafeScalar<T>();
+        return new Cactoos.Scalar.Add(left, Cactoos.Text.Text);
     }
- 
-    public static FuncScalar<T> funcScalar<T>()
+        public static Cactoos.Scalar.Add add()
     {
-        return new FuncScalar<T>();
+        return new Cactoos.Scalar.Add(left, Cactoos.Text.Text);
     }
- 
-    public static LazyScalar<T> lazyScalar<T>()
+        public static Cactoos.Scalar.And and()
     {
-        return new LazyScalar<T>();
+        return new Cactoos.Scalar.And(left, Cactoos.Text.Text);
     }
- 
-    public static MaxInt maxInt()
+        public static Cactoos.Scalar.And and()
     {
-        return new MaxInt();
+        return new Cactoos.Scalar.And(left, Cactoos.Text.Text);
     }
- 
-    public static MaxDouble maxDouble()
+        public static Cactoos.Scalar.CachedScalar<T> cachedScalar<T>()
     {
-        return new MaxDouble();
+        return new Cactoos.Scalar.CachedScalar<T>();
     }
- 
-    public static Not not()
+        public static Cactoos.Scalar.CachedScalar<T> cachedScalar<T>()
     {
-        return new Not();
+        return new Cactoos.Scalar.CachedScalar<T>();
     }
- 
-    public static Not not()
+        public static Cactoos.Scalar.DisposingScalar<T> disposingScalar<T>()
     {
-        return new Not();
+        return new Cactoos.Scalar.DisposingScalar<T>(source, Cactoos.Text.Text);
     }
- 
-    public static NotNull<T> notNull<T>()
+        public static Cactoos.Scalar.ErrorSafeScalar<T> errorSafeScalar<T>()
     {
-        return new NotNull<T>();
+        return new Cactoos.Scalar.ErrorSafeScalar<T>(source, Cactoos.Text.Text);
     }
- 
-    public static NotNull<T> notNull<T>()
+        public static Cactoos.Scalar.ErrorSafeScalar<T> errorSafeScalar<T>()
     {
-        return new NotNull<T>();
+        return new Cactoos.Scalar.ErrorSafeScalar<T>(source, Cactoos.Text.Text);
     }
- 
-    public static Or or()
+        public static Cactoos.Scalar.ErrorSafeScalar<T> errorSafeScalar<T>()
     {
-        return new Or();
+        return new Cactoos.Scalar.ErrorSafeScalar<T>(source, Cactoos.Text.Text);
     }
- 
-    public static Or or()
+        public static Cactoos.Scalar.ErrorSafeScalar<T> errorSafeScalar<T>()
     {
-        return new Or();
+        return new Cactoos.Scalar.ErrorSafeScalar<T>(source, Cactoos.Text.Text);
     }
- 
-    public static ParsedBool parsedBool()
+        public static Cactoos.Scalar.FuncScalar<T> funcScalar<T>()
     {
-        return new ParsedBool();
+        return new Cactoos.Scalar.FuncScalar<T>();
     }
- 
-    public static ParsedBool parsedBool()
+        public static Cactoos.Scalar.LazyScalar<T> lazyScalar<T>()
     {
-        return new ParsedBool();
+        return new Cactoos.Scalar.LazyScalar<T>();
     }
- 
-    public static ParsedByte parsedByte()
+        public static Cactoos.Scalar.MaxInt maxInt()
     {
-        return new ParsedByte();
+        return new Cactoos.Scalar.MaxInt();
     }
- 
-    public static ParsedByte parsedByte()
+        public static Cactoos.Scalar.MaxDouble maxDouble()
     {
-        return new ParsedByte();
+        return new Cactoos.Scalar.MaxDouble();
     }
- 
-    public static ParsedDecimal parsedDecimal()
+        public static Cactoos.Scalar.Not not()
     {
-        return new ParsedDecimal();
+        return new Cactoos.Scalar.Not();
     }
- 
-    public static ParsedDecimal parsedDecimal()
+        public static Cactoos.Scalar.Not not()
     {
-        return new ParsedDecimal();
+        return new Cactoos.Scalar.Not();
     }
- 
-    public static ParsedDouble parsedDouble()
+        public static Cactoos.Scalar.NotNull<T> notNull<T>()
     {
-        return new ParsedDouble();
+        return new Cactoos.Scalar.NotNull<T>();
     }
- 
-    public static ParsedDouble parsedDouble()
+        public static Cactoos.Scalar.NotNull<T> notNull<T>()
     {
-        return new ParsedDouble();
+        return new Cactoos.Scalar.NotNull<T>();
     }
- 
-    public static ParsedFloat parsedFloat()
+        public static Cactoos.Scalar.Or or()
     {
-        return new ParsedFloat();
+        return new Cactoos.Scalar.Or(left, Cactoos.Text.Text);
     }
- 
-    public static ParsedFloat parsedFloat()
+        public static Cactoos.Scalar.Or or()
     {
-        return new ParsedFloat();
+        return new Cactoos.Scalar.Or(left, Cactoos.Text.Text);
     }
- 
-    public static ParsedLong parsedLong()
+        public static Cactoos.Scalar.ParsedBool parsedBool()
     {
-        return new ParsedLong();
+        return new Cactoos.Scalar.ParsedBool();
     }
- 
-    public static ParsedLong parsedLong()
+        public static Cactoos.Scalar.ParsedBool parsedBool()
     {
-        return new ParsedLong();
+        return new Cactoos.Scalar.ParsedBool();
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.ParsedByte parsedByte()
     {
-        return new Percents();
+        return new Cactoos.Scalar.ParsedByte();
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.ParsedByte parsedByte()
     {
-        return new Percents();
+        return new Cactoos.Scalar.ParsedByte();
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.ParsedDecimal parsedDecimal()
     {
-        return new Percents();
+        return new Cactoos.Scalar.ParsedDecimal();
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.ParsedDecimal parsedDecimal()
     {
-        return new Percents();
+        return new Cactoos.Scalar.ParsedDecimal();
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.ParsedDouble parsedDouble()
     {
-        return new Percents();
+        return new Cactoos.Scalar.ParsedDouble();
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.ParsedDouble parsedDouble()
     {
-        return new Percents();
+        return new Cactoos.Scalar.ParsedDouble();
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.ParsedFloat parsedFloat()
     {
-        return new Percents();
+        return new Cactoos.Scalar.ParsedFloat();
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.ParsedFloat parsedFloat()
     {
-        return new Percents();
+        return new Cactoos.Scalar.ParsedFloat();
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.ParsedLong parsedLong()
     {
-        return new Percents();
+        return new Cactoos.Scalar.ParsedLong();
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.ParsedLong parsedLong()
     {
-        return new Percents();
+        return new Cactoos.Scalar.ParsedLong();
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new Percents();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new Percents();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new Percents();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new Percents();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new Percents();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new Percents();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static Percents percents()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new Percents();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static RetryScalar<T> retryScalar<T>()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new RetryScalar<T>();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static NumericSum numericSum()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new NumericSum();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static NumericSum numericSum()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new NumericSum();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static NumericSum numericSum()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new NumericSum();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static NumericSum numericSum()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new NumericSum();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static NumericSum numericSum()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new NumericSum();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static NumericSum numericSum()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new NumericSum();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static ThreadSafeScalar<T> threadSafeScalar<T>()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new ThreadSafeScalar<T>();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static ValueScalar<T> valueScalar<T>()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new ValueScalar<T>();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static Elapsed elapsed()
+        public static Cactoos.Scalar.Percents percents()
     {
-        return new Elapsed();
+        return new Cactoos.Scalar.Percents(first, Cactoos.Text.Text);
     }
- 
-    public static ParsedInt parsedInt()
+        public static Cactoos.Scalar.RetryScalar<T> retryScalar<T>()
     {
-        return new ParsedInt();
+        return new Cactoos.Scalar.RetryScalar<T>(source, Cactoos.Text.Text);
     }
- 
-    public static ParsedInt parsedInt()
+        public static Cactoos.Scalar.NumericSum numericSum()
     {
-        return new ParsedInt();
+        return new Cactoos.Scalar.NumericSum();
     }
- 
-    public static Count<T> count<T>()
+        public static Cactoos.Scalar.NumericSum numericSum()
     {
-        return new Count<T>();
+        return new Cactoos.Scalar.NumericSum();
     }
- 
-    public static ErrorSafeAsyncScalar<T> errorSafeAsyncScalar<T>()
+        public static Cactoos.Scalar.NumericSum numericSum()
     {
-        return new ErrorSafeAsyncScalar<T>();
+        return new Cactoos.Scalar.NumericSum();
     }
- 
-    public static ErrorSafeAsyncScalar<T> errorSafeAsyncScalar<T>()
+        public static Cactoos.Scalar.NumericSum numericSum()
     {
-        return new ErrorSafeAsyncScalar<T>();
+        return new Cactoos.Scalar.NumericSum();
     }
- 
-    public static ErrorSafeAsyncScalar<T> errorSafeAsyncScalar<T>()
+        public static Cactoos.Scalar.NumericSum numericSum()
     {
-        return new ErrorSafeAsyncScalar<T>();
+        return new Cactoos.Scalar.NumericSum();
     }
- 
-    public static ErrorSafeAsyncScalar<T> errorSafeAsyncScalar<T>()
+        public static Cactoos.Scalar.NumericSum numericSum()
     {
-        return new ErrorSafeAsyncScalar<T>();
+        return new Cactoos.Scalar.NumericSum();
     }
- 
-    public static FromResultScalar<T> fromResultScalar<T>()
+        public static Cactoos.Scalar.ThreadSafeScalar<T> threadSafeScalar<T>()
     {
-        return new FromResultScalar<T>();
+        return new Cactoos.Scalar.ThreadSafeScalar<T>();
     }
- 
-    public static FromResultScalar<T> fromResultScalar<T>()
+        public static Cactoos.Scalar.ValueScalar<T> valueScalar<T>()
     {
-        return new FromResultScalar<T>();
+        return new Cactoos.Scalar.ValueScalar<T>();
     }
- 
-    public static RetryAsyncScalar<T> retryAsyncScalar<T>()
+        public static Cactoos.Scalar.Elapsed elapsed()
     {
-        return new RetryAsyncScalar<T>();
+        return new Cactoos.Scalar.Elapsed();
     }
- 
-    public static RetryAsyncScalar<T> retryAsyncScalar<T>()
+        public static Cactoos.Scalar.ParsedInt parsedInt()
     {
-        return new RetryAsyncScalar<T>();
+        return new Cactoos.Scalar.ParsedInt();
     }
- 
-    public static SequenceEqual<T> sequenceEqual<T>()
+        public static Cactoos.Scalar.ParsedInt parsedInt()
     {
-        return new SequenceEqual<T>();
+        return new Cactoos.Scalar.ParsedInt();
     }
- 
-    public static SequenceEqual<T> sequenceEqual<T>()
+        public static Cactoos.Scalar.Async.Count<T> count<T>()
     {
-        return new SequenceEqual<T>();
+        return new Cactoos.Scalar.Async.Count<T>();
     }
- 
-    public static TaskScalar<T> taskScalar<T>()
+        public static Cactoos.Scalar.Async.ErrorSafeAsyncScalar<T> errorSafeAsyncScalar<T>()
     {
-        return new TaskScalar<T>();
+        return new Cactoos.Scalar.Async.ErrorSafeAsyncScalar<T>(source, Cactoos.Text.Text);
     }
- 
-    public static Async<T> async<T>()
+        public static Cactoos.Scalar.Async.ErrorSafeAsyncScalar<T> errorSafeAsyncScalar<T>()
     {
-        return new Async<T>();
+        return new Cactoos.Scalar.Async.ErrorSafeAsyncScalar<T>(source, Cactoos.Text.Text);
     }
- 
-    public static ErrorsAsText errorsAsText()
+        public static Cactoos.Scalar.Async.ErrorSafeAsyncScalar<T> errorSafeAsyncScalar<T>()
     {
-        return new ErrorsAsText();
+        return new Cactoos.Scalar.Async.ErrorSafeAsyncScalar<T>(source, Cactoos.Text.Text);
     }
- 
-    public static ItemIndexPair<T> itemIndexPair<T>()
+        public static Cactoos.Scalar.Async.ErrorSafeAsyncScalar<T> errorSafeAsyncScalar<T>()
     {
-        return new ItemIndexPair<T>();
+        return new Cactoos.Scalar.Async.ErrorSafeAsyncScalar<T>(source, Cactoos.Text.Text);
     }
- 
-    public static Indices<T> indices<T>()
+        public static Cactoos.Scalar.Async.FromResultScalar<T> fromResultScalar<T>()
     {
-        return new Indices<T>();
+        return new Cactoos.Scalar.Async.FromResultScalar<T>();
     }
- 
-    public static Indexed<T> indexed<T>()
+        public static Cactoos.Scalar.Async.FromResultScalar<T> fromResultScalar<T>()
     {
-        return new Indexed<T>();
+        return new Cactoos.Scalar.Async.FromResultScalar<T>();
     }
- 
-    public static ParsedBytes parsedBytes()
+        public static Cactoos.Scalar.Async.RetryAsyncScalar<T> retryAsyncScalar<T>()
     {
-        return new ParsedBytes();
+        return new Cactoos.Scalar.Async.RetryAsyncScalar<T>();
     }
- 
-    public static ParsedBytes parsedBytes()
+        public static Cactoos.Scalar.Async.RetryAsyncScalar<T> retryAsyncScalar<T>()
     {
-        return new ParsedBytes();
+        return new Cactoos.Scalar.Async.RetryAsyncScalar<T>();
     }
- 
-    public static ParsedDoubles parsedDoubles()
+        public static Cactoos.Scalar.Async.SequenceEqual<T> sequenceEqual<T>()
     {
-        return new ParsedDoubles();
+        return new Cactoos.Scalar.Async.SequenceEqual<T>(left, Cactoos.Text.Text);
     }
- 
-    public static ParsedDoubles parsedDoubles()
+        public static Cactoos.Scalar.Async.SequenceEqual<T> sequenceEqual<T>()
     {
-        return new ParsedDoubles();
+        return new Cactoos.Scalar.Async.SequenceEqual<T>(left, Cactoos.Text.Text);
     }
- 
-    public static ParsedFloats parsedFloats()
+        public static Cactoos.Scalar.Async.TaskScalar<T> taskScalar<T>()
     {
-        return new ParsedFloats();
+        return new Cactoos.Scalar.Async.TaskScalar<T>();
     }
- 
-    public static ParsedFloats parsedFloats()
+        public static Cactoos.List.Async<T> async<T>()
     {
-        return new ParsedFloats();
+        return new Cactoos.List.Async<T>();
     }
- 
-    public static ParsedInts parsedInts()
+        public static Cactoos.List.Distinct<T> distinct<T>()
     {
-        return new ParsedInts();
+        return new Cactoos.List.Distinct<T>();
     }
- 
-    public static ParsedInts parsedInts()
+        public static Cactoos.List.Empty<T> empty<T>()
     {
-        return new ParsedInts();
+        return new Cactoos.List.Empty<T>();
     }
- 
-    public static Reduced<T> reduced<T>()
+        public static Cactoos.List.ErrorsAsText errorsAsText()
     {
-        return new Reduced<T>();
+        return new Cactoos.List.ErrorsAsText();
     }
- 
-    public static ParsedLongs parsedLongs()
+        public static Cactoos.List.ItemIndexPair<T> itemIndexPair<T>()
     {
-        return new ParsedLongs();
+        return new Cactoos.List.ItemIndexPair<T>(index, Cactoos.Text.Text);
     }
- 
-    public static ParsedLongs parsedLongs()
+        public static Cactoos.List.Indices<T> indices<T>()
     {
-        return new ParsedLongs();
+        return new Cactoos.List.Indices<T>();
     }
- 
-    public static Concat<T> concat<T>()
+        public static Cactoos.List.Indexed<T> indexed<T>()
     {
-        return new Concat<T>();
+        return new Cactoos.List.Indexed<T>();
     }
- 
-    public static Cycled<T> cycled<T>()
+        public static Cactoos.List.ParsedBytes parsedBytes()
     {
-        return new Cycled<T>();
+        return new Cactoos.List.ParsedBytes();
     }
- 
-    public static Filtered<T> filtered<T>()
+        public static Cactoos.List.ParsedBytes parsedBytes()
     {
-        return new Filtered<T>();
+        return new Cactoos.List.ParsedBytes();
     }
- 
-    public static Infinite<T> infinite<T>()
+        public static Cactoos.List.ParsedDoubles parsedDoubles()
     {
-        return new Infinite<T>();
+        return new Cactoos.List.ParsedDoubles();
     }
- 
-    public static Infinite<T> infinite<T>()
+        public static Cactoos.List.ParsedDoubles parsedDoubles()
     {
-        return new Infinite<T>();
+        return new Cactoos.List.ParsedDoubles();
     }
- 
-    public static Joined<T> joined<T>()
+        public static Cactoos.List.ParsedFloats parsedFloats()
     {
-        return new Joined<T>();
+        return new Cactoos.List.ParsedFloats();
     }
- 
-    public static Joined<T> joined<T>()
+        public static Cactoos.List.ParsedFloats parsedFloats()
     {
-        return new Joined<T>();
+        return new Cactoos.List.ParsedFloats();
     }
- 
-    public static Limited<T> limited<T>()
+        public static Cactoos.List.ParsedInts parsedInts()
     {
-        return new Limited<T>();
+        return new Cactoos.List.ParsedInts();
     }
- 
-    public static Mapped<T, TResult> mapped<T, TResult>()
+        public static Cactoos.List.ParsedInts parsedInts()
     {
-        return new Mapped<T, TResult>();
+        return new Cactoos.List.ParsedInts();
     }
- 
-    public static Ordered<T> ordered<T>()
+        public static Cactoos.List.Reduced<T> reduced<T>()
     {
-        return new Ordered<T>();
+        return new Cactoos.List.Reduced<T>(source, Cactoos.Text.Text);
     }
- 
-    public static AssemblyTypes assemblyTypes()
+        public static Cactoos.List.TextCollection textCollection()
     {
-        return new AssemblyTypes();
+        return new Cactoos.List.TextCollection();
     }
- 
-    public static AssemblyTypes assemblyTypes()
+        public static Cactoos.List.ParsedLongs parsedLongs()
     {
-        return new AssemblyTypes();
+        return new Cactoos.List.ParsedLongs();
     }
- 
-    public static AssemblyOfType assemblyOfType()
+        public static Cactoos.List.ParsedLongs parsedLongs()
     {
-        return new AssemblyOfType();
+        return new Cactoos.List.ParsedLongs();
     }
- 
-    public static AssemblyRootNamespace assemblyRootNamespace()
+        public static Cactoos.List.Concat<T> concat<T>()
     {
-        return new AssemblyRootNamespace();
+        return new Cactoos.List.Concat<T>();
     }
- 
-    public static AssemblyRootNamespace assemblyRootNamespace()
+        public static Cactoos.List.Cycled<T> cycled<T>()
     {
-        return new AssemblyRootNamespace();
+        return new Cactoos.List.Cycled<T>(source, Cactoos.Text.Text);
     }
- 
-    public static TypeCacheWithoutNamespace typeCacheWithoutNamespace()
+        public static Cactoos.List.Filtered<T> filtered<T>()
     {
-        return new TypeCacheWithoutNamespace();
+        return new Cactoos.List.Filtered<T>(source, Cactoos.Text.Text);
     }
- 
-    public static AssemblyTypeCache assemblyTypeCache()
+        public static Cactoos.List.Infinite<T> infinite<T>()
     {
-        return new AssemblyTypeCache();
+        return new Cactoos.List.Infinite<T>();
     }
- 
-    public static AssemblyTypeCache assemblyTypeCache()
+        public static Cactoos.List.Infinite<T> infinite<T>()
     {
-        return new AssemblyTypeCache();
+        return new Cactoos.List.Infinite<T>();
     }
- 
-    public static FastObject fastObject()
+        public static Cactoos.List.Joined<T> joined<T>()
     {
-        return new FastObject();
+        return new Cactoos.List.Joined<T>();
     }
- 
-    public static FastObject fastObject()
+        public static Cactoos.List.Joined<T> joined<T>()
     {
-        return new FastObject();
+        return new Cactoos.List.Joined<T>();
     }
- 
-    public static MergedTypeCache mergedTypeCache()
+        public static Cactoos.List.Limited<T> limited<T>()
     {
-        return new MergedTypeCache();
+        return new Cactoos.List.Limited<T>(source, Cactoos.Text.Text);
     }
- 
-    public static MergedTypeCache mergedTypeCache()
+        public static Cactoos.List.Mapped<T, TResult> mapped<T, TResult>()
     {
-        return new MergedTypeCache();
+        return new Cactoos.List.Mapped<T, TResult>(source, Cactoos.Text.Text);
     }
- 
-    public static MergedTypeCache mergedTypeCache()
+        public static Cactoos.List.Ordered<T> ordered<T>()
     {
-        return new MergedTypeCache();
+        return new Cactoos.List.Ordered<T>(source, Cactoos.Text.Text);
     }
- 
-    public static NamespacesOfAssembly namespacesOfAssembly()
+        public static Cactoos.Reflection.AssemblyTypes assemblyTypes()
     {
-        return new NamespacesOfAssembly();
+        return new Cactoos.Reflection.AssemblyTypes(assembly, Cactoos.Text.Text);
     }
- 
-    public static NamespacesOfAssembly namespacesOfAssembly()
+        public static Cactoos.Reflection.AssemblyTypes assemblyTypes()
     {
-        return new NamespacesOfAssembly();
+        return new Cactoos.Reflection.AssemblyTypes(assembly, Cactoos.Text.Text);
     }
- 
-    public static NamespacesOfAssembly namespacesOfAssembly()
+        public static Cactoos.Reflection.UsefulTypes usefulTypes()
     {
-        return new NamespacesOfAssembly();
+        return new Cactoos.Reflection.UsefulTypes();
     }
- 
-    public static NotGeneratedTypes notGeneratedTypes()
+        public static Cactoos.Reflection.UsefulTypes usefulTypes()
     {
-        return new NotGeneratedTypes();
+        return new Cactoos.Reflection.UsefulTypes();
     }
- 
-    public static NotGeneratedTypes notGeneratedTypes()
+        public static Cactoos.Reflection.UsefulTypes usefulTypes()
     {
-        return new NotGeneratedTypes();
+        return new Cactoos.Reflection.UsefulTypes();
     }
- 
-    public static NotGeneratedTypes notGeneratedTypes()
+        public static Cactoos.Reflection.AssemblyOfType assemblyOfType()
     {
-        return new NotGeneratedTypes();
+        return new Cactoos.Reflection.AssemblyOfType();
     }
- 
-    public static ConsoleInput consoleInput()
+        public static Cactoos.Reflection.AssemblyRootNamespace assemblyRootNamespace()
     {
-        return new ConsoleInput();
+        return new Cactoos.Reflection.AssemblyRootNamespace();
     }
- 
-    public static ConsoleOutput consoleOutput()
+        public static Cactoos.Reflection.AssemblyRootNamespace assemblyRootNamespace()
     {
-        return new ConsoleOutput();
+        return new Cactoos.Reflection.AssemblyRootNamespace();
     }
- 
-    public static StdErrOutput stdErrOutput()
+        public static Cactoos.Reflection.AssemblyTypeCache assemblyTypeCache()
     {
-        return new StdErrOutput();
+        return new Cactoos.Reflection.AssemblyTypeCache();
     }
- 
-    public static ByteInput byteInput()
+        public static Cactoos.Reflection.AssemblyTypeCache assemblyTypeCache()
     {
-        return new ByteInput();
+        return new Cactoos.Reflection.AssemblyTypeCache();
     }
- 
-    public static ByteInput byteInput()
+        public static Cactoos.Reflection.FastObject fastObject()
     {
-        return new ByteInput();
+        return new Cactoos.Reflection.FastObject(type, ctorPosition, Cactoos.Text.Text);
     }
- 
-    public static ByteInput byteInput()
+        public static Cactoos.Reflection.FastObject fastObject()
     {
-        return new ByteInput();
+        return new Cactoos.Reflection.FastObject(type, Cactoos.Text.Text);
     }
- 
-    public static BytesAsOutput bytesAsOutput()
+        public static Cactoos.Reflection.MergedTypeCache mergedTypeCache()
     {
-        return new BytesAsOutput();
+        return new Cactoos.Reflection.MergedTypeCache();
     }
- 
-    public static BytesAsOutput bytesAsOutput()
+        public static Cactoos.Reflection.MergedTypeCache mergedTypeCache()
     {
-        return new BytesAsOutput();
+        return new Cactoos.Reflection.MergedTypeCache();
     }
- 
-    public static DisposableWrap<T> disposableWrap<T>()
+        public static Cactoos.Reflection.MergedTypeCache mergedTypeCache()
     {
-        return new DisposableWrap<T>();
+        return new Cactoos.Reflection.MergedTypeCache();
     }
- 
-    public static EnumerableAsBytes enumerableAsBytes()
+        public static Cactoos.Reflection.NamespacesOfAssembly namespacesOfAssembly()
     {
-        return new EnumerableAsBytes();
+        return new Cactoos.Reflection.NamespacesOfAssembly();
     }
- 
-    public static EnumerableAsBytes enumerableAsBytes()
+        public static Cactoos.Reflection.NamespacesOfAssembly namespacesOfAssembly()
     {
-        return new EnumerableAsBytes();
+        return new Cactoos.Reflection.NamespacesOfAssembly();
     }
- 
-    public static FakeInput fakeInput()
+        public static Cactoos.Reflection.NamespacesOfAssembly namespacesOfAssembly()
     {
-        return new FakeInput();
+        return new Cactoos.Reflection.NamespacesOfAssembly();
     }
- 
-    public static FakeOutput fakeOutput()
+        public static Cactoos.Reflection.PublicCtors publicCtors()
     {
-        return new FakeOutput();
+        return new Cactoos.Reflection.PublicCtors();
     }
- 
-    public static FloatBytes floatBytes()
+        public static Cactoos.Reflection.SimpleNameTypeCache simpleNameTypeCache()
     {
-        return new FloatBytes();
+        return new Cactoos.Reflection.SimpleNameTypeCache();
     }
- 
-    public static FloatBytes floatBytes()
+        public static Cactoos.Reflection.SimpleNameTypeCache simpleNameTypeCache()
     {
-        return new FloatBytes();
+        return new Cactoos.Reflection.SimpleNameTypeCache();
     }
- 
-    public static InputAsBytes inputAsBytes()
+        public static Cactoos.Reflection.SimpleNameTypeCache simpleNameTypeCache()
     {
-        return new InputAsBytes();
+        return new Cactoos.Reflection.SimpleNameTypeCache();
     }
- 
-    public static InputAsBytes inputAsBytes()
+        public static Cactoos.IO.ConsoleInput consoleInput()
     {
-        return new InputAsBytes();
+        return new Cactoos.IO.ConsoleInput();
     }
- 
-    public static DoubleBytes doubleBytes()
+        public static Cactoos.IO.ConsoleOutput consoleOutput()
     {
-        return new DoubleBytes();
+        return new Cactoos.IO.ConsoleOutput();
     }
- 
-    public static DoubleBytes doubleBytes()
+        public static Cactoos.IO.StdErrOutput stdErrOutput()
     {
-        return new DoubleBytes();
+        return new Cactoos.IO.StdErrOutput();
     }
- 
-    public static IntBytes intBytes()
+        public static Cactoos.IO.ByteInput byteInput()
     {
-        return new IntBytes();
+        return new Cactoos.IO.ByteInput();
     }
- 
-    public static IntBytes intBytes()
+        public static Cactoos.IO.ByteInput byteInput()
     {
-        return new IntBytes();
+        return new Cactoos.IO.ByteInput();
     }
- 
-    public static ShortBytes shortBytes()
+        public static Cactoos.IO.ByteInput byteInput()
     {
-        return new ShortBytes();
+        return new Cactoos.IO.ByteInput();
     }
- 
-    public static ShortBytes shortBytes()
+        public static Cactoos.IO.BytesAsOutput bytesAsOutput()
     {
-        return new ShortBytes();
+        return new Cactoos.IO.BytesAsOutput();
     }
- 
-    public static TextInput textInput()
+        public static Cactoos.IO.BytesAsOutput bytesAsOutput()
     {
-        return new TextInput();
+        return new Cactoos.IO.BytesAsOutput();
     }
- 
-    public static TextInput textInput()
+        public static Cactoos.IO.DisposableWrap<T> disposableWrap<T>()
     {
-        return new TextInput();
+        return new Cactoos.IO.DisposableWrap<T>();
     }
- 
-    public static NotNullInput notNullInput()
+        public static Cactoos.IO.EnumerableAsBytes enumerableAsBytes()
     {
-        return new NotNullInput();
+        return new Cactoos.IO.EnumerableAsBytes();
     }
- 
-    public static NotNullOutput notNullOutput()
+        public static Cactoos.IO.EnumerableAsBytes enumerableAsBytes()
     {
-        return new NotNullOutput();
+        return new Cactoos.IO.EnumerableAsBytes();
     }
- 
-    public static Output output()
+        public static Cactoos.IO.FakeInput fakeInput()
     {
-        return new Output();
+        return new Cactoos.IO.FakeInput();
     }
- 
-    public static Output output()
+        public static Cactoos.IO.FakeOutput fakeOutput()
     {
-        return new Output();
+        return new Cactoos.IO.FakeOutput();
     }
- 
-    public static Output output()
+        public static Cactoos.IO.FloatBytes floatBytes()
     {
-        return new Output();
+        return new Cactoos.IO.FloatBytes();
     }
- 
-    public static Output output()
+        public static Cactoos.IO.FloatBytes floatBytes()
     {
-        return new Output();
+        return new Cactoos.IO.FloatBytes();
     }
- 
-    public static Output output()
+        public static Cactoos.IO.InputAsBytes inputAsBytes()
     {
-        return new Output();
+        return new Cactoos.IO.InputAsBytes();
     }
- 
-    public static Output output()
+        public static Cactoos.IO.InputAsBytes inputAsBytes()
     {
-        return new Output();
+        return new Cactoos.IO.InputAsBytes();
     }
- 
-    public static Output output()
+        public static Cactoos.IO.DoubleBytes doubleBytes()
     {
-        return new Output();
+        return new Cactoos.IO.DoubleBytes();
     }
- 
-    public static OutputEnumerator outputEnumerator()
+        public static Cactoos.IO.DoubleBytes doubleBytes()
     {
-        return new OutputEnumerator();
+        return new Cactoos.IO.DoubleBytes();
     }
- 
-    public static PathInput pathInput()
+        public static Cactoos.IO.IntBytes intBytes()
     {
-        return new PathInput();
+        return new Cactoos.IO.IntBytes();
     }
- 
-    public static PathOutput pathOutput()
+        public static Cactoos.IO.IntBytes intBytes()
     {
-        return new PathOutput();
+        return new Cactoos.IO.IntBytes();
     }
- 
-    public static SingleByteEnumerator singleByteEnumerator()
+        public static Cactoos.IO.ShortBytes shortBytes()
     {
-        return new SingleByteEnumerator();
+        return new Cactoos.IO.ShortBytes();
     }
- 
-    public static InputEnumerator inputEnumerator()
+        public static Cactoos.IO.ShortBytes shortBytes()
     {
-        return new InputEnumerator();
+        return new Cactoos.IO.ShortBytes();
     }
- 
-    public static Input input()
+        public static Cactoos.IO.TextInput textInput()
     {
-        return new Input();
+        return new Cactoos.IO.TextInput();
     }
- 
-    public static Input input()
+        public static Cactoos.IO.TextInput textInput()
     {
-        return new Input();
+        return new Cactoos.IO.TextInput();
     }
- 
-    public static StreamInput streamInput()
+        public static Cactoos.IO.NotNullInput notNullInput()
     {
-        return new StreamInput();
+        return new Cactoos.IO.NotNullInput();
     }
- 
-    public static StreamOutput streamOutput()
+        public static Cactoos.IO.NotNullOutput notNullOutput()
     {
-        return new StreamOutput();
+        return new Cactoos.IO.NotNullOutput();
     }
- 
-    public static StringInput stringInput()
+        public static Cactoos.IO.Output output()
     {
-        return new StringInput();
+        return new Cactoos.IO.Output(source, Cactoos.Text.Text);
     }
- 
-    public static WriteOnlyEnumerator<T> writeOnlyEnumerator<T>()
+        public static Cactoos.IO.Output output()
     {
-        return new WriteOnlyEnumerator<T>();
+        return new Cactoos.IO.Output(from, Cactoos.Text.Text);
     }
- 
-    public static AsyncInput asyncInput()
+        public static Cactoos.IO.Output output()
     {
-        return new AsyncInput();
+        return new Cactoos.IO.Output(from, Cactoos.Text.Text);
     }
- 
-    public static AsyncInput asyncInput()
+        public static Cactoos.IO.Output output()
     {
-        return new AsyncInput();
+        return new Cactoos.IO.Output(from, Cactoos.Text.Text);
     }
- 
-    public static AsyncInputEnumerator asyncInputEnumerator()
+        public static Cactoos.IO.Output output()
     {
-        return new AsyncInputEnumerator();
+        return new Cactoos.IO.Output(from, Cactoos.Text.Text);
     }
- 
-    public static AsyncOutput asyncOutput()
+        public static Cactoos.IO.Output output()
     {
-        return new AsyncOutput();
+        return new Cactoos.IO.Output(from, Cactoos.Text.Text);
     }
- 
-    public static AsyncOutput asyncOutput()
+        public static Cactoos.IO.Output output()
     {
-        return new AsyncOutput();
+        return new Cactoos.IO.Output(from, encoding, Cactoos.Text.Text);
     }
- 
-    public static AsyncOutput asyncOutput()
+        public static Cactoos.IO.OutputEnumerator outputEnumerator()
     {
-        return new AsyncOutput();
+        return new Cactoos.IO.OutputEnumerator(from, output, Cactoos.Text.Text);
     }
- 
-    public static AsyncOutput asyncOutput()
+        public static Cactoos.IO.PathInput pathInput()
     {
-        return new AsyncOutput();
+        return new Cactoos.IO.PathInput();
     }
- 
-    public static AsyncOutput asyncOutput()
+        public static Cactoos.IO.PathOutput pathOutput()
     {
-        return new AsyncOutput();
+        return new Cactoos.IO.PathOutput(path, Cactoos.Text.Text);
     }
- 
-    public static AsyncOutput asyncOutput()
+        public static Cactoos.IO.SingleByteEnumerator singleByteEnumerator()
     {
-        return new AsyncOutput();
+        return new Cactoos.IO.SingleByteEnumerator();
     }
- 
-    public static AsyncOutput asyncOutput()
+        public static Cactoos.IO.InputEnumerator inputEnumerator()
     {
-        return new AsyncOutput();
+        return new Cactoos.IO.InputEnumerator(from, Cactoos.Text.Text);
     }
- 
-    public static AsyncOutputEnumerator asyncOutputEnumerator()
+        public static Cactoos.IO.Input input()
     {
-        return new AsyncOutputEnumerator();
+        return new Cactoos.IO.Input();
     }
- 
-    public static AsyncOutputEnumerator asyncOutputEnumerator()
+        public static Cactoos.IO.Input input()
     {
-        return new AsyncOutputEnumerator();
+        return new Cactoos.IO.Input();
     }
- 
-    public static SingleByteAsyncEnumerator singleByteAsyncEnumerator()
+        public static Cactoos.IO.StreamInput streamInput()
     {
-        return new SingleByteAsyncEnumerator();
+        return new Cactoos.IO.StreamInput();
     }
- 
-    public static Enumerat<T> enumerat<T>()
+        public static Cactoos.IO.StreamOutput streamOutput()
     {
-        return new Enumerat<T>();
+        return new Cactoos.IO.StreamOutput();
     }
- 
-    public static Enumerat<T> enumerat<T>()
+        public static Cactoos.IO.StringInput stringInput()
     {
-        return new Enumerat<T>();
+        return new Cactoos.IO.StringInput();
     }
- 
-    public static Enumerat<T> enumerat<T>()
+        public static Cactoos.IO.WriteOnlyEnumerator<T> writeOnlyEnumerator<T>()
     {
-        return new Enumerat<T>();
+        return new Cactoos.IO.WriteOnlyEnumerator<T>();
     }
- 
-    public static JoinEnumerator<T, T> joinEnumerator<T, T>()
+        public static Cactoos.IO.Async.AsyncInput asyncInput()
     {
-        return new JoinEnumerator<T, T>();
+        return new Cactoos.IO.Async.AsyncInput();
     }
- 
-    public static JoinEnumerator<T, T> joinEnumerator<T, T>()
+        public static Cactoos.IO.Async.AsyncInput asyncInput()
     {
-        return new JoinEnumerator<T, T>();
+        return new Cactoos.IO.Async.AsyncInput();
     }
- 
-    public static ObjectActivator objectActivator()
+        public static Cactoos.IO.Async.AsyncInputEnumerator asyncInputEnumerator()
     {
-        return new ObjectActivator();
+        return new Cactoos.IO.Async.AsyncInputEnumerator(from, Cactoos.Text.Text);
     }
- 
-    public static FakeStream fakeStream()
+        public static Cactoos.IO.Async.AsyncOutput asyncOutput()
     {
-        return new FakeStream();
+        return new Cactoos.IO.Async.AsyncOutput(source, Cactoos.Text.Text);
     }
- 
-    public static EmptyBytes emptyBytes()
+        public static Cactoos.IO.Async.AsyncOutput asyncOutput()
     {
-        return new EmptyBytes();
+        return new Cactoos.IO.Async.AsyncOutput(from, Cactoos.Text.Text);
     }
- 
-    public static AttemptAsText attemptAsText()
+        public static Cactoos.IO.Async.AsyncOutput asyncOutput()
     {
-        return new AttemptAsText();
+        return new Cactoos.IO.Async.AsyncOutput(from, Cactoos.Text.Text);
     }
- 
-    public static BoolText boolText()
+        public static Cactoos.IO.Async.AsyncOutput asyncOutput()
     {
-        return new BoolText();
+        return new Cactoos.IO.Async.AsyncOutput(from, Cactoos.Text.Text);
     }
- 
-    public static BoolText boolText()
+        public static Cactoos.IO.Async.AsyncOutput asyncOutput()
     {
-        return new BoolText();
+        return new Cactoos.IO.Async.AsyncOutput(from, Cactoos.Text.Text);
     }
- 
-    public static ByteText byteText()
+        public static Cactoos.IO.Async.AsyncOutput asyncOutput()
     {
-        return new ByteText();
+        return new Cactoos.IO.Async.AsyncOutput(from, Cactoos.Text.Text);
     }
- 
-    public static ByteText byteText()
+        public static Cactoos.IO.Async.AsyncOutput asyncOutput()
     {
-        return new ByteText();
+        return new Cactoos.IO.Async.AsyncOutput(from, encoding, Cactoos.Text.Text);
     }
- 
-    public static CharSplitText charSplitText()
+        public static Cactoos.IO.Async.AsyncOutputEnumerator asyncOutputEnumerator()
     {
-        return new CharSplitText();
+        return new Cactoos.IO.Async.AsyncOutputEnumerator(from, output, Cactoos.Text.Text);
     }
- 
-    public static CharSplitText charSplitText()
+        public static Cactoos.IO.Async.AsyncOutputEnumerator asyncOutputEnumerator()
     {
-        return new CharSplitText();
+        return new Cactoos.IO.Async.AsyncOutputEnumerator(from, output, Cactoos.Text.Text);
     }
- 
-    public static DoubleText doubleText()
+        public static Cactoos.IO.Async.SingleByteAsyncEnumerator singleByteAsyncEnumerator()
     {
-        return new DoubleText();
+        return new Cactoos.IO.Async.SingleByteAsyncEnumerator();
     }
- 
-    public static DoubleText doubleText()
-    {
-        return new DoubleText();
-    }
- 
-    public static FloatText floatText()
-    {
-        return new FloatText();
-    }
- 
-    public static FloatText floatText()
-    {
-        return new FloatText();
-    }
- 
-    public static InferredName inferredName()
-    {
-        return new InferredName();
-    }
- 
-    public static InferredName inferredName()
-    {
-        return new InferredName();
-    }
- 
-    public static InferredName inferredName()
-    {
-        return new InferredName();
-    }
- 
-    public static InputText inputText()
-    {
-        return new InputText();
-    }
- 
-    public static InputText inputText()
-    {
-        return new InputText();
-    }
- 
-    public static Base64Text base64Text()
-    {
-        return new Base64Text();
-    }
- 
-    public static Base64Text base64Text()
-    {
-        return new Base64Text();
-    }
- 
-    public static ByteArray byteArray()
-    {
-        return new ByteArray();
-    }
- 
-    public static ByteArray byteArray()
-    {
-        return new ByteArray();
-    }
- 
-    public static BytesText bytesText()
-    {
-        return new BytesText();
-    }
- 
-    public static BytesText bytesText()
-    {
-        return new BytesText();
-    }
- 
-    public static BytesText bytesText()
-    {
-        return new BytesText();
-    }
- 
-    public static ComparableText comparableText()
-    {
-        return new ComparableText();
-    }
- 
-    public static EmptyText emptyText()
-    {
-        return new EmptyText();
-    }
- 
-    public static EquatableText equatableText()
-    {
-        return new EquatableText();
-    }
- 
-    public static IntText intText()
-    {
-        return new IntText();
-    }
- 
-    public static IntText intText()
-    {
-        return new IntText();
-    }
- 
-    public static IsBlank isBlank()
-    {
-        return new IsBlank();
-    }
- 
-    public static IsBlank isBlank()
-    {
-        return new IsBlank();
-    }
- 
-    public static IsNamespaced isNamespaced()
-    {
-        return new IsNamespaced();
-    }
- 
-    public static IsNamespaced isNamespaced()
-    {
-        return new IsNamespaced();
-    }
- 
-    public static Lines lines()
-    {
-        return new Lines();
-    }
- 
-    public static Lines lines()
-    {
-        return new Lines();
-    }
- 
-    public static LongIntText longIntText()
-    {
-        return new LongIntText();
-    }
- 
-    public static LongIntText longIntText()
-    {
-        return new LongIntText();
-    }
- 
-    public static NamespacedName namespacedName()
-    {
-        return new NamespacedName();
-    }
- 
-    public static NamespacedName namespacedName()
-    {
-        return new NamespacedName();
-    }
- 
-    public static RepeatedText repeatedText()
-    {
-        return new RepeatedText();
-    }
- 
-    public static RepeatedText repeatedText()
-    {
-        return new RepeatedText();
-    }
- 
-    public static JoinedText joinedText()
-    {
-        return new JoinedText();
-    }
- 
-    public static JoinedText joinedText()
-    {
-        return new JoinedText();
-    }
- 
-    public static JoinedText joinedText()
-    {
-        return new JoinedText();
-    }
- 
-    public static JoinedText joinedText()
-    {
-        return new JoinedText();
-    }
- 
-    public static JoinedText joinedText()
-    {
-        return new JoinedText();
-    }
- 
-    public static JoinedText joinedText()
-    {
-        return new JoinedText();
-    }
- 
-    public static JoinedText joinedText()
-    {
-        return new JoinedText();
-    }
- 
-    public static LowerText lowerText()
-    {
-        return new LowerText();
-    }
- 
-    public static LowerText lowerText()
-    {
-        return new LowerText();
-    }
- 
-    public static NormalizeText normalizeText()
-    {
-        return new NormalizeText();
-    }
- 
-    public static NormalizeText normalizeText()
-    {
-        return new NormalizeText();
-    }
- 
-    public static ReversedText reversedText()
-    {
-        return new ReversedText();
-    }
- 
-    public static ReversedText reversedText()
-    {
-        return new ReversedText();
-    }
- 
-    public static ShortIntText shortIntText()
-    {
-        return new ShortIntText();
-    }
- 
-    public static ShortIntText shortIntText()
-    {
-        return new ShortIntText();
-    }
- 
-    public static SimpleName simpleName()
-    {
-        return new SimpleName();
-    }
- 
-    public static SimpleNamespace simpleNamespace()
-    {
-        return new SimpleNamespace();
-    }
- 
-    public static SimpleNamespace simpleNamespace()
-    {
-        return new SimpleNamespace();
-    }
- 
-    public static SimpleNamespace simpleNamespace()
-    {
-        return new SimpleNamespace();
-    }
- 
-    public static StringSplitText stringSplitText()
-    {
-        return new StringSplitText();
-    }
- 
-    public static StringSplitText stringSplitText()
-    {
-        return new StringSplitText();
-    }
- 
-    public static StringSplitText stringSplitText()
-    {
-        return new StringSplitText();
-    }
- 
-    public static SubText subText()
-    {
-        return new SubText();
-    }
- 
-    public static SubText subText()
-    {
-        return new SubText();
-    }
- 
-    public static Text text()
-    {
-        return new Text();
-    }
- 
-    public static TextBytes textBytes()
-    {
-        return new TextBytes();
-    }
- 
-    public static TextBytes textBytes()
-    {
-        return new TextBytes();
-    }
- 
-    public static TextBytes textBytes()
-    {
-        return new TextBytes();
-    }
- 
-    public static TrimmedText trimmedText()
-    {
-        return new TrimmedText();
-    }
- 
-    public static TrimmedText trimmedText()
-    {
-        return new TrimmedText();
-    }
- 
-    public static UpperText upperText()
-    {
-        return new UpperText();
-    }
- 
-    public static UpperText upperText()
-    {
-        return new UpperText();
-    }
- 
-    public static And and()
-    {
-        return new And();
-    }
- 
-    public static And and()
-    {
-        return new And();
-    }
- 
-    public static CachedScalar<T> cachedScalar<T>()
-    {
-        return new CachedScalar<T>();
-    }
- 
-    public static CachedScalar<T> cachedScalar<T>()
-    {
-        return new CachedScalar<T>();
-    }
- 
-    public static DisposingScalar<T> disposingScalar<T>()
-    {
-        return new DisposingScalar<T>();
-    }
- 
-    public static ErrorSafeScalar<T> errorSafeScalar<T>()
-    {
-        return new ErrorSafeScalar<T>();
-    }
- 
-    public static ErrorSafeScalar<T> errorSafeScalar<T>()
-    {
-        return new ErrorSafeScalar<T>();
-    }
- 
-    public static ErrorSafeScalar<T> errorSafeScalar<T>()
-    {
-        return new ErrorSafeScalar<T>();
-    }
- 
-    public static ErrorSafeScalar<T> errorSafeScalar<T>()
-    {
-        return new ErrorSafeScalar<T>();
-    }
- 
-    public static FuncScalar<T> funcScalar<T>()
-    {
-        return new FuncScalar<T>();
-    }
- 
-    public static LazyScalar<T> lazyScalar<T>()
-    {
-        return new LazyScalar<T>();
-    }
- 
-    public static MaxInt maxInt()
-    {
-        return new MaxInt();
-    }
- 
-    public static MaxDouble maxDouble()
-    {
-        return new MaxDouble();
-    }
- 
-    public static Not not()
-    {
-        return new Not();
-    }
- 
-    public static Not not()
-    {
-        return new Not();
-    }
- 
-    public static NotNull<T> notNull<T>()
-    {
-        return new NotNull<T>();
-    }
- 
-    public static NotNull<T> notNull<T>()
-    {
-        return new NotNull<T>();
-    }
- 
-    public static Or or()
-    {
-        return new Or();
-    }
- 
-    public static Or or()
-    {
-        return new Or();
-    }
- 
-    public static ParsedBool parsedBool()
-    {
-        return new ParsedBool();
-    }
- 
-    public static ParsedBool parsedBool()
-    {
-        return new ParsedBool();
-    }
- 
-    public static ParsedByte parsedByte()
-    {
-        return new ParsedByte();
-    }
- 
-    public static ParsedByte parsedByte()
-    {
-        return new ParsedByte();
-    }
- 
-    public static ParsedDecimal parsedDecimal()
-    {
-        return new ParsedDecimal();
-    }
- 
-    public static ParsedDecimal parsedDecimal()
-    {
-        return new ParsedDecimal();
-    }
- 
-    public static ParsedDouble parsedDouble()
-    {
-        return new ParsedDouble();
-    }
- 
-    public static ParsedDouble parsedDouble()
-    {
-        return new ParsedDouble();
-    }
- 
-    public static ParsedFloat parsedFloat()
-    {
-        return new ParsedFloat();
-    }
- 
-    public static ParsedFloat parsedFloat()
-    {
-        return new ParsedFloat();
-    }
- 
-    public static ParsedLong parsedLong()
-    {
-        return new ParsedLong();
-    }
- 
-    public static ParsedLong parsedLong()
-    {
-        return new ParsedLong();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static Percents percents()
-    {
-        return new Percents();
-    }
- 
-    public static RetryScalar<T> retryScalar<T>()
-    {
-        return new RetryScalar<T>();
-    }
- 
-    public static NumericSum numericSum()
-    {
-        return new NumericSum();
-    }
- 
-    public static NumericSum numericSum()
-    {
-        return new NumericSum();
-    }
- 
-    public static NumericSum numericSum()
-    {
-        return new NumericSum();
-    }
- 
-    public static NumericSum numericSum()
-    {
-        return new NumericSum();
-    }
- 
-    public static NumericSum numericSum()
-    {
-        return new NumericSum();
-    }
- 
-    public static NumericSum numericSum()
-    {
-        return new NumericSum();
-    }
- 
-    public static ThreadSafeScalar<T> threadSafeScalar<T>()
-    {
-        return new ThreadSafeScalar<T>();
-    }
- 
-    public static ValueScalar<T> valueScalar<T>()
-    {
-        return new ValueScalar<T>();
-    }
- 
-    public static Elapsed elapsed()
-    {
-        return new Elapsed();
-    }
- 
-    public static ParsedInt parsedInt()
-    {
-        return new ParsedInt();
-    }
- 
-    public static ParsedInt parsedInt()
-    {
-        return new ParsedInt();
-    }
- 
-    public static Count<T> count<T>()
-    {
-        return new Count<T>();
-    }
- 
-    public static ErrorSafeAsyncScalar<T> errorSafeAsyncScalar<T>()
-    {
-        return new ErrorSafeAsyncScalar<T>();
-    }
- 
-    public static ErrorSafeAsyncScalar<T> errorSafeAsyncScalar<T>()
-    {
-        return new ErrorSafeAsyncScalar<T>();
-    }
- 
-    public static ErrorSafeAsyncScalar<T> errorSafeAsyncScalar<T>()
-    {
-        return new ErrorSafeAsyncScalar<T>();
-    }
- 
-    public static ErrorSafeAsyncScalar<T> errorSafeAsyncScalar<T>()
-    {
-        return new ErrorSafeAsyncScalar<T>();
-    }
- 
-    public static FromResultScalar<T> fromResultScalar<T>()
-    {
-        return new FromResultScalar<T>();
-    }
- 
-    public static FromResultScalar<T> fromResultScalar<T>()
-    {
-        return new FromResultScalar<T>();
-    }
- 
-    public static RetryAsyncScalar<T> retryAsyncScalar<T>()
-    {
-        return new RetryAsyncScalar<T>();
-    }
- 
-    public static RetryAsyncScalar<T> retryAsyncScalar<T>()
-    {
-        return new RetryAsyncScalar<T>();
-    }
- 
-    public static SequenceEqual<T> sequenceEqual<T>()
-    {
-        return new SequenceEqual<T>();
-    }
- 
-    public static SequenceEqual<T> sequenceEqual<T>()
-    {
-        return new SequenceEqual<T>();
-    }
- 
-    public static TaskScalar<T> taskScalar<T>()
-    {
-        return new TaskScalar<T>();
-    }
- 
-    public static Async<T> async<T>()
-    {
-        return new Async<T>();
-    }
- 
-    public static ErrorsAsText errorsAsText()
-    {
-        return new ErrorsAsText();
-    }
- 
-    public static ItemIndexPair<T> itemIndexPair<T>()
-    {
-        return new ItemIndexPair<T>();
-    }
- 
-    public static Indices<T> indices<T>()
-    {
-        return new Indices<T>();
-    }
- 
-    public static Indexed<T> indexed<T>()
-    {
-        return new Indexed<T>();
-    }
- 
-    public static ParsedBytes parsedBytes()
-    {
-        return new ParsedBytes();
-    }
- 
-    public static ParsedBytes parsedBytes()
-    {
-        return new ParsedBytes();
-    }
- 
-    public static ParsedDoubles parsedDoubles()
-    {
-        return new ParsedDoubles();
-    }
- 
-    public static ParsedDoubles parsedDoubles()
-    {
-        return new ParsedDoubles();
-    }
- 
-    public static ParsedFloats parsedFloats()
-    {
-        return new ParsedFloats();
-    }
- 
-    public static ParsedFloats parsedFloats()
-    {
-        return new ParsedFloats();
-    }
- 
-    public static ParsedInts parsedInts()
-    {
-        return new ParsedInts();
-    }
- 
-    public static ParsedInts parsedInts()
-    {
-        return new ParsedInts();
-    }
- 
-    public static Reduced<T> reduced<T>()
-    {
-        return new Reduced<T>();
-    }
- 
-    public static ParsedLongs parsedLongs()
-    {
-        return new ParsedLongs();
-    }
- 
-    public static ParsedLongs parsedLongs()
-    {
-        return new ParsedLongs();
-    }
- 
-    public static Concat<T> concat<T>()
-    {
-        return new Concat<T>();
-    }
- 
-    public static Cycled<T> cycled<T>()
-    {
-        return new Cycled<T>();
-    }
- 
-    public static Filtered<T> filtered<T>()
-    {
-        return new Filtered<T>();
-    }
- 
-    public static Infinite<T> infinite<T>()
-    {
-        return new Infinite<T>();
-    }
- 
-    public static Infinite<T> infinite<T>()
-    {
-        return new Infinite<T>();
-    }
- 
-    public static Joined<T> joined<T>()
-    {
-        return new Joined<T>();
-    }
- 
-    public static Joined<T> joined<T>()
-    {
-        return new Joined<T>();
-    }
- 
-    public static Limited<T> limited<T>()
-    {
-        return new Limited<T>();
-    }
- 
-    public static Mapped<T, TResult> mapped<T, TResult>()
-    {
-        return new Mapped<T, TResult>();
-    }
- 
-    public static Ordered<T> ordered<T>()
-    {
-        return new Ordered<T>();
-    }
- 
-    public static AssemblyTypes assemblyTypes()
-    {
-        return new AssemblyTypes();
-    }
- 
-    public static AssemblyTypes assemblyTypes()
-    {
-        return new AssemblyTypes();
-    }
- 
-    public static AssemblyOfType assemblyOfType()
-    {
-        return new AssemblyOfType();
-    }
- 
-    public static AssemblyRootNamespace assemblyRootNamespace()
-    {
-        return new AssemblyRootNamespace();
-    }
- 
-    public static AssemblyRootNamespace assemblyRootNamespace()
-    {
-        return new AssemblyRootNamespace();
-    }
- 
-    public static TypeCacheWithoutNamespace typeCacheWithoutNamespace()
-    {
-        return new TypeCacheWithoutNamespace();
-    }
- 
-    public static AssemblyTypeCache assemblyTypeCache()
-    {
-        return new AssemblyTypeCache();
-    }
- 
-    public static AssemblyTypeCache assemblyTypeCache()
-    {
-        return new AssemblyTypeCache();
-    }
- 
-    public static FastObject fastObject()
-    {
-        return new FastObject();
-    }
- 
-    public static FastObject fastObject()
-    {
-        return new FastObject();
-    }
- 
-    public static MergedTypeCache mergedTypeCache()
-    {
-        return new MergedTypeCache();
-    }
- 
-    public static MergedTypeCache mergedTypeCache()
-    {
-        return new MergedTypeCache();
-    }
- 
-    public static MergedTypeCache mergedTypeCache()
-    {
-        return new MergedTypeCache();
-    }
- 
-    public static NamespacesOfAssembly namespacesOfAssembly()
-    {
-        return new NamespacesOfAssembly();
-    }
- 
-    public static NamespacesOfAssembly namespacesOfAssembly()
-    {
-        return new NamespacesOfAssembly();
-    }
- 
-    public static NamespacesOfAssembly namespacesOfAssembly()
-    {
-        return new NamespacesOfAssembly();
-    }
- 
-    public static NotGeneratedTypes notGeneratedTypes()
-    {
-        return new NotGeneratedTypes();
-    }
- 
-    public static NotGeneratedTypes notGeneratedTypes()
-    {
-        return new NotGeneratedTypes();
-    }
- 
-    public static NotGeneratedTypes notGeneratedTypes()
-    {
-        return new NotGeneratedTypes();
-    }
- 
-    public static ConsoleInput consoleInput()
-    {
-        return new ConsoleInput();
-    }
- 
-    public static ConsoleOutput consoleOutput()
-    {
-        return new ConsoleOutput();
-    }
- 
-    public static StdErrOutput stdErrOutput()
-    {
-        return new StdErrOutput();
-    }
- 
-    public static ByteInput byteInput()
-    {
-        return new ByteInput();
-    }
- 
-    public static ByteInput byteInput()
-    {
-        return new ByteInput();
-    }
- 
-    public static ByteInput byteInput()
-    {
-        return new ByteInput();
-    }
- 
-    public static BytesAsOutput bytesAsOutput()
-    {
-        return new BytesAsOutput();
-    }
- 
-    public static BytesAsOutput bytesAsOutput()
-    {
-        return new BytesAsOutput();
-    }
- 
-    public static DisposableWrap<T> disposableWrap<T>()
-    {
-        return new DisposableWrap<T>();
-    }
- 
-    public static EnumerableAsBytes enumerableAsBytes()
-    {
-        return new EnumerableAsBytes();
-    }
- 
-    public static EnumerableAsBytes enumerableAsBytes()
-    {
-        return new EnumerableAsBytes();
-    }
- 
-    public static FakeInput fakeInput()
-    {
-        return new FakeInput();
-    }
- 
-    public static FakeOutput fakeOutput()
-    {
-        return new FakeOutput();
-    }
- 
-    public static FloatBytes floatBytes()
-    {
-        return new FloatBytes();
-    }
- 
-    public static FloatBytes floatBytes()
-    {
-        return new FloatBytes();
-    }
- 
-    public static InputAsBytes inputAsBytes()
-    {
-        return new InputAsBytes();
-    }
- 
-    public static InputAsBytes inputAsBytes()
-    {
-        return new InputAsBytes();
-    }
- 
-    public static DoubleBytes doubleBytes()
-    {
-        return new DoubleBytes();
-    }
- 
-    public static DoubleBytes doubleBytes()
-    {
-        return new DoubleBytes();
-    }
- 
-    public static IntBytes intBytes()
-    {
-        return new IntBytes();
-    }
- 
-    public static IntBytes intBytes()
-    {
-        return new IntBytes();
-    }
- 
-    public static ShortBytes shortBytes()
-    {
-        return new ShortBytes();
-    }
- 
-    public static ShortBytes shortBytes()
-    {
-        return new ShortBytes();
-    }
- 
-    public static TextInput textInput()
-    {
-        return new TextInput();
-    }
- 
-    public static TextInput textInput()
-    {
-        return new TextInput();
-    }
- 
-    public static NotNullInput notNullInput()
-    {
-        return new NotNullInput();
-    }
- 
-    public static NotNullOutput notNullOutput()
-    {
-        return new NotNullOutput();
-    }
- 
-    public static Output output()
-    {
-        return new Output();
-    }
- 
-    public static Output output()
-    {
-        return new Output();
-    }
- 
-    public static Output output()
-    {
-        return new Output();
-    }
- 
-    public static Output output()
-    {
-        return new Output();
-    }
- 
-    public static Output output()
-    {
-        return new Output();
-    }
- 
-    public static Output output()
-    {
-        return new Output();
-    }
- 
-    public static Output output()
-    {
-        return new Output();
-    }
- 
-    public static OutputEnumerator outputEnumerator()
-    {
-        return new OutputEnumerator();
-    }
- 
-    public static PathInput pathInput()
-    {
-        return new PathInput();
-    }
- 
-    public static PathOutput pathOutput()
-    {
-        return new PathOutput();
-    }
- 
-    public static SingleByteEnumerator singleByteEnumerator()
-    {
-        return new SingleByteEnumerator();
-    }
- 
-    public static InputEnumerator inputEnumerator()
-    {
-        return new InputEnumerator();
-    }
- 
-    public static Input input()
-    {
-        return new Input();
-    }
- 
-    public static Input input()
-    {
-        return new Input();
-    }
- 
-    public static StreamInput streamInput()
-    {
-        return new StreamInput();
-    }
- 
-    public static StreamOutput streamOutput()
-    {
-        return new StreamOutput();
-    }
- 
-    public static StringInput stringInput()
-    {
-        return new StringInput();
-    }
- 
-    public static WriteOnlyEnumerator<T> writeOnlyEnumerator<T>()
-    {
-        return new WriteOnlyEnumerator<T>();
-    }
- 
-    public static AsyncInput asyncInput()
-    {
-        return new AsyncInput();
-    }
- 
-    public static AsyncInput asyncInput()
-    {
-        return new AsyncInput();
-    }
- 
-    public static AsyncInputEnumerator asyncInputEnumerator()
-    {
-        return new AsyncInputEnumerator();
-    }
- 
-    public static AsyncOutput asyncOutput()
-    {
-        return new AsyncOutput();
-    }
- 
-    public static AsyncOutput asyncOutput()
-    {
-        return new AsyncOutput();
-    }
- 
-    public static AsyncOutput asyncOutput()
-    {
-        return new AsyncOutput();
-    }
- 
-    public static AsyncOutput asyncOutput()
-    {
-        return new AsyncOutput();
-    }
- 
-    public static AsyncOutput asyncOutput()
-    {
-        return new AsyncOutput();
-    }
- 
-    public static AsyncOutput asyncOutput()
-    {
-        return new AsyncOutput();
-    }
- 
-    public static AsyncOutput asyncOutput()
-    {
-        return new AsyncOutput();
-    }
- 
-    public static AsyncOutputEnumerator asyncOutputEnumerator()
-    {
-        return new AsyncOutputEnumerator();
-    }
- 
-    public static AsyncOutputEnumerator asyncOutputEnumerator()
-    {
-        return new AsyncOutputEnumerator();
-    }
- 
-    public static SingleByteAsyncEnumerator singleByteAsyncEnumerator()
-    {
-        return new SingleByteAsyncEnumerator();
-    }
- 
-    public static Enumerat<T> enumerat<T>()
-    {
-        return new Enumerat<T>();
-    }
- 
-    public static Enumerat<T> enumerat<T>()
-    {
-        return new Enumerat<T>();
     }
- 
 }

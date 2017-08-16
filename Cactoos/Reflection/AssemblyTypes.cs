@@ -51,7 +51,8 @@ namespace Cactoos.Reflection
             Assembly assembly = _assembly.Value();
             var types = assembly.DefinedTypes
                     .Cast<Type>()
-                    .Concat(assembly.ExportedTypes);
+                    .Concat(assembly.ExportedTypes)
+                    .Distinct();
             if (_omitAbstract)
             {
                 types = types.Where(type => !type.IsAbstract && !type.IsInterface);

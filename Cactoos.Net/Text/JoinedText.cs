@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Cactoos.List;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
@@ -12,7 +13,7 @@ namespace Cactoos.Text
         private string _delimiter;
 
         public JoinedText(string delimiter, IEnumerable<string> strings)
-            : this(delimiter, strings.Select(s => (IText)new Text(s)))
+            : this(delimiter, new TextCollection(strings))
         {
 
         }
@@ -39,6 +40,11 @@ namespace Cactoos.Text
         }
 
         public JoinedText(char delimiter, IEnumerable<IText> strings) : this(delimiter.ToString(), strings)
+        {
+
+        }
+
+        public JoinedText(char delimiter, params IText[] strings) : this(delimiter.ToString(), strings)
         {
 
         }

@@ -34,7 +34,7 @@ namespace Cactoos.Text
         /// <summary>
         /// Gets the own name, without namespace.
         /// </summary>
-        public string OwnName
+        public string Name
         {
             get
             {

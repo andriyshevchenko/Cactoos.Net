@@ -32,6 +32,24 @@ namespace Test.IO
         }
 
         [TestMethod]
+        public void should_write_plain_string()
+        {
+            new Output(
+                "nice try fascist",
+                new PathOutput("should_write_plain_string.txt", FileMode.OpenOrCreate)
+            ).Count();
+
+            Assert.AreEqual(
+                "nice try fascist",
+                new BytesText(
+                    new Input(
+                        new PathInput("should_write_plain_string.txt")
+                    ),
+                    Encoding.UTF8
+                ).String());
+        }
+
+        [TestMethod]
         public void should_read_from_input()
         {
             byte[] trg = array<byte>(1024);

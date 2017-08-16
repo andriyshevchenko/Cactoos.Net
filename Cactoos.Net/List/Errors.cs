@@ -27,7 +27,12 @@ namespace Cactoos.List
         /// <returns>An enumerator that can be used to iterate through the collection.</returns>
         public IEnumerator<IText> GetEnumerator()
         {
-            return  map(_source.Errors(), error => (IText)new Text.Text(error.ToString())).GetEnumerator();
+            return 
+                new TextCollection(
+                    strings(
+                        _source.Errors()
+                    )
+                ).GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()

@@ -8,7 +8,7 @@
         /// <summary>
         /// Own name without a namespace.
         /// </summary>
-        string OwnName { get; }
+        string Name { get; }
 
         /// <summary>
         /// The namespace.

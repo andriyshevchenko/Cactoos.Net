@@ -16,7 +16,7 @@ namespace Test.Reflection
                 new InferredName(
                     new AssemblyOfType<IText>(),
                     nameof(IText)
-                ).Value()
+                ).String()
             );
         }
     }

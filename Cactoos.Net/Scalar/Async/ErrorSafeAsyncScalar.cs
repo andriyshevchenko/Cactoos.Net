@@ -55,18 +55,6 @@ namespace Cactoos.Scalar.Async
                 _errors.Add(e);
                 return await _fallback.Value();
             }
-        }
-
-        public ErrorSafeAsyncScalar<T> Create(IAsyncScalar<T> source, IAsyncScalar<T> fallback)
-            => new ErrorSafeAsyncScalar<T>(source, fallback);
-
-        public ErrorSafeAsyncScalar<T> Create(Func<Task<T>> source, Func<Task<T>> fallback)
-            => new ErrorSafeAsyncScalar<T>(source, fallback);
-
-        public ErrorSafeAsyncScalar<T> Create(IAsyncScalar<T> source, IScalar<T> fallback)
-            => new ErrorSafeAsyncScalar<T>(source, fallback);
-
-        public ErrorSafeAsyncScalar<T> Create(Func<Task<T>> source, Func<T> fallback)
-            => new ErrorSafeAsyncScalar<T>(source, fallback);
+        } 
     }
 }
