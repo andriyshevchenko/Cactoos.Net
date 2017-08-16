@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Package.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="..\Cactoos.Net\Cactoos.Net.projitems" Label="Shared" />
