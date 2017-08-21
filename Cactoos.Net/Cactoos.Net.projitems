@@ -57,6 +57,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Async\Count.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Async\ErrorSafeAsyncScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Async\FromResultScalar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scalar\Async\LazyAsyncScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Async\RetryAsyncScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Async\SequenceEqual.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\Async\TaskScalar.cs" />
