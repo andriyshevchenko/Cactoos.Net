@@ -24,10 +24,11 @@ namespace Cactoos.Scalar.Async
         {
             var left = _left.GetEnumerator();
             var right = _right.GetEnumerator();
+            EqualityComparer<T> @default = EqualityComparer<T>.Default;
             while (await left.MoveNextAsync().ConfigureAwait(false)
                 && await right.MoveNextAsync().ConfigureAwait(false))
             {
-                if (!EqualityComparer<T>.Default.Equals(left.Current, right.Current))
+                if (!@default.Equals(left.Current, right.Current))
                 {
                     return false;
                 }

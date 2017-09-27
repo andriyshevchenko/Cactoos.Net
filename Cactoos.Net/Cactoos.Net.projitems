@@ -22,6 +22,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)IO\Async\SingleByteAsyncEnumerator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\ByteInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\BytesAsOutput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\CharsInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\DisposableWrap.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\EnumerableAsBytes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IO\FakeInput.cs" />
