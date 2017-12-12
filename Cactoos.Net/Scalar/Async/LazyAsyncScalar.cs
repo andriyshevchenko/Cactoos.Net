@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Cactoos.Scalar.Async
@@ -25,7 +23,7 @@ namespace Cactoos.Scalar.Async
                 return _value;
             }
             activated = true;
-            return _value = await _source();
+            return _value = await _source().ConfigureAwait(false);
         }
     }
 }

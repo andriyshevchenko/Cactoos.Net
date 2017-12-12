@@ -1,7 +1,6 @@
 ﻿namespace Cactoos.Text
 {
     using Cactoos;
-    using Cactoos.Text;
 
     public struct Spaced : IText
     {

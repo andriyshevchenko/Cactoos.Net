@@ -1,6 +1,5 @@
 ﻿namespace Cactoos.Text
 {
-    using System;
     using System.Text;
 
     /// <summary>

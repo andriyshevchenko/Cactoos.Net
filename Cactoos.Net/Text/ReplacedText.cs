@@ -1,8 +1,7 @@
 ﻿namespace Cactoos.Text
 {
     using Cactoos;
-    using Cactoos.Text;
-    
+
     public struct ReplacedText : IText
     {
         private IText source;
