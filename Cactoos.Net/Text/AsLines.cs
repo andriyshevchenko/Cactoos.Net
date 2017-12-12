@@ -3,16 +3,16 @@ using System.Collections.Generic;
 
 namespace Cactoos.Text
 {
-    public class Lines : IEnumerable<string>
+    public class AsLines : IEnumerable<string>
     {
         private IText _source;
 
-        public Lines(IText source)
+        public AsLines(IText source)
         {
             _source = source;
         }
 
-        public Lines(string source) : this(new Cactoos.Text.Text(source))
+        public AsLines(string source) : this(new Cactoos.Text.Text(source))
         {
 
         }

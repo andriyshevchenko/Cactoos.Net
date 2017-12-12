@@ -10,7 +10,7 @@ namespace Cactoos.Reflection
     /// Allows to create objects without direct constructor invocation,  
     /// only knowing its type and constructor arguments.
     /// Significantly faster than Activator.CreateInstance()
-    /// Warning! To use <see cref="FastObject"/> you have to know 
+    /// Warning! To use <see cref="NewInstance{T}"/> you have to know 
     /// exact position of required type constructor in Type.GetConstructors() array.
     /// For example, <see cref="String"/> has 8 constructors:
     /// 
@@ -27,24 +27,24 @@ namespace Cactoos.Reflection
     /// so the ctorPosition will be 6 (in zero-based index).
     /// Example usage:
     ///
-    ///     var ctor = new FastObject(typeof(string), 6, new char[2]{'1', '2'}); 
+    ///     var ctor = new NewInstance(typeof(string), 6, new char[2]{'1', '2'}); 
     ///     var str = ctor.Value(); 
     ///     
     /// str is equal to "12" now.
     /// </summary>
-    public struct FastObject : IScalar<object>
+    public struct NewInstance<T> : IScalar<T>
     {
         private int _constructorNumber;
         private Type _type;
         private object[] _args;
 
         /// <summary>
-        /// Intializes a new instance of <see cref="FastObject"/>
+        /// Intializes a new instance of <see cref="NewInstance{T}"/>
         /// </summary>
         /// <parameters name="type">Type of object to create</parameters>
         /// <parameters name="ctorPosition">Position of constructor in Type.GetConstructors() array</parameters>
         /// <parameters name="args">Constructor arguments</parameters>
-        public FastObject(Type type, int ctorPosition, params object[] args)
+        public NewInstance(Type type, int ctorPosition, params object[] args)
         {
             _type = type;
             _constructorNumber = ctorPosition
@@ -53,22 +53,22 @@ namespace Cactoos.Reflection
         }
 
         /// <summary>
-        /// Intializes a new instance of <see cref="FastObject"/> running a default constructor.
+        /// Intializes a new instance of <see cref="NewInstance{T}"/> running a default constructor.
         /// </summary>
         /// <parameters name="type">Type of object to create</parameters>
         /// <parameters name="ctorPosition">Position of constructor in Type.GetConstructors() array</parameters>
-        public FastObject(Type type, int ctorPosition = 0) : this(type, ctorPosition, array<object>())
+        public NewInstance(Type type, int ctorPosition = 0) : this(type, ctorPosition, array<object>())
         {
 
         }
 
-        delegate object ObjectActivator(params object[] args);
+        delegate T ObjectActivator(params object[] args);
 
         /// <summary>
         /// Initializes a new instance of required type.
         /// </summary>
         /// <returns>New instance of required type</returns>
-        public object Value()
+        public T Value()
         {
             ConstructorInfo constructor = _type.GetConstructors()[_constructorNumber];
             ParameterInfo[] parametersInfo = constructor.GetParameters();

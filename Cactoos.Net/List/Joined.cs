@@ -10,8 +10,7 @@ namespace Cactoos.List
 {
     public class Joined<T> : IEnumerable<T>
     {
-
-        internal class JoinEnumerator<T> : IEnumerator<T>
+        internal class JoinEnumerator : IEnumerator<T>
         {
             private IEnumerator<T>[] _source;
             private T current;
@@ -118,7 +117,7 @@ namespace Cactoos.List
         /// <returns>An enumerator that can be used to iterate through the collection.</returns>
         public IEnumerator<T> GetEnumerator()
         {
-            return new JoinEnumerator<T>(_source);
+            return new JoinEnumerator(_source);
         }
 
         IEnumerator IEnumerable.GetEnumerator()

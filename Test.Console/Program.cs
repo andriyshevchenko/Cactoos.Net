@@ -1,7 +1,7 @@
 ﻿using Cactoos.IO;
 using Cactoos.Scalar;
 using Cactoos.Text;
-
+using System.Linq;
 using static System.Functional.Func;
 
 namespace Test.Console
@@ -21,7 +21,7 @@ namespace Test.Console
                     )
                 ),
                 new ConsoleOutput()
-            );
+            ).Count();
             System.Console.Read();
         }
     }

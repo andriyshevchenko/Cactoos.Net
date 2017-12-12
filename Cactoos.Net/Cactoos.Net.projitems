@@ -47,9 +47,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\AssemblyOfType.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\AssemblyRootNamespace.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\AssemblyTypeCache.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Reflection\FastObject.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\MergedTypeCache.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\NamespacesOfAssembly.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Reflection\NewInstance.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\PublicCtors.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\SimpleNameTypeCache.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\TypeOf.cs" />
@@ -85,13 +85,20 @@
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ThreadSafeScalar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\True.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ValueScalar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\AsLines.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\AttemptAsText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\BoolText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\ByteText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\CachedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\CharSplitText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\Collapsed.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\CombinedPath.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\CommaSeparated.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\Concat.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\DoubleText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\FloatText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\FormattedText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\QuotedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\ICSharpName.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\InferredName.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\InputText.cs" />
@@ -132,7 +139,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\ISimpleNamespace.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\IsNamespaced.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\IsUpper.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Text\Lines.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\LongIntText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\NamespacedName.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\ParagraphText.cs" />
@@ -140,15 +146,19 @@
     <Compile Include="$(MSBuildThisFileDirectory)Text\JoinedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\LowerText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\NormalizeText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\ReplacedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\ReversedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\ShortIntText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\SimpleName.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\SimpleNamespace.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\Spaced.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\StringSplitText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\SubText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\Text.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\TextBytes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\ToString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\TrimmedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\UpperText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\WithEndline.cs" />
   </ItemGroup>
 </Project>
