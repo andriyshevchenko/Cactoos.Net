@@ -24,7 +24,7 @@ namespace Cactoos.IO
         /// Initializes a new instance of  <see cref="FloatBytes"/>.
         /// </summary>
         /// <param name="source">The source.</param>
-        public FloatBytes(float source) : this(new ValueScalar<float>(source))
+        public FloatBytes(float source) : this(new ScalarOf<float>(source))
         {
 
         }

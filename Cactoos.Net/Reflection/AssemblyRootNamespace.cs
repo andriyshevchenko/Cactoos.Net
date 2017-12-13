@@ -16,7 +16,7 @@ namespace Cactoos.Reflection
         /// Initializes a new instance <see cref="AssemblyRootNamespace"/>.
         /// </summary>
         /// <param name="source">The assembly.</param>
-        public AssemblyRootNamespace(Assembly source): this(new ValueScalar<Assembly>(source))
+        public AssemblyRootNamespace(Assembly source): this(new ScalarOf<Assembly>(source))
         {
 
         }

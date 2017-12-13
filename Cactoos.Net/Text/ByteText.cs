@@ -2,7 +2,7 @@
 
 namespace Cactoos.Text
 {
-    public class ByteText : IText
+    internal class ByteText : IText
     {
         private IScalar<byte> _source;
 
@@ -11,7 +11,7 @@ namespace Cactoos.Text
             _source = source;
         }
 
-        public ByteText(byte source) : this(new ValueScalar<byte>(source))
+        public ByteText(byte source) : this(new ScalarOf<byte>(source))
         {
 
         }

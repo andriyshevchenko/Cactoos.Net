@@ -13,7 +13,7 @@ namespace Test.Console
             new Output(
                 new AttemptAsText(
                     monad(
-                        new ErrorSafeScalar<int>(
+                        new NoThrow<int>(
                             () => throw new System.NotImplementedException("hello, this is a test"),
                             () => 0
                         ),

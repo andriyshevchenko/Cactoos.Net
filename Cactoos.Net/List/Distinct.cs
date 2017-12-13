@@ -7,7 +7,7 @@ using static System.Collections.Generic.Create;
 
 namespace Cactoos.List
 {
-    public class Distinct<T> : IEnumerable<T>
+    internal class Distinct<T> : IEnumerable<T>
     {
         private IScalar<ISet<T>> _items;
         private IEnumerable<T> _source;

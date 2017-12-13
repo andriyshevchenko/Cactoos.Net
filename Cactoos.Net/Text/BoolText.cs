@@ -22,7 +22,7 @@ namespace Cactoos.Text
         /// Initializes a new instance of <see cref="BoolText"/>.
         /// </summary>
         /// <param name="source">The source.</param>
-        public BoolText(bool source) : this(new ValueScalar<bool>(source))
+        public BoolText(bool source) : this(new ScalarOf<bool>(source))
         {
 
         }

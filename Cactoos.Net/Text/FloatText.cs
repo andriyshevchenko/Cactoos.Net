@@ -2,7 +2,7 @@
 
 namespace Cactoos.Text
 {
-    public class FloatText : IText
+    internal class FloatText : IText
     {
         private IScalar<float> _source;
 
@@ -11,7 +11,7 @@ namespace Cactoos.Text
             _source = source;
         }
 
-        public FloatText(float source) : this(new ValueScalar<float>(source))
+        public FloatText(float source) : this(new ScalarOf<float>(source))
         {
 
         }

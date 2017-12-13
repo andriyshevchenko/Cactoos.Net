@@ -11,7 +11,7 @@ namespace Cactoos.Scalar
             _source = source;
         }
 
-        public ParsedDecimal(string source) : this(new ValueScalar<string>(source))
+        public ParsedDecimal(string source) : this(new ScalarOf<string>(source))
         {
 
         }

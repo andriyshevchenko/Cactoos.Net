@@ -5,7 +5,7 @@ namespace Cactoos.Text
     /// <summary>
     /// Creates a new C# name with a namespace, if target name doesn't have it.
     /// </summary>
-    public struct NamespacedName : IText
+    internal struct NamespacedName : IText
     {
         private string _source;
         private string _namespace;

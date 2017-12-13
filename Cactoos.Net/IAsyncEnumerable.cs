@@ -6,6 +6,7 @@ namespace Cactoos
     /// <summary>
     /// Defines a strongly typed enumerator, which enumerates the sequence asynchronously.
     /// </summary>
+    [Obsolete("For internal use")]
     public interface IAsyncEnumerator<T> : IAsyncEnumerator, IDisposable
     {
 #pragma warning disable CS0108 // Member hides inherited member; missing new keyword

@@ -8,16 +8,17 @@ namespace Cactoos.Scalar
     /// Will dispose value it wraps when calling Value().
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class DisposingScalar<T> : IScalar<T>
+    [Obsolete("For internal use")]
+    internal class Using<T> : IScalar<T>
     {
         private IScalar<T> _value;
 
         /// <summary>
-        /// Initializes a new instance of <see cref="DisposingScalar{T}"/>.
+        /// Initializes a new instance of <see cref="Using{T}"/>.
         /// </summary>
         /// <param name="source">The source.</param>
         /// <param name="getValue">Function to get the value from <paramref name="source"/>.</param>
-        public DisposingScalar(IDisposable source, Func<IDisposable, T> getValue)
+        public Using(IDisposable source, Func<IDisposable, T> getValue)
         {
             _value = new LazyScalar<T>(() => use(source, getValue));
         }

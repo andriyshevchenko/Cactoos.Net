@@ -6,7 +6,7 @@ using static System.Collections.Generic.Create;
 
 namespace Cactoos.List
 {
-    public class ParsedInts : IEnumerable<int>
+    internal class ParsedInts : IEnumerable<int>
     {
         private IEnumerable<string> _source;
 

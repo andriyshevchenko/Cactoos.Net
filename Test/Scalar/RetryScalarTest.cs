@@ -14,8 +14,8 @@ namespace Test.Scalar
         {
             int i = 0;
             var scalar =
-                new RetryScalar<Unit>(
-                    new FuncScalar<Unit>(
+                new Retry<Unit>(
+                    new FuncOf<Unit>(
                         fun(() =>
                         {
                             if (i < 2)
@@ -34,8 +34,8 @@ namespace Test.Scalar
         {
             int i = 0;
             var scalar =
-                new RetryScalar<Unit>(
-                    new FuncScalar<Unit>(
+                new Retry<Unit>(
+                    new FuncOf<Unit>(
                         fun(() =>
                         {
                             throw new NotFiniteNumberException(i.ToString());

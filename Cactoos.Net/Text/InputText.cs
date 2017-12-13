@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Cactoos.Text
 {
+    /// <summary>
+    /// <see cref="IInput"/> as <see cref="IText"/> with <see cref="Encoding"/> provided.
+    /// </summary>
     public class InputText : IText
     {
         private IInput _source;
@@ -20,6 +23,10 @@ namespace Cactoos.Text
 
         }
 
+        /// <summary>
+        /// Gets the string value.
+        /// </summary>
+        /// <returns></returns>
         public string String()
         {
             return new BytesText(new InputAsBytes(_source), _encoding).String();

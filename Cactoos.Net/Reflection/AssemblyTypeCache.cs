@@ -26,7 +26,7 @@ namespace Cactoos.Reflection
         /// Initializes a new instance of <see cref="AssemblyTypeCache"/>.
         /// </summary>
         /// <param name="assembly">The assembly.</param>
-        public AssemblyTypeCache(Assembly assembly) : this(new ValueScalar<Assembly>(assembly))
+        public AssemblyTypeCache(Assembly assembly) : this(new ScalarOf<Assembly>(assembly))
         {
 
         }

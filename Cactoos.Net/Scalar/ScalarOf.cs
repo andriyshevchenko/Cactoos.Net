@@ -4,11 +4,11 @@
     /// Returns the same value all the time
     /// </summary>
     /// <typeparam name="T">The type of the value</typeparam>
-    public struct ValueScalar<T> : IScalar<T>
+    public struct ScalarOf<T> : IScalar<T>
     {
         private T _value;
 
-        public ValueScalar(T value)
+        public ScalarOf(T value)
         {
             _value = value;
         }

@@ -6,15 +6,15 @@ namespace Cactoos.Scalar
     /// Gets the value by calling the function.
     /// </summary>
     /// <typeparam name="T">Type of the value to return.</typeparam>
-    public class FuncScalar<T> : IScalar<T>
+    public class FuncOf<T> : IScalar<T>
     {
         private Func<T> _func;
 
         /// <summary>
-        /// Initializes a new instance of <see cref="FuncScalar{T}"/>
+        /// Initializes a new instance of <see cref="FuncOf{T}"/>
         /// </summary>
         /// <param name="func">Function to get values from.</param>
-        public FuncScalar(Func<T> func)
+        public FuncOf(Func<T> func)
         {
             _func = func;
         }

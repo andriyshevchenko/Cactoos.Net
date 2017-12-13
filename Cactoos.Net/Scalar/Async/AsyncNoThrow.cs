@@ -4,32 +4,32 @@ using System.Threading.Tasks;
 
 namespace Cactoos.Scalar.Async
 {
-    public class ErrorSafeAsyncScalar<T> : IAsyncScalar<T>, IAttempt
+    public class AsyncNoThrow<T> : IAsyncScalar<T>, IAttempt
     {
         private List<Exception> _errors = new List<Exception>();
         private IAsyncScalar<T> _source;
         private IAsyncScalar<T> _fallback;
 
-        public ErrorSafeAsyncScalar(IAsyncScalar<T> source, IAsyncScalar<T> fallback)
+        public AsyncNoThrow(IAsyncScalar<T> source, IAsyncScalar<T> fallback)
         {
             _source = source;
             _fallback = fallback;
         }
 
-        public ErrorSafeAsyncScalar(Func<Task<T>> source, Func<Task<T>> fallback)
+        public AsyncNoThrow(Func<Task<T>> source, Func<Task<T>> fallback)
             : this(new TaskScalar<T>(source), new TaskScalar<T>(fallback))
         {
 
         }
 
-        public ErrorSafeAsyncScalar(IAsyncScalar<T> source, IScalar<T> fallback)
-            : this(source, new FromResultScalar<T>(fallback))
+        public AsyncNoThrow(IAsyncScalar<T> source, IScalar<T> fallback)
+            : this(source, new FromResult<T>(fallback))
         {
             
         }
 
-        public ErrorSafeAsyncScalar(Func<Task<T>> source, Func<T> fallback)
-            : this(new TaskScalar<T>(source), new FromResultScalar<T>(fallback))
+        public AsyncNoThrow(Func<Task<T>> source, Func<T> fallback)
+            : this(new TaskScalar<T>(source), new FromResult<T>(fallback))
         {
 
         }

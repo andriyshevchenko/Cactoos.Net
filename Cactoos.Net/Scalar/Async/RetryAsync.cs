@@ -4,18 +4,18 @@ using System.Threading.Tasks;
 
 namespace Cactoos.Scalar.Async
 {
-    public class RetryAsyncScalar<T> : IAsyncScalar<T>, IAttempt
+    public class RetryAsync<T> : IAsyncScalar<T>, IAttempt
     {
         private List<Exception> _errors = new List<Exception>();
         private int _attempts;
         private IAsyncScalar<T> _source;
 
-        public RetryAsyncScalar(IAsyncScalar<T> source)
+        public RetryAsync(IAsyncScalar<T> source)
         {
             _source = source;
         }
 
-        public RetryAsyncScalar(Func<Task<T>> source) : this(new TaskScalar<T>(source))
+        public RetryAsync(Func<Task<T>> source) : this(new TaskScalar<T>(source))
         {
 
         }
@@ -37,7 +37,7 @@ namespace Cactoos.Scalar.Async
             {
                 try
                 {
-                    value = await _source.Value();
+                    value = await _source.Value().ConfigureAwait(false);
                 }
                 catch (Exception e)
                 {

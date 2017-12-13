@@ -3,13 +3,13 @@ using System.Threading.Tasks;
 
 namespace Cactoos.Scalar.Async
 {
-    public struct LazyAsyncScalar<T> : IAsyncScalar<T>
+    public struct LazyAsync<T> : IAsyncScalar<T>
     {
         private Func<Task<T>> _source;
         private T _value;
         bool activated;
 
-        public LazyAsyncScalar(Func<Task<T>> source)
+        public LazyAsync(Func<Task<T>> source)
         {
             activated = false;
             _value = default(T);

@@ -1,12 +1,14 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 
 namespace Cactoos.Scalar.Async
 {
     /// <summary>
-    /// Counts the numbre of elements in <see cref="IAsyncEnumerable{T}"/>.
+    /// Counts the number of elements in <see cref="IAsyncEnumerable{T}"/>.
     /// </summary>
     /// <typeparam name="T">The type of the item.</typeparam>
-    public class Count<T> : IAsyncScalar<int>
+    [Obsolete("For internal use")]
+    internal class Count<T> : IAsyncScalar<int>
     {
         private IAsyncEnumerable<T> _source;
 

@@ -11,7 +11,7 @@ namespace Cactoos.Scalar
             _source = source;
         }
 
-        public NotNull(T source) : this(new ValueScalar<T>(source))
+        public NotNull(T source) : this(new ScalarOf<T>(source))
         {
 
         }

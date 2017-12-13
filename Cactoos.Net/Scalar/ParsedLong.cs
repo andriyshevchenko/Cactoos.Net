@@ -9,7 +9,7 @@
             _source = source;
         }
 
-        public ParsedLong(string source) : this(new ValueScalar<string>(source))
+        public ParsedLong(string source) : this(new ScalarOf<string>(source))
         {
 
         }

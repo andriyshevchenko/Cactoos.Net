@@ -4,7 +4,7 @@
     {
         private IScalar<bool> _value;
 
-        public Not(bool value) : this(new ValueScalar<bool>(value))
+        public Not(bool value) : this(new ScalarOf<bool>(value))
         {
             
         }

@@ -4,12 +4,12 @@
     /// Performs a lock operation when calling Value()
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class ThreadSafeScalar<T> : IScalar<T> 
+    internal class ThreadSafe<T> : IScalar<T> 
     {
-        private static readonly object _lock = new object();
+        private readonly object _lock = new object();
         private IScalar<T> _source;
 
-        public ThreadSafeScalar(IScalar<T> source)
+        public ThreadSafe(IScalar<T> source)
         {
             _source = source;
         }

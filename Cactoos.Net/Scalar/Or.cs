@@ -11,7 +11,7 @@
             _right = right;
         }
 
-        public Or(bool left, bool right) : this(new ValueScalar<bool>(left), new ValueScalar<bool>(right))
+        public Or(bool left, bool right) : this(new ScalarOf<bool>(left), new ScalarOf<bool>(right))
         {
 
         }

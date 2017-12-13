@@ -31,7 +31,7 @@ namespace Cactoos.Reflection
         /// </summary>
         /// <param name="assembly">The assembly</param>
         /// <param name="omitAbstractTypes">Ignore interfaces and abstract classes.</param>
-        public AssemblyTypes(Assembly assembly, bool omitAbstractTypes = false) : this(new ValueScalar<Assembly>(assembly), omitAbstractTypes)
+        public AssemblyTypes(Assembly assembly, bool omitAbstractTypes = false) : this(new ScalarOf<Assembly>(assembly), omitAbstractTypes)
         {
 
         }

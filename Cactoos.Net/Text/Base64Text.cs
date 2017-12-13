@@ -6,7 +6,7 @@ namespace Cactoos.Text
     /// <summary>
     /// Converts 64 byte string to 8 byte string
     /// </summary>
-    public class Base64Text : IText
+    internal class Base64Text : IText
     {
         private IText _source;
         private Encoding _encoding;

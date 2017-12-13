@@ -24,7 +24,7 @@ namespace Cactoos.IO
         /// Initializes a new instance of  <see cref="DoubleBytes"/>.
         /// </summary>
         /// <param name="source">The source.</param>
-        public DoubleBytes(double source) : this(new ValueScalar<double>(source))
+        public DoubleBytes(double source) : this(new ScalarOf<double>(source))
         {
 
         }

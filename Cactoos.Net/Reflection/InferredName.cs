@@ -25,7 +25,7 @@ namespace Cactoos.Text
         public InferredName(IScalar<IReadOnlyDictionary<string, Type[]>> typeCache, IText source, int handleDuplicatesIndex = 0)
         {
             _handleDuplicatesIndex = handleDuplicatesIndex.CheckIfNonNegative(nameof(handleDuplicatesIndex));
-            _typeCacheWithoutNamespace = new CachedScalar<IReadOnlyDictionary<string, Type[]>>(typeCache);
+            _typeCacheWithoutNamespace = new Cached<IReadOnlyDictionary<string, Type[]>>(typeCache);
             _source = source;
         }
 

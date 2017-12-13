@@ -2,19 +2,25 @@
 
 namespace Cactoos.Text
 {
-    public class IntText : IText
+    public class PrintedInt : IText
     {
-        private IScalar<int> _source;
+        private IScalar<long> _source;
 
-        public IntText(IScalar<int> source)
+        public PrintedInt(IScalar<long> source)
         {
             _source = source;
         }
 
-        public IntText(int source) : this(new ValueScalar<int>(source))
+        public PrintedInt(long source) : this(new ScalarOf<long>(source))
         {
 
         }
+
+        public PrintedInt(int source) : this((long)source)
+        {
+
+        }
+
 
         public string String()
         {

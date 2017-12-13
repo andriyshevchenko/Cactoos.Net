@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace Cactoos.Scalar
 {
-    public class Elapsed : IScalar<TimeSpan>
+    internal class Elapsed : IScalar<TimeSpan>
     {
         private Action _action;
         private Stopwatch _clock;

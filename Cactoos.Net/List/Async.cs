@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace Cactoos.List
 {
-    public class Async<T> : IAsyncEnumerable<T>
+    internal class Async<T> : IAsyncEnumerable<T>
     {
         private IEnumerable<T> _source;
 

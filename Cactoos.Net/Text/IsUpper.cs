@@ -1,6 +1,6 @@
 ﻿namespace Cactoos.Text
 {
-    public struct IsUpper : IScalar<bool>
+    internal struct IsUpper : IScalar<bool>
     {
         private IText _source;
 

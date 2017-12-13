@@ -2,8 +2,8 @@
 using System.Linq;
 
 namespace Cactoos.Scalar
-{ 
-    public struct NumericSum : IScalar<double>
+{
+    internal struct NumericSum : IScalar<double>
     {
         private IEnumerable<double> _source;
 

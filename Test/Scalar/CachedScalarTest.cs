@@ -14,8 +14,8 @@ namespace Test.Scalar
         {
             int i = 0;
             var scalar =
-                new CachedScalar<int>(
-                    new FuncScalar<int>(() => i++)
+                new Cached<int>(
+                    new FuncOf<int>(() => i++)
                 );
             Assert.IsTrue(
                 array(scalar.Value(), scalar.Value())

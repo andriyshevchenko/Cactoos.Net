@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace Cactoos.Scalar
 {
-    public class RetryScalar<T> : IScalar<T>, IAttempt
+    public class Retry<T> : IScalar<T>, IAttempt
     {
         private List<Exception> _errors = new List<Exception>();
         private int _attempts;
         private IScalar<T> _source;
 
-        public RetryScalar(IScalar<T> source, int times)
+        public Retry(IScalar<T> source, int times)
         {
             _attempts = times;
             _source = source;

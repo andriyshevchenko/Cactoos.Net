@@ -11,7 +11,7 @@ namespace Cactoos.Text
             _source = source;
         }
 
-        public EncodedUrl(string source) : this(new ValueScalar<string>(source))
+        public EncodedUrl(string source) : this(new ScalarOf<string>(source))
         {
 
         }

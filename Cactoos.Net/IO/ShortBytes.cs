@@ -24,7 +24,7 @@ namespace Cactoos.IO
         /// Initializes a new instance of  <see cref="ShortBytes"/>.
         /// </summary>
         /// <param name="source">The source.</param>
-        public ShortBytes(short source) : this(new ValueScalar<short>(source))
+        public ShortBytes(short source) : this(new ScalarOf<short>(source))
         {
 
         }

@@ -9,7 +9,7 @@ namespace Cactoos.List
     /// <summary>
     /// Convert collection of strings to collection of bytes.
     /// </summary>
-    public class ParsedBytes : IEnumerable<byte>
+    internal class ParsedBytes : IEnumerable<byte>
     {
         private IEnumerable<string> _source;
 

@@ -1,10 +1,12 @@
 ﻿using Cactoos.List;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Cactoos.Scalar.Async
 {
-    public class SequenceEqual<T> : IAsyncScalar<bool>
+    [Obsolete("For internal use")]
+    internal class SequenceEqual<T> : IAsyncScalar<bool>
     {
         private IAsyncEnumerable<T> _left;
         private IAsyncEnumerable<T> _right;

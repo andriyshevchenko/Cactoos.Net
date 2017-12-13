@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Cactoos.List
 {
-    public class Limited<T> : IEnumerable<T>
+    internal class Limited<T> : IEnumerable<T>
     {
         private IEnumerable<T> _source;
         private int _items;

@@ -3,17 +3,17 @@ using System.Threading.Tasks;
 
 namespace Cactoos.Scalar.Async
 {
-    public struct FromResultScalar<T> : IAsyncScalar<T>
+    public struct FromResult<T> : IAsyncScalar<T>
     {
         private IScalar<T> _source;
 
-        public FromResultScalar(IScalar<T> source)
+        public FromResult(IScalar<T> source)
         {
             _source = source;
         }
 
-        public FromResultScalar(Func<T> source)
-            : this(new FuncScalar<T>(source))
+        public FromResult(Func<T> source)
+            : this(new FuncOf<T>(source))
         {
 
         }

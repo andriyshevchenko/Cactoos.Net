@@ -11,7 +11,7 @@ namespace Cactoos.Scalar
             _source = source;
         }
 
-        public ParsedFloat(string source) : this(new ValueScalar<string>(source))
+        public ParsedFloat(string source) : this(new ScalarOf<string>(source))
         {
 
         }

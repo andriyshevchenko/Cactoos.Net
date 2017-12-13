@@ -25,7 +25,7 @@ namespace Cactoos.List
     /// The ordered enumerable.
     /// </summary>
     /// <typeparam name="T">The type of the item.</typeparam>
-    public class Ordered<T> : IEnumerable<T> where T : IComparable<T>
+    internal class Ordered<T> : IEnumerable<T> where T : IComparable<T>
     {
         private IEnumerable<T> _source;
         private SortOrder _order;

@@ -1,9 +1,11 @@
-﻿namespace Cactoos.Text
+﻿using System;
+
+namespace Cactoos.Text
 {
     /// <summary>
     /// Determines if text is C# name with a namespace.
     /// </summary>
-    public struct IsNamespaced : IScalar<bool>
+    internal struct IsNamespaced : IScalar<bool>
     {
         private IText _source;
 
