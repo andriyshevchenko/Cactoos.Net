@@ -1,6 +1,6 @@
 ﻿using Cactoos.Reflection;
 using Cactoos.Scalar;
-using InputValidation;
+
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -24,7 +24,7 @@ namespace Cactoos.Text
         /// <param name="handleDuplicatesIndex">If there are duplicate type names in an assembly, this index used to access a particular item from an array.</param>
         public InferredName(IScalar<IReadOnlyDictionary<string, Type[]>> typeCache, IText source, int handleDuplicatesIndex = 0)
         {
-            _handleDuplicatesIndex = handleDuplicatesIndex.CheckIfNonNegative(nameof(handleDuplicatesIndex));
+            _handleDuplicatesIndex = handleDuplicatesIndex;
             _typeCacheWithoutNamespace = new Cached<IReadOnlyDictionary<string, Type[]>>(typeCache);
             _source = source;
         }

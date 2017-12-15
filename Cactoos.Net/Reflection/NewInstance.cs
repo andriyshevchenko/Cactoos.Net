@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Reflection;
 using System.Linq.Expressions;
-using InputValidation;
-using static System.Collections.Generic.Create;
+
+
 
 namespace Cactoos.Reflection
 {
@@ -47,8 +47,7 @@ namespace Cactoos.Reflection
         public NewInstance(Type type, int ctorPosition, params object[] args)
         {
             _type = type;
-            _constructorNumber = ctorPosition
-                .CheckIfNonNegative("Position of constructor in Type.GetConstructors() array");
+            _constructorNumber = ctorPosition;
             _args = args;
         }
 
@@ -57,7 +56,7 @@ namespace Cactoos.Reflection
         /// </summary>
         /// <parameters name="type">Type of object to create</parameters>
         /// <parameters name="ctorPosition">Position of constructor in Type.GetConstructors() array</parameters>
-        public NewInstance(Type type, int ctorPosition = 0) : this(type, ctorPosition, array<object>())
+        public NewInstance(Type type, int ctorPosition = 0) : this(type, ctorPosition, new object[0])
         {
 
         }

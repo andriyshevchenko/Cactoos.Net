@@ -1,6 +1,4 @@
-﻿using InputValidation;
-
-namespace Cactoos.Scalar
+﻿namespace Cactoos.Scalar
 {
     public class NotNull<T> : IScalar<T> where T : class
     {
@@ -18,7 +16,7 @@ namespace Cactoos.Scalar
 
         public T Value()
         {
-            return _source.Value().CheckNotNull("NULL instead of a valid scalar");
+            return _source.Value() ??  throw new System.Exception("NULL instead of a valid scalar");
         }
     }
 }

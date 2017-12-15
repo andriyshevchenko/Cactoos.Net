@@ -1,9 +1,7 @@
-﻿using InputValidation;
-using System;
+﻿using System;
 using System.IO;
 using System.Threading.Tasks;
 
-using static System.Collections.Generic.Create;
 
 namespace Cactoos.IO.Async
 {
@@ -18,8 +16,9 @@ namespace Cactoos.IO.Async
         {
             _target = from;
             _target.Position = 0;
-            _step = step.CheckIfNatural(nameof(step));
-            buffer = array<byte>(_step);
+
+            _step = step;
+            buffer = new byte[_step];
         }
 
         public byte[] Current

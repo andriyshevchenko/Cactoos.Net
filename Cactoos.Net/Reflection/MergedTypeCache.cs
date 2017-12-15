@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using static System.Collections.Generic.Create;
+
 
 namespace Cactoos.Reflection
 {
@@ -18,7 +18,7 @@ namespace Cactoos.Reflection
         /// </summary>
         /// <param name="items">The assemblies.</param>
         public MergedTypeCache(params IScalar<Assembly>[] items)
-           : this(array(items, item => new AssemblyTypeCache(item)))
+           : this(items.Select(item => new AssemblyTypeCache(item)).ToArray())
         {
 
         }
@@ -28,7 +28,7 @@ namespace Cactoos.Reflection
         /// </summary>
         /// <param name="items">The assemblies.</param>
         public MergedTypeCache(params Assembly[] items)
-            : this(array(items, item => new AssemblyTypeCache(item)))
+            : this(items.Select(item => new AssemblyTypeCache(item)).ToArray())
         {
 
         }
@@ -48,12 +48,16 @@ namespace Cactoos.Reflection
         /// <returns>New dictionary instance.</returns>
         public IReadOnlyDictionary<string, Type> Value()
         {
-            var result = _items[0].Value().AsEnumerable();
-            for (int i = 1; i < _items.Length; i++)
+            Dictionary<string, Type> ret = new Dictionary<string, Type>(256);
+            for (int i = 0; i < _items.Length; i++)
             {
-                result = result.Concat(_items[i].Value());
+                var m_value = _items[i].Value();
+                foreach (var item in m_value)
+                {
+                    ret[item.Key] = item.Value;
+                }
             }
-            return dictionary(result);
+            return ret;
         }
     }
 }

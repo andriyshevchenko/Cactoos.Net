@@ -2,9 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Collections;
-using InputValidation;
 
-using static System.Collections.Generic.Create;
+
+
 
 namespace Cactoos.IO
 {
@@ -19,8 +19,8 @@ namespace Cactoos.IO
         {
             _target = from;
             _target.Position = 0;
-            _step = step.CheckIfNatural(nameof(step));
-            buffer = array<byte>(_step);
+            _step = step;
+            buffer = new byte[_step];
         }
 
         public byte[] Current

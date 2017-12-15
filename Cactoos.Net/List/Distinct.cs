@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-using static System.Collections.Generic.Create;
-
 namespace Cactoos.List
 {
     internal class Distinct<T> : IEnumerable<T>
@@ -15,7 +13,7 @@ namespace Cactoos.List
         public Distinct(IEnumerable<T> source)
         {
             _source = source;
-            _items = new LazyScalar<ISet<T>>(() => set(_source));
+            _items = new LazyScalar<ISet<T>>(() => new HashSet<T>(_source));
         }
 
         public IEnumerator<T> GetEnumerator()

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System;
 using System.Collections;
-using InputValidation;
 
-using static System.Collections.Generic.Create;
+
+
 
 namespace Cactoos.IO
 {
@@ -24,7 +24,7 @@ namespace Cactoos.IO
         {
             _source = from.GetEnumerator();
             _output = output;
-            _step = step.CheckIfNatural(nameof(step));
+            _step = step;
         }
 
         public byte[] Current
@@ -65,7 +65,7 @@ namespace Cactoos.IO
         {
             bool moveNext = _output.CanWrite;
 
-            buffer = array<byte>(_step);
+            buffer = new byte[_step];
             for (int i = 0; i < _step; i++)
             {
                 moveNext &= _source.MoveNext();

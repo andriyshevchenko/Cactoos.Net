@@ -1,5 +1,5 @@
 ﻿using System;
-using static System.Collections.Generic.Create;
+
 
 namespace Cactoos.Scalar
 {
@@ -57,7 +57,7 @@ namespace Cactoos.Scalar
 
         public Exception[] Errors()
         {
-            return array(_error);
+            return new Exception[] { _error };
         }
 
         public bool HasErrors()

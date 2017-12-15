@@ -1,4 +1,4 @@
-﻿using InputValidation;
+﻿
 using System;
 
 namespace Cactoos.IO
@@ -18,7 +18,7 @@ namespace Cactoos.IO
 
         public void Dispose()
         {
-            _wrapee.As<IDisposable>()?.Dispose();
+            (_wrapee as IDisposable)?.Dispose();
         }
 
         public T Value()

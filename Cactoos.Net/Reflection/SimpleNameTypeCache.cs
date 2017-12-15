@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using Cactoos.Text;
 
-using static System.Collections.Generic.Create;
+
 
 namespace Cactoos.Reflection
 {
@@ -47,22 +48,29 @@ namespace Cactoos.Reflection
         /// <returns>New dictionary instance.</returns>
         public IReadOnlyDictionary<string, Type[]> Value()
         {
-            var types =
-                array(
-                    _source.Value(),
-                    item => (new SimpleName(item.Key).Name, item.Value)
-                );
-            var dictionary = dictionary<string, Type[]>();
+            var types = _source.Value()
+                .Select(item => (new SimpleName(item.Key).Name, item.Value))
+                .ToArray();
+
+            var dictionary = new Dictionary<string, Type[]>();
+
             for (int i = 0; i < types.Length; i++)
             {
                 (var key, var value) = types[i];
                 if (dictionary.ContainsKey(key))
                 {
-                    dictionary[key] = Cons(dictionary[key], value);
+                    Type[] type = dictionary[key];
+                    var newitem = new Type[type.Length + 1];
+                    for (int j = 0; j < type.Length; j++)
+                    {
+                        newitem[j] = type[j];
+                    }
+                    newitem[type.Length] = value;
+                    dictionary[key] = newitem;
                 }
                 else
                 {
-                    dictionary[key] = array(value);
+                    dictionary[key] = new Type[] { value };
                 }
             }
             return dictionary;

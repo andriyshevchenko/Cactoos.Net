@@ -1,4 +1,4 @@
-﻿using InputValidation;
+﻿
 using System.IO;
 
 namespace Cactoos.IO
@@ -25,8 +25,7 @@ namespace Cactoos.IO
         /// <returns>The stream.</returns>
         public Stream Stream()
         {
-            return _source.CheckNotNull("NULL instead of a valid input")
-                          .Stream();
+            return (_source ?? throw new System.Exception("NULL instead of a valid input")).Stream();
         }
     }
 }

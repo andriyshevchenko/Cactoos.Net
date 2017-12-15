@@ -80,7 +80,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\NumericSum.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ThreadSafe.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\True.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Scalar\Using.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scalar\ScalarOf.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\AsLines.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\AttemptAsText.cs" />
@@ -137,6 +136,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Text\IsUpper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Reflection\NamespacedName.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\ParagraphText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\RemoveEndLine.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\RepeatedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\JoinedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\LowerText.cs" />
@@ -150,6 +150,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Text\SubText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\Text.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\TextBytes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Text\TextEqual.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\ToString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\TrimmedText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Text\UpperText.cs" />

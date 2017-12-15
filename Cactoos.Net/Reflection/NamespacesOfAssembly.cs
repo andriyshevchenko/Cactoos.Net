@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-using static System.Collections.Generic.Create;
+
 
 namespace Cactoos.Reflection
 {
@@ -50,8 +50,8 @@ namespace Cactoos.Reflection
         public IEnumerable<SimpleNamespace> Value()
         {
             return
-                set(
-                    map(
+                new HashSet<SimpleNamespace>(
+                    System.Linq.Enumerable.Select(
                         _types,
                         type =>
                             new SimpleNamespace(

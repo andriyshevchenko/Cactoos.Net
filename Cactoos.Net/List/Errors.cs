@@ -1,7 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
-using static System.Collections.Generic.Create;
+
 
 namespace Cactoos.List
 {
@@ -29,8 +30,9 @@ namespace Cactoos.List
         {
             return 
                 new TextCollection(
-                    strings(
-                        _source.Errors()
+                    new Mapped<Exception, string>(
+                        _source.Errors(),
+                        err => err.ToString()
                     )
                 ).GetEnumerator();
         }

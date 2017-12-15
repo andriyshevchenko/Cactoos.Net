@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using static System.Collections.Generic.Create;
+
 
 namespace Cactoos.Text
 {
@@ -59,12 +59,14 @@ namespace Cactoos.Text
             var strings = _strings.ToArray();
             int length = strings.Length;
 
-            var body = 
-                part(strings, 0, length - 1)
-                    .Aggregate(
-                         new StringBuilder(),
-                         (builder, text) => builder.Append(text.String()).Append(_delimiter)
-                     );
+            var body = strings
+                .Take(length - 1)
+                .Aggregate(
+                     new StringBuilder(),
+                     (builder, text) =>
+                          builder.Append(text.String())
+                                 .Append(_delimiter)
+                );
 
             return body.Append(strings[length - 1].String())
                        .ToString();

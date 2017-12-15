@@ -1,12 +1,9 @@
-﻿using Cactoos.List;
-using InputValidation;
+﻿using Cactoos.List; 
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
-
-using static System.Collections.Generic.Create;
-
+ 
 namespace Cactoos.IO.Async
 { /// <summary>
   /// The enumerator for <see cref="AsyncOutput"/>.
@@ -30,7 +27,11 @@ namespace Cactoos.IO.Async
         {
             _source = from.GetEnumerator();
             _output = output;
-            _step = step.CheckIfNatural(nameof(step));
+            if (step <= 0)
+            {
+                throw new ArgumentOutOfRangeException("step");
+            }
+            _step = step;
         }
 
         public byte[] Current
@@ -60,7 +61,7 @@ namespace Cactoos.IO.Async
             }
             bool moveNext = _output.CanWrite;
 
-            buffer = array<byte>(_step);
+            buffer = new byte[_step];
             for (int i = 0; i < _step; i++)
             {
                 moveNext &= await _source.MoveNextAsync().ConfigureAwait(false);

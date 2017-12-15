@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
-
-using static System.Collections.Generic.Create;
+using System.Linq;
 
 namespace Cactoos.List
 {
@@ -16,14 +15,14 @@ namespace Cactoos.List
         }
 
         public ParsedDoubles(IEnumerable<IText> source)
-            : this(map(source, item => item.String()))
+            : this(source.Select(item => item.String()))
         {
                 
         }
 
         public IEnumerator<double> GetEnumerator()
         {
-            return map(_source, item => double.Parse(item, CultureInfo.InvariantCulture)).GetEnumerator();
+            return _source.Select(item => double.Parse(item, CultureInfo.InvariantCulture)).GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()

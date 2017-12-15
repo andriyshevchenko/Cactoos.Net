@@ -1,8 +1,8 @@
 ﻿//using Cactoos.List;
-//using InputValidation;
+//
 //using System.Text;
 
-//using static System.Collections.Generic.Create;
+//
 
 //namespace Cactoos.Text
 //{
@@ -25,7 +25,7 @@
 
 //        }
 
-//        private static char[] _breaks = array(',', '-', '!', '?', ' ');
+//        private static char[] _breaks = System.Linq.Enumerable.ToArray(',', '-', '!', '?', ' ');
 
 //        public string String()
 //        {

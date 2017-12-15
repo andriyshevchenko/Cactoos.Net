@@ -1,4 +1,4 @@
-﻿namespace FastXml
+﻿namespace Cactoos
 {
     using System.Collections.Generic;
     using Cactoos.Text;
